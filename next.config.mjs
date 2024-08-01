@@ -3,8 +3,8 @@ const nextConfig = {
     // output: 'export'
 };
 
-module.exports = {
-    basePath: '/', // Replace '/subpath' with your actual base path
-  };
+// module.exports = {
+//     basePath: '/', // Replace '/subpath' with your actual base path
+//   };
 
 export default nextConfig;
