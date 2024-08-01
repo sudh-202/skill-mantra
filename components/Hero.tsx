@@ -96,6 +96,13 @@ const Hero = () => {
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row bg-[#21355C]">
       {/* <div className="hero-map" /> */}
 
+      <Image
+        src="/circle.webp"
+        alt="circle"
+        width={1000}
+        height={100}
+        className="absolute right-[-555px] top-[-530px] z-0 "
+      />
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         {/* <Image 
           src="/camp.svg"
@@ -112,34 +119,36 @@ const Hero = () => {
             </div>
           ))}
           <div className=''>
-            <Button asChild className='bg-[#FFC224] py-8 px-8 text-2xl rounded-xl'>
+            <Button asChild className='bg-[#FFC224] py-8 px-8 text-2xl rounded-xl text-blue-90'>
               <Link href="/login">Download Prospectus</Link>
             </Button>
 
 
-            {/* <Button
-          type="button"
-          title="Download Prospectus"
-          variant="btn_green"
-        /> */}
+
           </div>
-          {/* <Button className="mt-4 bg-[#00E0D3] text-[#21355C] py-2 px-4 md:py-4 md:px-6 lg:py-8 lg:px-8 rounded-lg text-lg md:text-xl font-semibold w-1/2">
-            Download Prospectus
-          </Button> */}
+
         </div>
-        <div className="mt-4">
+        <div className="mt-8">
           {data.subsections.map((subsection, index) => (
             <div key={index} className="flex items-center mb-2">
-              <span className="text-xl md:text-3xl lg:text-4xl text-white">{subsection.title}</span>
+              <span className="text-xl md:text-3xl lg:text-4xl text-white font-semibold">{subsection.title}</span>
             </div>
           ))}
         </div>
         <div className="flex flex-wrap gap-4 md:gap-10 mt-6">
           {data.stats.map((stat, index) => (
             <div key={index} className="w-full md:w-auto text-start mb-2 md:mb-0">
-              <div className="text-xl md:text-3xl lg:text-4xl font-semibold text-white">{stat.percentage}</div>
-              <div className="text-sm md:text-base text-white">{stat.description}</div>
+              <div className="text-xl md:text-3xl lg:text-5xl font-bold text-white">{stat.percentage}</div>
+              <div className="text-sm md:text-base lg:text-lg text-white">{stat.description}</div>
+              <Image
+                src="/icons/arrow.webp"
+                alt="circle"
+                width={50}
+                height={100}
+                className="absolute right-[-15px] top-[330px] z-0 "
+              />
             </div>
+
           ))}
         </div>
 
@@ -212,12 +221,12 @@ const Hero = () => {
 
 
       {/* Form */}
-      <div className="flex flex-col items-center justify-between p-14 bg-white rounded-2xl">
-        <h1 className='text-3xl mb-6'>Enroll for free Courses</h1>
+      <div className="flex flex-col items-center justify-between lg:p-14 bg-white rounded-2xl z-10">
+        <h1 className='text-4xl font-bold mb-6 text-blue-90'>Enroll for free Courses</h1>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(handleSubmit)}
-            className="max-w-xl w-full flex flex-col gap-4"
+            className="lg:max-w-xl w-full flex flex-col gap-4"
           >
             <FormField
               control={form.control}
