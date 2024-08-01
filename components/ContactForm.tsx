@@ -64,118 +64,122 @@ const ContactForm = () => {
         }
     };
 
-    return ( // Add return statement here
-        <div className="flex flex-col items-center justify-between lg:p-14 p-8 bg-white rounded-2xl z-10">
-            <h1 className="lg:text-4xl text-2xl font-bold mb-6 text-blue-90">Enroll for Free Courses</h1>
-            <Form {...form}>
-                <form onSubmit={form.handleSubmit(handleSubmit)} className="lg:max-w-xl w-full flex flex-col gap-4">
-                    <FormField
-                        control={form.control}
-                        name="name"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Name</FormLabel>
-                                <FormControl>
-                                    <Input placeholder="John Doe" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name="phone"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Phone Number</FormLabel>
-                                <FormControl>
-                                    <Input placeholder="8561718721" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name="emailAddress"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Email Address</FormLabel>
-                                <FormControl>
-                                    <Input
-                                        placeholder="johndoe@gmail.com"
-                                        type="email"
-                                        {...field}
-                                    />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name="accountType"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>I am a</FormLabel>
-                                <Select value={field.value} onValueChange={field.onChange}>
-                                    <FormControl>
-                                        <SelectTrigger>
-                                            <SelectValue placeholder="Student" />
-                                        </SelectTrigger>
-                                    </FormControl>
-                                    <SelectContent className="bg-white">
-                                        <SelectItem value="student">Student</SelectItem>
-                                        <SelectItem value="Working Professional">Working Professional</SelectItem>
-                                        <SelectItem value="CA/CS Pursuing">CA/CS Pursuing</SelectItem>
-                                        <SelectItem value="Govt Job Preparation">Govt Job Preparation</SelectItem>
-                                    </SelectContent>
-                                </Select>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    {form.watch("accountType") === "Working Professional" && (
+    return (
+        <>
+            <Image
+                src="/circle.webp"
+                alt="circle"
+                width={1000}
+                height={100}
+                className="absolute right-[-350px] top-[-330px]  hidden lg:block z-[-10]"
+            />
+            <div className="flex flex-col items-center justify-between lg:p-14 p-8 bg-white rounded-2xl z-90">
+                <h1 className="lg:text-4xl text-2xl font-bold mb-6 text-blue-90">Enroll for Free Courses</h1>
+                <Form {...form}>
+
+                    <form onSubmit={form.handleSubmit(handleSubmit)} className="lg:max-w-xl w-full flex flex-col gap-4">
                         <FormField
                             control={form.control}
-                            name="companyName"
+                            name="name"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Company Name</FormLabel>
+                                    <FormLabel>Name</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Company name" {...field} />
+                                        <Input placeholder="John Doe" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                    )}
-                    <FormField
-                        control={form.control}
-                        name="city"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>City/State</FormLabel>
-                                <FormControl>
-                                    <Input placeholder="Mumbai" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
+                        <FormField
+                            control={form.control}
+                            name="phone"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Phone Number</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder="8561718721" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="emailAddress"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Email Address</FormLabel>
+                                    <FormControl>
+                                        <Input
+                                            placeholder="johndoe@gmail.com"
+                                            type="email"
+                                            {...field}
+                                        />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="accountType"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>I am a</FormLabel>
+                                    <Select value={field.value} onValueChange={field.onChange}>
+                                        <FormControl>
+                                            <SelectTrigger>
+                                                <SelectValue placeholder="Student" />
+                                            </SelectTrigger>
+                                        </FormControl>
+                                        <SelectContent className="bg-white">
+                                            <SelectItem value="student">Student</SelectItem>
+                                            <SelectItem value="Working Professional">Working Professional</SelectItem>
+                                            <SelectItem value="CA/CS Pursuing">CA/CS Pursuing</SelectItem>
+                                            <SelectItem value="Govt Job Preparation">Govt Job Preparation</SelectItem>
+                                        </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        {form.watch("accountType") === "Working Professional" && (
+                            <FormField
+                                control={form.control}
+                                name="companyName"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Company Name</FormLabel>
+                                        <FormControl>
+                                            <Input placeholder="Company name" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
                         )}
-                    />
-                    <Button type="submit" className="w-full bg-blue-90 text-white mt-4">
-                        Submit
-                    </Button>
-                </form>
-            </Form>
-            <Image
-                src="/icons/dots.webp"
-                alt="circle"
-                width={100}
-                height={100}
-                className="absolute left-[60px] top-[690px] z-10 hidden lg:block"
-            />
-        </div>
+                        <FormField
+                            control={form.control}
+                            name="city"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>City/State</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder="Mumbai" {...field} />
+                                    </FormControl>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <Button type="submit" className="w-full bg-blue-90 text-white mt-4">
+                            Submit
+                        </Button>
+                    </form>
+                </Form>
+
+            </div>
+        </>
     );
 };
 
