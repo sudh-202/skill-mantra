@@ -42,7 +42,7 @@ const Hero = () => {
                                 alt="circle"
                                 width={40}
                                 height={100}
-                                className="absolute right-[-65px] top-[350px] z-0 "
+                                className="absolute right-[-25px] top-[350px] z-0 "
                             />
                         </div>
                     ))}
