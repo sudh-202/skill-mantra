@@ -24,11 +24,11 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <Button asChild className="border-2 border-blue-90 text-blue-90 text-lg">
+        <Button asChild variant="outline" className="border-2 border-blue-90 text-blue-90 text-lg">
           <Link href="/login">Login</Link>
         </Button>
 
-        <Button asChild className="border-2 border-[#FFC224] bg-[#FFC224] text-blue-90 text-lg">
+        <Button asChild  className="border-2 border-[#FFC224] bg-[#FFC224] text-blue-90 text-lg">
           <Link href="/login">Register</Link>
         </Button>
 
