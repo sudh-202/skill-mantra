@@ -32,11 +32,11 @@ const Hero = () => {
                         </div>
                     ))}
                 </div>
-                <div className="flex flex-wrap gap-4 md:gap-10 mt-6 flex-col lg:flex-row">
+                <div className="flex flex-wrap gap-4 md:gap-2 mt-6 flex-col lg:flex-row">
                     {data.stats.map((stat, index) => (
                         <div key={index} className="w-full md:w-auto text-start mb-2 md:mb-0 flex lg:flex-col gap-4 lg:gap-2">
                             <div className="text-xl md:text-3xl lg:text-4xl font-bold text-white">{stat.percentage}</div>
-                            <div className="text-sm md:text-base lg:text-lg text-white">{stat.description}</div>
+                            <div className="text-sm md:text-base lg:text-lg text-white w-[70%]">{stat.description}</div>
                             <Image
                                 src="/icons/arrow.webp"
                                 alt="circle"
