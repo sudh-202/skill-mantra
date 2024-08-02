@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { courses } from '../../constants';
+import { courses } from '../constants';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import {
@@ -12,7 +12,6 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import { FaClock, FaGraduationCap, FaUniversity, FaDollarSign, FaCheckCircle } from 'react-icons/fa';
-import 'tailwindcss/tailwind.css';
 
 const CoursesSection: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
