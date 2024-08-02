@@ -20,7 +20,7 @@ const CoursesSection: React.FC = () => {
     // This will depend on the library's capabilities
 
     return (
-        <div className="w-full py-16 bg-white text-blue-900 flex flex-col items-center lg:px-0 px-4">
+        <div className="w-full py-16 bg-white text-blue-900 flex flex-col items-center lg:px-12 px-4">
             <h2 className="text-center text-6xl font-semibold mb-8">Our Courses</h2>
             <div className="relative w-full max-w-[1320px]">
                 <Carousel
@@ -31,8 +31,8 @@ const CoursesSection: React.FC = () => {
                     <CarouselContent>
                         {courses.map((course, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3  w-full">
-                                <div className="bg-[#89fff98e] pt-3 pb-8 px-3 rounded-lg shadow-md flex flex-col h-full">
-                                    <div className='bg-white rounded-lg p-6 mb-4'>
+                                <div className="bg-[#89fff98e] pt-3 pb-8 px-3 rounded-2xl shadow-md flex flex-col h-full">
+                                    <div className='bg-white rounded-2xl p-6 mb-4'>
                                         <h3 className="text-4xl font-semibold mb-2 border-b-2 border-blue-90 pb-4">{course.title}</h3>
 
                                         <div className="mb-2 flex flex-row  justify-between border-b-2 border-blue-90 py-3">
@@ -67,8 +67,8 @@ const CoursesSection: React.FC = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-full bg-gray-700 text-white p-2 rounded-full" />
-                    <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-full bg-gray-700 text-white p-2 rounded-full" />
+                    <CarouselPrevious className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-full bg-gray-700 text-white p-2 rounded-full" />
+                    <CarouselNext className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-full bg-gray-700 text-white p-2 rounded-full" />
                 </Carousel>
                 {/* Custom Indicators */}
                 {/* <div className="flex justify-center mt-4">
