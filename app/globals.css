@@ -14,6 +14,9 @@ body {
   font-family: Inter;
 }
 
+
+/* Logo of partners */
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -31,6 +34,42 @@ body {
 
 .animate-pause {
   animation-play-state: paused;
+}
+
+/* For companies */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%; /* Double the width to fit the repeated content */
+  animation: marquee 10s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: 200%; /* Double the width to fit the repeated content */
+  animation: marquee-reverse 10s linear infinite;
+}
+
+.flex-none {
+  flex: none;
 }
 
 @layer utilities {
