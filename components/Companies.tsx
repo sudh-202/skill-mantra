@@ -19,7 +19,7 @@ const Companies: React.FC = () => {
                     <div className="flex animate-marquee gap-7">
                         {companiesimg.concat(companiesimg).map((company, index) => (
                             <div key={index} className="flex-none flex justify-center items-center">
-                                <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain" />
+                                <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain"  loading='lazy'/>
                             </div>
                         ))}
                     </div>
@@ -30,7 +30,7 @@ const Companies: React.FC = () => {
                     <div className="flex animate-marquee-reverse gap-7">
                         {companiesimg.concat(companiesimg).map((company, index) => (
                             <div key={index} className="flex-none  flex justify-center items-center">
-                                <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain" />
+                                <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain"  loading='lazy'/>
                             </div>
                         ))}
                     </div>
@@ -49,6 +49,7 @@ const Companies: React.FC = () => {
                     width={500}
                     height={500}
                     className="rounded-lg"
+                     loading='lazy'
                 />
             </div>
         </div>

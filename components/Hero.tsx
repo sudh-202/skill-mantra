@@ -42,7 +42,8 @@ const Hero = () => {
                                 alt="circle"
                                 width={40}
                                 height={100}
-                                className="absolute md:right-[-25px] right-[-16px] top-[350px] z-0 "
+                                className="absolute md:right-[-25px] right-[-16px] top-[350px] z-0"
+                                loading='lazy'
                             />
                         </div>
                     ))}
@@ -53,6 +54,7 @@ const Hero = () => {
                     width={100}
                     height={100}
                     className="absolute left-[60px] top-[630px] z-10 hidden lg:block"
+                    loading='lazy'
                 />
             </div>
 

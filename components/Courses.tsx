@@ -88,6 +88,7 @@ const CoursesSection: React.FC = () => {
                     width={250}
                     height={100}
                     className="absolute bottom-[-120px] left-0 z-10 hidden lg:block"
+                    loading='lazy'
                 />
                 
             </div>
