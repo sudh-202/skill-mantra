@@ -14,6 +14,25 @@ body {
   font-family: Inter;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  width: calc(200% + 8rem); /* Adjust based on the gap and number of items */
+}
+
+.animate-pause {
+  animation-play-state: paused;
+}
+
 @layer utilities {
   .btn_white { 
     @apply  border-white bg-white px-8 py-3 text-green-50

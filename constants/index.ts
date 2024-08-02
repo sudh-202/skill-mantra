@@ -171,4 +171,49 @@ export const NAV_LINKS = [
       ]
     },
   ];
+
+  // Partner information
+  export const patnerdata = {
+  sections: [
+    { title: 'Self Assessment', completed: true },
+    { title: 'Job Search Strategies', completed: true },
+    { title: 'Goal Setting', completed: true },
+    { title: 'Market Trends, etc. ', completed: true }
+  ],
+  subsections: [
+      { title: 'A customized roadmap ', completed: true },
+      { title: 'leading you to success!  ', completed: true },
+      { title: 'Take your assessment today ', completed: true },
+      { para: 'to get enrolled for free counselling which will help you in - ', completed: true },
+    ],
+  }
   
+    // Partner information icons
+  export const partnersimg = [
+    {
+        name: "National Career Service",
+        image: "/patners-logos/p1.webp",
+        alt: "National Career Service",
+    },
+    {
+        name: "Skill India",
+        image: "/patners-logos/p2.webp",
+        alt: "Skill India",
+    },
+    {
+        name: "MSME",
+        image: "/patners-logos/p3.webp",
+        alt: "MSME",
+    },
+    {
+      name: "AIU",
+      image: "/patners-logos/p5.webp",
+      alt: "AIU",
+  },
+    {
+        name: "Lingaya's University",
+        image: "/patners-logos/p4.webp",
+        alt: "Lingaya's University",
+    },
+    
+];
