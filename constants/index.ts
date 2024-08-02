@@ -84,6 +84,8 @@ export const NAV_LINKS = [
       '/wordpress.svg',
     ],
   };
+
+  // Banner page data left side 
   
   
   export const data = {
@@ -105,10 +107,68 @@ export const NAV_LINKS = [
     ]
   };
   
-  export const animals = [
-    { key: "cat", label: "Cat" },
-    { key: "dog", label: "Dog" },
-    { key: "rabbit", label: "Rabbit" },
-    { key: "parrot", label: "Parrot" },
+   // Courses information 
+
+   export const courses = [
+    {
+      title: "CCA Course",
+      duration: "9 Months",
+      eligibility: " 9 Months",
+      modules: "9 Months",
+      mode: " 9 Months",
+      description: [
+        "Get professional certification offered by",
+        "Get professional certification offered by",
+        "Get professional certification offered by"
+      ]
+    },
+    {
+      title: "CCA Course",
+      duration: "9 Months",
+      eligibility: " 9 Months",
+      modules: " 9 Months",
+      mode: " 9 Months",
+      description: [
+        "Get professional certification offered by",
+        "Get professional certification offered by",
+        "Get professional certification offered by"
+      ]
+    },
+    {
+      title: "CCA Course",
+      duration: "9 Months",
+      eligibility: " 9 Months",
+      modules: " 9 Months",
+      mode: " 9 Months",
+      description: [
+        "Get professional certification offered by",
+        "Get professional certification offered by",
+        "Get professional certification offered by"
+      ]
+    },
+    {
+      title: "CCA Course",
+      duration: "9 Months",
+      eligibility: "Eligibility 9 Months",
+      modules: "Modules 9 Months",
+      mode: "Mode 9 Months",
+      description: [
+        "Get professional certification offered by",
+        "Get professional certification offered by",
+        "Get professional certification offered by"
+      ]
+    },
+    {
+      title: "CCA Course",
+      duration: "9 Months",
+      eligibility: "Eligibility 9 Months",
+      modules: "Modules 9 Months",
+      mode: "Mode 9 Months",
+      description: [
+        "Get professional certification offered by",
+        "Get professional certification offered by",
+        "Get professional certification offered by"
+      ]
+    },
   ];
   

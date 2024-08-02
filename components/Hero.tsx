@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
     return (
-        <section className="max-container padding-container flex flex-col lg:gap-20 xl:gap-24 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row bg-[#21355C]">
+        <section className="max-container padding-container flex flex-col lg:gap-20 xl:gap-24 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row bg-[#21355C] px-14 bg-contain relative">
              
             <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
             

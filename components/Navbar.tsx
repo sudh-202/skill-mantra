@@ -13,8 +13,9 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/logo.webp" alt="logo" width={250} height={29} />
       </Link>
+    
 
-
+   <div className="  "></div>
 
       <div className="lg:flexCenter hidden gap-4">
         <ul className="hidden h-full gap-12 lg:flex mr-10">
