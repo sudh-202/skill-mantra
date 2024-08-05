@@ -266,3 +266,82 @@ export const companiesimg = [
     logo: "/companies-logos/11.webp",
   },
 ];
+
+// Testimonial section
+
+
+export const testimonials = [
+  {
+    name: "John Doe",
+    position: "CEO at Example Corp",
+    testimonial: "This is an amazing product! It has changed the way our team works.",
+    image: "/path/to/john-doe.jpg",
+    rating: 5,
+  },
+  {
+    name: "Jane Smith",
+    position: "CTO at Another Company",
+    testimonial: "I can't imagine working without it. Highly recommended!",
+    image: "/path/to/jane-smith.jpg",
+    rating: 4,
+  },
+  {
+    name: "Alice Johnson",
+    position: "Marketing Director at Innovate Inc.",
+    testimonial: "The user experience is top-notch. Our customers love it.",
+    image: "/path/to/alice-johnson.jpg",
+    rating: 5,
+  },
+  {
+    name: "Bob Brown",
+    position: "Product Manager at Tech Solutions",
+    testimonial: "The features are exactly what we needed. It's very intuitive and easy to use.",
+    image: "/path/to/bob-brown.jpg",
+    rating: 4,
+  },
+  {
+    name: "Emily White",
+    position: "Designer at Creative Studio",
+    testimonial: "The design is sleek and modern. It fits perfectly with our brand.",
+    image: "/path/to/emily-white.jpg",
+    rating: 5,
+  },
+  {
+    name: "Michael Green",
+    position: "Developer at DevWorks",
+    testimonial: "It's incredibly reliable. We haven't experienced any downtime since we started using it.",
+    image: "/path/to/michael-green.jpg",
+    rating: 5,
+  },
+  {
+    name: "Sarah Black",
+    position: "HR Manager at PeopleFirst",
+    testimonial: "It has streamlined our processes significantly. The team is much more productive now.",
+    image: "/path/to/sarah-black.jpg",
+    rating: 4,
+  },
+  {
+    name: "David Lee",
+    position: "Sales Lead at GrowthCorp",
+    testimonial: "Our sales have increased by 30% since we integrated this tool into our workflow.",
+    image: "/path/to/david-lee.jpg",
+    rating: 5,
+  },
+  {
+    name: "Samantha Taylor",
+    position: "Consultant at BizAdvise",
+    testimonial: "The support team is fantastic. They're always quick to respond and very helpful.",
+    image: "/path/to/samantha-taylor.jpg",
+    rating: 5,
+  },
+  {
+    name: "Chris Martin",
+    position: "Founder at StartupX",
+    testimonial: "It’s a game-changer for startups. We’ve been able to scale quickly thanks to this solution.",
+    image: "/path/to/chris-martin.jpg",
+    rating: 5,
+  },
+];
+
+
+

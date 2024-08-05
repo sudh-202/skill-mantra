@@ -6,6 +6,7 @@ import Companies from "@/components/Companies";
 import Courses from "@/components/Courses";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
+import TestimonialCarousel from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Courses />
       <Partners />
       <Companies />
+      <TestimonialCarousel />
       {/* <Camp />
       <Guide />
       <Features />
