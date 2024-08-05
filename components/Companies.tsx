@@ -5,7 +5,7 @@ import { companiesimg } from '../constants';
 const Companies: React.FC = () => {
     return (
         <div className='w-full bg-white md:py-12 px-4 lg:px-12 py-12'>
-        <h2 className="text-3xl md:text-5xl font-bold  text-blue-90 text-center mb-12">Trusted by 200+ Companies Worldwide</h2>
+        <h2 className="text-3xl md:text-5xl font-bold  text-blue-90 text-center mb-12 pl-12">Trusted by 200+ Companies Worldwide</h2>
         <div className="flex flex-col md:flex-row items-center container mx-auto ">
             
             {/* Left side with logos */}
@@ -48,7 +48,7 @@ const Companies: React.FC = () => {
                     width={500}
                     height={500}
                     className="rounded-lg"
-                     loading='lazy'
+                    loading='lazy'
                 />
             </div>
         </div>
