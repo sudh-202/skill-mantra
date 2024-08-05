@@ -344,4 +344,17 @@ export const testimonials = [
 ];
 
 
+// video section 
+
+export const stats = [
+  { label: "Careers Advanced", value: "1000+" },
+  { label: "Corporate Tie-Ups", value: "200+" },
+  { label: "Qualified Trainers", value: "50+" },
+  { label: "Students Counseled", value: "10+" },
+  { label: "Reach on Social Media", value: "6M+" },
+  { label: "Rating", value: "4.6/5" },
+  { label: "Hours of UpSkilling", value: "15K+" },
+];
+
+
 

@@ -7,6 +7,8 @@ import Courses from "@/components/Courses";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import TestimonialCarousel from "@/components/Testimonials";
+import VideoSection from "@/components/VideoSection";
+
 
 
 export default function Home() {
@@ -17,6 +19,7 @@ export default function Home() {
       <Partners />
       <Companies />
       <TestimonialCarousel />
+      <VideoSection />
       {/* <Camp />
       <Guide />
       <Features />

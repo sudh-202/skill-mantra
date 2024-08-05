@@ -1,13 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { companiesimg } from '../constants';
-import { Button } from "@/components/ui/button";
 
 const Companies: React.FC = () => {
     return (
         <div className='w-full bg-white md:py-12 px-4 lg:px-12 py-12'>
         <h2 className="text-3xl md:text-5xl font-bold  text-blue-90 text-center mb-12">Trusted by 200+ Companies Worldwide</h2>
-        <div className="flex flex-col md:flex-row items-center justify-between ">
+        <div className="flex flex-col md:flex-row items-center container mx-auto ">
             
             {/* Left side with logos */}
             <div className="w-full md:w-1/2 flex flex-col items-center text-center md:text-left">

@@ -13,7 +13,7 @@ import { FaStar } from 'react-icons/fa';
 const TestimonialCarousel: FC = () => {
   return (
     <section className="w-full py-20 bg-blue-90 px-6 md:px-0">
-      <div className="container mx-auto px-4">
+      <div className="">
         <h2 className="text-4xl md:text-5xl font-medium  text-white text-center mb-12">Testimonials</h2>
         <div className="relative w-full max-w-7xl mx-auto">
           <Carousel opts={{ align: "start" }} className="w-full">

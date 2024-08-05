@@ -13,7 +13,7 @@ const Partners = () => {
                 <h2 className='text-white lg:text-7xl text-4xl mb-4'>Our Partners</h2>
                 <p className='text-white italic font-semibold mb-5 md:text-start text-center'>One Of The Best-Recognized Virtual Learning Institutes Helps Individuals Reach Their Goals.</p>
             </div>
-            <div className="relative overflow-hidden bg-[#fffffff0] py-5 z-50">
+            <div className="relative overflow-hidden bg-[#fffffff0] py-5 z-50 container mx-auto">
                 <div className="flex flex-nowrap animate-scroll hover:animate-pause gap-2">
                     {[...partnersimg, ...partnersimg].map((partner, index) => (
                         <div key={index} className="flex justify-center items-center w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/6">
