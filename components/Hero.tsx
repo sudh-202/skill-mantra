@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
     return (
-        <section className="max-container padding-container flex flex-col lg:gap-20 xl:gap-24 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row bg-[#21355C] lg:px-14 bg-contain relative">
+        <section className=" flex justify-center md:flex-row flex-col items-center p-10 gap-32">
              
-            <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
+            <div className="">
             
                 <div className="flex flex-col">
                     {data.sections.map((section, index) => (
@@ -31,31 +31,35 @@ const Hero = () => {
                             <span className="text-xl md:text-3xl lg:text-4xl text-white font-semibold">{subsection.title}</span>
                         </div>
                     ))}
+                     <Image
+                    src="/icons/dots.webp"
+                    alt="dots"
+                    width={100}
+                    height={100}
+                    className="absolute top-[680px] z-10 hidden lg:block"
+                    loading='lazy'
+                />
                 </div>
                 <div className="flex flex-wrap gap-4 md:gap-2 mt-6 flex-col lg:flex-row">
                     {data.stats.map((stat, index) => (
                         <div key={index} className="w-full md:w-auto text-start mb-2 md:mb-0 flex lg:flex-col gap-4 lg:gap-2">
                             <div className="text-xl md:text-3xl lg:text-4xl font-bold text-white">{stat.percentage}</div>
                             <div className="text-sm md:text-base lg:text-lg text-white w-[70%]">{stat.description}</div>
-                            <Image
+                            
+                        </div>
+                        
+                    ))}
+                    <Image
                                 src="/icons/arrow.webp"
-                                alt="circle"
+                                alt="arrow"
                                 width={40}
                                 height={100}
-                                className="absolute md:right-[-25px] right-[-16px] top-[350px] z-0"
+                                className="absolute top-[480px] z-10 hidden lg:block translate-x-[32rem] "
                                 loading='lazy'
                             />
-                        </div>
-                    ))}
+                    
                 </div>
-                    <Image
-                    src="/icons/dots.webp"
-                    alt="dots"
-                    width={100}
-                    height={100}
-                    className="absolute left-[60px] top-[630px] z-10 hidden lg:block"
-                    loading='lazy'
-                />
+                   
             </div>
 
             <div className="relative z-20  flex-col pt-16 md:pt-0  ">
