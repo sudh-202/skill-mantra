@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import TestimonialCarousel from "@/components/Testimonials";
 import VideoSection from "@/components/VideoSection";
+import WhyUs from "@/components/WhyUs";
 
 
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Companies />
       <TestimonialCarousel />
       <VideoSection />
+      <WhyUs />
       {/* <Camp />
       <Guide />
       <Features />

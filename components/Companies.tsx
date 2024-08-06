@@ -14,7 +14,7 @@ const Companies: React.FC = () => {
                 {/* <p className="text-gray-700 mb-8">Dedicated Career Services team to help find your dream company.</p> */}
 
                 {/* First Line of Logos Moving Left to Right */}
-                <div className="overflow-hidden w-full mb-8">
+                <div className="overflow-hidden w-full mb-2">
                     <div className="flex animate-marquee gap-7">
                         {companiesimg.concat(companiesimg).map((company, index) => (
                             <div key={index} className="flex-none flex justify-center items-center">
@@ -25,7 +25,7 @@ const Companies: React.FC = () => {
                 </div>
 
                 {/* Second Line of Logos Moving Right to Left */}
-                <div className="overflow-hidden w-full mb-8">
+                <div className="overflow-hidden w-full mb-2">
                     <div className="flex animate-marquee-reverse gap-7">
                         {companiesimg.concat(companiesimg).map((company, index) => (
                             <div key={index} className="flex-none  flex justify-center items-center">

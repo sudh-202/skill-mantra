@@ -356,5 +356,37 @@ export const stats = [
   { label: "Reach on Social Media", value: "6M+" },
 ];
 
+// why us section
+
+export const features = [
+  {
+    title: "Expert Instructors",
+    description: "Learn from industry professionals with extensive experience and expertise in their respective fields.",
+    icon: "/icons/instructors.svg",
+    link: "#",
+  },
+  {
+    title: "Flexible Learning",
+    description: "Access our courses anytime, anywhere, with flexible learning options that fit your schedule.",
+    icon: "/icons/membership.svg",
+    link: "#",
+  },
+  {
+    title: "Practical Approach",
+    description: "Engage in hands-on learning with real-world case studies, projects, and practical exercises.",
+    icon: "/icons/tailor-made.svg",
+    link: "#",
+  },
+  {
+    title: "Career Support",
+    description: "Benefit from our career counselling, job placement assistance, and networking opportunities with industry leaders.",
+    icon: "/icons/schedule.svg",
+    link: "#",
+  },
+  
+  
+];
+
+
 
 
