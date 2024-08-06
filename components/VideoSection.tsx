@@ -23,24 +23,13 @@ const VideoSection: FC = () => {
 
                     {/* Stats Section */}
                     <div className="w-full">
-                        <div className="relative flex md:flex-wrap justify-between items-center w-full gap-4 md:gap-0">
+                        <div className="relative flex md:flex-wrap justify-between items-center w-full gap-4 md:gap-0 ">
                             {/* Horizontal Line */}
-                            <div className="absolute top-[10px] left-24 right-10 h-[1px] bg-black transform -translate-y-1/2 z-0 hidden md:block"></div>
+                            {/* <div className="absolute top-[10px] left-24 right-10 h-[1px] bg-black transform -translate-y-1/2 z-0 hidden md:block"></div> */}
+                            <Image src="/stats.webp" alt='stats' width={1200} height={100}/>
 
-                            {stats.map((stat, index) => (
-                                <div key={index} className="flex flex-col  items-center text-center relative z-10 w-1/2 md:w-auto md:flex-1">
-                                    {/* Dot */}
-                                    <div className="w-4 h-4 bg-teal-500 rounded-full mb-2 relative z-10"></div>
-                                    {/* Stat Value */}
-                                    <div className="text-xl font-bold text-teal-500 mt-2">
-                                        {stat.value}
-                                    </div>
-                                    {/* Stat Label */}
-                                    <div className="text-sm text-gray-700 mt-1">
-                                        {stat.label}
-                                    </div>
-                                </div>
-                            ))}
+                            
+                            
                         </div>
                     </div>
                 </div>
