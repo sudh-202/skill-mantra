@@ -362,25 +362,25 @@ export const features = [
   {
     title: "Expert Instructors",
     description: "Learn from industry professionals with extensive experience and expertise in their respective fields.",
-    icon: "/icons/instructors.svg",
+    icon: "/why/1.webp",
     link: "#",
   },
   {
     title: "Flexible Learning",
     description: "Access our courses anytime, anywhere, with flexible learning options that fit your schedule.",
-    icon: "/icons/membership.svg",
+    icon: "/why/2.webp",
     link: "#",
   },
   {
     title: "Practical Approach",
     description: "Engage in hands-on learning with real-world case studies, projects, and practical exercises.",
-    icon: "/icons/tailor-made.svg",
+    icon: "/why/3.webp",
     link: "#",
   },
   {
     title: "Career Support",
     description: "Benefit from our career counselling, job placement assistance, and networking opportunities with industry leaders.",
-    icon: "/icons/schedule.svg",
+    icon: "/why/4.webp",
     link: "#",
   },
   
