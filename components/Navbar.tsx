@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image src="/logo.webp" alt="logo" width={100} height={100} className="md:w-72 md:h-18 w-52"/>
+        <Image src="/logo.webp" alt="logo" width={100} height={100} className="md:w-72 md:h-18 w-52" loading="lazy"/>
       </Link>
     
 
