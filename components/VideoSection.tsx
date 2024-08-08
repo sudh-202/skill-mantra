@@ -7,7 +7,7 @@ const YoutubeVideo: FC = () => {
         
         <section className="py-12 bg-white w-full">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col gap-8 items-center justify-center">
+                <div className="flex flex-col gap-8 items-center justify-between">
                     {/* Video Section */}
                     <div className="flex justify-center items-center w-full md:w-1/2">
                         <div className="w-full h-56 md:h-72 lg:h-96 bg-gray-200 rounded-lg flex items-center justify-center text-white text-xl relative">
@@ -22,13 +22,9 @@ const YoutubeVideo: FC = () => {
                     </div>
 
                     {/* Stats Section */}
-                    <div className="w-full">
-                        <div className="relative flex md:flex-wrap justify-between items-center w-full gap-4 md:gap-0 ">
-                            {/* Horizontal Line */}
-                            {/* <div className="absolute top-[10px] left-24 right-10 h-[1px] bg-black transform -translate-y-1/2 z-0 hidden md:block"></div> */}
+
                             <Image src="/stats.webp" alt='stats' width={1200} height={100}/>   
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
