@@ -528,6 +528,41 @@ export const target = [
   },
 ];
 
+// last page
+export const exploreWorlds = [
+  {
+    id: 'world-1',
+    imgUrl: '/account/1.webp',
+    title: 'Job Openings',
+    description: 'India has more than 10L job openings in accounting and finance every year.',
+  },
+  {
+    id: 'world-2',
+    imgUrl: '/account/2.webp',
+    title: 'Accounting Staff',
+    description: '96% of Indian companies are planning to hire Finance or Accounting staff in 2024.',
+  },
+  {
+    id: 'world-3',
+    imgUrl: '/account/3.webp',
+    title: 'Accounting career',
+    description: 'Accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.',
+  },
+  {
+    id: 'world-4',
+    imgUrl: '/account/4.webp',
+    title: 'Accounting salary',
+    description: 'The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA and for senior-level profiles INR 7 - 12 LPA. ',
+  },
+  {
+    id: 'world-5',
+    imgUrl: '/account/5.webp',
+    title: 'Accounting graduates',
+    description: 'Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.',
+  },
+];
+
+
 
 
 

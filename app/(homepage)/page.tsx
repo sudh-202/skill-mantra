@@ -11,6 +11,7 @@ import DegreeComparison from "@/components/DegreeComparison";
 import { FAQS } from "@/components/Faqs";
 import TrustedBrands from "@/components/TrustedBrands";
 import TargetSegment from "@/components/TargetSegment";
+import Scope from "@/components/scope";
 
 
 
@@ -29,6 +30,7 @@ export default function Home() {
       <OurTrainer />
       <YoutubeVideo />
       <DegreeComparison />
+      <Scope/>
       <FAQS/>
     </>
   )
