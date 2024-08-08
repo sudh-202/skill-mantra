@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <main className="relative overflow-hidden bg-[#21355C]">
+        <main className="">
           {children}
         </main>
         {/* <Footer /> */}

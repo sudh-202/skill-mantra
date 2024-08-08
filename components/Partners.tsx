@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const Partners = () => {
     return (
-        <section>
+        <section className='bg-blue-90'>
             <div className='flex flex-col justify-center items-center lg:pt-24 px-8 pt-10'>
                 <h2 className='text-white lg:text-7xl text-4xl mb-4'>Our Partners</h2>
                 <p className='text-white italic font-semibold mb-5 md:text-start text-center'>One Of The Best-Recognized Virtual Learning Institutes Helps Individuals Reach Their Goals.</p>
