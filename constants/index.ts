@@ -383,9 +383,56 @@ export const features = [
     icon: "/why/4.webp",
     link: "#",
   },
-  
-  
 ];
+
+//Trainers - Profile
+
+export const trainers = [
+  {
+    name: "Rakesh Joshi",
+    experience: "3.5 Years",
+    qualification: "B.Com (Hons)",
+    role: "German Language Trainer",
+    image: "/trainer/1.webp", 
+    course: "Payroll course "
+  },
+  {
+    name: "Isha Verma",
+    experience: "4 Years",
+    qualification: "Btech (CSE)",
+    role: "Passionate in teaching",
+    image: "/trainer/2.webp",
+    course: "GST Course"
+  },
+  {
+    name: "CA Vivek Sharma",
+    experience: "4+ years ",
+    qualification: "Masters Of Science",
+    role: "Hard work leads to success",
+    image: "/trainer/3.webp",
+    course: "ITR Course"
+  }
+  , {
+    name: "Shalini Kumari",
+    experience: "4+ years ",
+    qualification: "Masters Of Science",
+    role: "Hard work leads to success",
+    image: "/trainer/4.webp",
+    course: "Business Analytics "
+  } ,
+   {
+    name: "Abhishek Sharma",
+    experience: "4+ years ",
+    qualification: "Masters Of Science",
+    role: "Hard work leads to success",
+    image: "/trainer/5.webp",
+    course: "Business Analytics "
+  }
+];
+
+
+
+
 
 
 

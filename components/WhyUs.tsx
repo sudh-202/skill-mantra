@@ -22,11 +22,6 @@ import {
               <CardContent>
                 <p className="text-sm">{feature.description}</p>
               </CardContent>
-              {/* <CardFooter>
-                <a href={feature.link} className="text-blue-500 hover:underline">
-                  Learn More
-                </a>
-              </CardFooter> */}
             </Card>
           ))}
         </div>
