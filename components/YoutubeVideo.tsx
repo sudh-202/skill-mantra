@@ -14,7 +14,6 @@ const VideoSection: FC = () => {
                                 className="w-full h-[500px] rounded-lg"
                                 src={video}
                                 title={`YouTube Short ${index}`}
-                                frameBorder="0"
                                 allowFullScreen
                                 loading='lazy'
                                 // playsInline

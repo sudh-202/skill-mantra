@@ -66,13 +66,13 @@ const ContactForm = () => {
 
     return (
         <>
-            <Image
+            {/* <Image
                 src="/circle.webp"
                 alt="circle"
                 width={1000}
                 height={100}
                 className="absolute right-[-350px] top-[-330px]  hidden lg:block z-[-10]"
-            />
+            /> */}
             <div className="flex flex-col items-center justify-between lg:p-14 p-8 bg-white rounded-2xl z-90">
                 <h1 className="lg:text-4xl text-2xl font-bold mb-6 text-blue-90">Enroll for Free Courses</h1>
                 <Form {...form}>
