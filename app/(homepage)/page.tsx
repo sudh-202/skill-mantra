@@ -12,6 +12,7 @@ import YoutubeVideo from "@/components/YoutubeVideo";
 import VideoSection from "@/components/VideoSection";
 import WhyUs from "@/components/WhyUs";
 import DegreeComparison from "@/components/DegreeComparison";
+import { FAQS } from "@/components/Faqs";
 
 
 
@@ -28,6 +29,7 @@ export default function Home() {
       <OurTrainer />
       <YoutubeVideo />
       <DegreeComparison />
+      <FAQS/>
       {/* <Camp />
       <Guide />
       <Features />

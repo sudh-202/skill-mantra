@@ -441,7 +441,6 @@ export const videos = [
 
 // Degree Table
 
-// constants/index.ts
 export const DEGREE_DATA = {
   title: "Make Your Degree Smart",
   subtitle: "Get smart, get ahead by benefiting from the best of both worlds: a university degree and industry-ready training course.",
@@ -455,6 +454,37 @@ export const DEGREE_DATA = {
     { label: "VR simulation based training", traditional: false, smart: true },
   ],
 };
+
+// FAQ's
+
+// constants/index.ts
+export const faqs = [
+  {
+      id: "item-1",
+      question:"What courses does Skill Mantra offer?",
+      answer: "CCA courses, HR Payroll Program, HR Generalist, TDS course, GST courses, Excel Basic to Advance, Tally, and Accounting for Accounts.\n\nTo know more in detail about our courses, visit our website."
+  },
+  {
+      id: "item-2",
+      question: "What are the eligibility criteria to enroll in Skill Mantra courses?",
+      answer: "Different courses offered by Skill Mantra have different eligibility requirements. Some of the courses may require a specific academic qualification, like 10+2, while others may be open to anyone with basic internet skills. And there are courses that require a bachelor’s degree. For your preferred course, check out our web page."
+  },
+  {
+      id: "item-3",
+      question: "What is the admission process to enroll in Skill Mantra Courses?",
+      answer: "Browse the Skill Mantra website or app to find the course you’re interested in, and use our online application form available on our website. Fill out the form with accurate information and upload the required documents. After successful submission, you’ll receive instructions on making the course fee payment."
+  },
+  {
+      id: "item-4",
+      question: "How can I access my Skill Mantra courses? Is it available on the website, app, or both?",
+      answer: "Accessing your Skill Mantra courses depends on the specific course you are enrolled in and the delivery method. Most of the courses are online through their learning platforms on the website. There are also certain blended learning programs that combine online modules with offline sessions, which might include course materials and assessments on the online platform as well.\n\nYes, Skill Mantra offers a mobile app where you can access some of their online courses on your smartphone or tablet. However, not all courses are available on the app yet."
+  },
+  {
+      id: "item-5",
+      question: "Does Skill Mantra provide customer support?",
+      answer: "Yes, Skill Mantra provides customer support for learners. They offer various channels to reach their support team, ensuring you get the help you need."
+  },
+];
 
 
 
