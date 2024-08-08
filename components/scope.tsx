@@ -13,7 +13,7 @@ const Scope = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className="px-32 py-20 text-white" id="explore">
+    <section className=" px-4 py-10 md:px-32 md:py-20 text-white" id="explore">
       <motion.div
         // variants={staggerContainer}
         initial="hidden"

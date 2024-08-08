@@ -35,7 +35,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ id, imgUrl, title, descriptio
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[20px] text-white">
           {title}
         </h2>
-        <p>{description}</p>
+        <p className='text-xs md:text-lg'>{description}</p>
       </div>
     )}
   </motion.div>
