@@ -16,6 +16,7 @@ const VideoSection: FC = () => {
                                 title={`YouTube Short ${index}`}
                                 frameBorder="0"
                                 allowFullScreen
+                                loading='lazy'
                                 // playsInline
                                 
                             ></iframe>
