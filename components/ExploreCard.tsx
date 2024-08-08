@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
@@ -21,9 +21,11 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ id, imgUrl, title, descriptio
       } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
-    <img
+    <Image
       src={imgUrl}
       alt="planet-04"
+      width={100}
+      height={100}
       className="absolute w-full h-full object-cover rounded-[24px]"
     />
     {active !== id ? (
