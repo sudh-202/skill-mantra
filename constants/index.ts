@@ -434,30 +434,10 @@ export const trainers = [
 
 // constants/index.ts
 export const videos = [
-  {
-    id: 1,
-    title: "E-Way Bill System",
-    thumbnail: "/path/to/thumbnail1.jpg", // Replace with actual path
-    url: "https://youtube.com/shorts/qbfxe9i6TX0?si=o_3rOr24YBQqdW0-"
-  },
-  {
-    id: 2,
-    title: "HR Payroll Program",
-    thumbnail: "/path/to/thumbnail2.jpg", // Replace with actual path
-    url: "https://www.youtube.com/shorts/28Hhv8izHzE"
-  },
-  {
-    id: 3,
-    title: "Skill Mantra",
-    thumbnail: "/path/to/thumbnail3.jpg", // Replace with actual path
-    url: "https://www.youtube.com/shorts/-YpvK3ykmrA"
-  },
-  {
-    id: 4,
-    title: "Another Video",
-    thumbnail: "/path/to/thumbnail4.jpg", // Replace with actual path
-    url: "https://youtube.com/shorts/Fxj5Ke5omgU?si=4u810vAhLFZTA7CG"
-  }
+  "https://youtube.com/embed/qbfxe9i6TX0",
+  "https://youtube.com/embed/28Hhv8izHzE",
+  "https://youtube.com/embed/-YpvK3ykmrA",
+  "https://youtube.com/embed/Fxj5Ke5omgU",
 ];
 
 
