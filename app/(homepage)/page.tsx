@@ -11,6 +11,7 @@ import TestimonialCarousel from "@/components/Testimonials";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import VideoSection from "@/components/VideoSection";
 import WhyUs from "@/components/WhyUs";
+import DegreeComparison from "@/components/DegreeComparison";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
       <WhyUs />
       <OurTrainer />
       <YoutubeVideo />
+      <DegreeComparison />
       {/* <Camp />
       <Guide />
       <Features />

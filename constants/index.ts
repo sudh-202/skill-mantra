@@ -432,13 +432,29 @@ export const trainers = [
 
 // mantra youtube videos
 
-// constants/index.ts
 export const videos = [
   "https://youtube.com/embed/qbfxe9i6TX0",
   "https://youtube.com/embed/28Hhv8izHzE",
   "https://youtube.com/embed/-YpvK3ykmrA",
   "https://youtube.com/embed/Fxj5Ke5omgU",
 ];
+
+// Degree Table
+
+// constants/index.ts
+export const DEGREE_DATA = {
+  title: "Make Your Degree Smart",
+  subtitle: "Get smart, get ahead by benefiting from the best of both worlds: a university degree and industry-ready training course.",
+  rows: [
+    { label: "General teaching by university", traditional: true, smart: true },
+    { label: "UGC recognized bachelors", traditional: true, smart: true },
+    { label: "Access to 1000+ hours of rich content", traditional: false, smart: true },
+    { label: "2500+ hours of hands on training", traditional: false, smart: true },
+    { label: "Courses designed by your future employer!", traditional: false, smart: true },
+    { label: "Built-in income guaranteed", traditional: false, smart: true },
+    { label: "VR simulation based training", traditional: false, smart: true },
+  ],
+};
 
 
 
