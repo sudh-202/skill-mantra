@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import OurTrainer from "@/components/OurTrainer";
 import Partners from "@/components/Partners";
 import TestimonialCarousel from "@/components/Testimonials";
+import YoutubeVideo from "@/components/YoutubeVideo";
 import VideoSection from "@/components/VideoSection";
 import WhyUs from "@/components/WhyUs";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <VideoSection />
       <WhyUs />
       <OurTrainer />
+      <YoutubeVideo />
       {/* <Camp />
       <Guide />
       <Features />

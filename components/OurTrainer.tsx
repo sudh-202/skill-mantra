@@ -27,7 +27,7 @@ const TrainerCarousel: FC = () => {
                         alt={trainer.name} 
                         width={100} 
                         height={100} 
-                        className="w-32 h-32 rounded-full object-cover mb-4" 
+                        className="w-32 h-32 rounded-full object-cover mb-4 border-white border-2" 
                       />
                       <h2 className="text-2xl font-bold pb-2">{trainer.name}</h2>
                       <p>{trainer.experience}</p>
