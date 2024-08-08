@@ -11,7 +11,7 @@ import {
   const WhyUs: React.FC = () => {
     return (
       <div className="py-10 px-2 bg-blue-90">
-        <h2 className="text-6xl font-semibold text-center text-white mb-8">Why Us?</h2>
+        <h2 className="text-5xl font-semibold text-center text-white mb-8">Why Choose Skill Mantra?</h2>
         <div className="flex flex-wrap justify-center gap-4 p-4 md:p-0">
           {features.map((feature, index) => (
             <Card key={index} className="flex flex-col items-center justify-center text-center w-full sm:w-1/2 lg:w-1/5 bg-[#FFC224] ">

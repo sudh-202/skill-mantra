@@ -1,7 +1,3 @@
-// import Camp from "@/components/Camp";
-// import Features from "@/components/Features";
-// import GetApp from "@/components/GetApp";
-// import Guide from "@/components/Guide";
 import Companies from "@/components/Companies";
 import Courses from "@/components/Courses";
 import Hero from "@/components/Hero";
@@ -13,6 +9,8 @@ import VideoSection from "@/components/VideoSection";
 import WhyUs from "@/components/WhyUs";
 import DegreeComparison from "@/components/DegreeComparison";
 import { FAQS } from "@/components/Faqs";
+import TrustedBrands from "@/components/TrustedBrands";
+import TargetSegment from "@/components/TargetSegment";
 
 
 
@@ -24,16 +22,14 @@ export default function Home() {
       <Partners />
       <Companies />
       <TestimonialCarousel />
-      <VideoSection />
+      <TrustedBrands/>
       <WhyUs />
+      <VideoSection />
+      <TargetSegment/>
       <OurTrainer />
       <YoutubeVideo />
       <DegreeComparison />
       <FAQS/>
-      {/* <Camp />
-      <Guide />
-      <Features />
-      <GetApp /> */}
     </>
   )
 }

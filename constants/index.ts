@@ -457,7 +457,6 @@ export const DEGREE_DATA = {
 
 // FAQ's
 
-// constants/index.ts
 export const faqs = [
   {
       id: "item-1",
@@ -483,6 +482,49 @@ export const faqs = [
       id: "item-5",
       question: "Does Skill Mantra provide customer support?",
       answer: "Yes, Skill Mantra provides customer support for learners. They offer various channels to reach their support team, ensuring you get the help you need."
+  },
+];
+
+// Trusted Brands 
+
+export const TRUSTED_BRANDS = [
+  {
+    name: "GoAbroad",
+    rating: 4.6,
+    image: "/brands/1.webp",
+    stars: 4.5,
+  },
+  {
+    name: "AmbitionBox",
+    rating: 4.5,
+    image: "/brands/2.webp", 
+    stars: 4.5,
+  },
+  
+];
+
+// Targert Segment section
+
+export const target = [
+  {
+    title: "Students / Graduates",
+    icon: "/choose/1.webp",
+    link: "#",
+  },
+  {
+    title: "Working Professionals",
+    icon: "/choose/2.webp",
+    link: "#",
+  },
+  {
+    title: "CA/CS Candidates",
+    icon: "/choose/3.webp",
+    link: "#",
+  },
+  {
+    title: "Govt Job Candidates",
+    icon: "/choose/4.webp",
+    link: "#",
   },
 ];
 
