@@ -1,10 +1,8 @@
+
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "/courses", key: "courses", label: "Courses" },
-  // { href: '/', key: 'services', label: 'Services' },
-  // { href: '/', key: 'pricing ', label: 'Pricing ' },
-  // { href: '/', key: 'contact_us', label: 'Contact Us' },
 ];
 
 // CAMP SECTION
@@ -560,6 +558,77 @@ export const exploreWorlds = [
     title: 'Accounting graduates',
     description: 'Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.',
   },
+];
+
+
+// ------------------------------
+
+// Courses 
+
+// constant/index.ts
+
+export interface Course {
+  slug: string;
+  title: string;
+  description: string;
+  imagePath: string; // Added field for image path
+}
+
+export const Coursesdata: Course[] = [
+  { 
+    slug: 'cca', 
+    title: 'Certified Chartered Accountant', 
+    description: 'Details about the CCA course.',
+    imagePath: '/courses/cca.webp' // Image path for CCA course
+  },
+  { 
+    slug: 'hr', 
+    title: 'HR Management', 
+    description: 'Details about the HR course.',
+    imagePath: '/courses/hr.webp' // Image path for HR Management course
+  },
+  { 
+    slug: 'hr-generalist', 
+    title: 'HR Generalist', 
+    description: 'Details about the HR Generalist course.',
+    imagePath: '/courses/hr-generalist.webp' // Image path for HR Generalist course
+  },
+  // Add more courses here with appropriate image paths
+];
+
+// tabData.ts (or wherever you keep your tab data)
+
+export const tabData = [
+  {
+    id: 'job-market',
+    title: 'Vast Job Market',
+    icon: '/icons/job-market-icon.svg', // Use appropriate icons or illustrations
+    content: 'India has more than 10L job openings in accounting and finance every year.'
+},
+{
+    id: 'high-demand',
+    title: 'High Demand in 2024',
+    icon: '/icons/high-demand-icon.svg',
+    content: '96% of Indian companies are planning to hire Finance or Accounting staff in 2024.'
+},
+{
+    id: 'career-paths',
+    title: 'Diverse Career Paths',
+    icon: '/icons/career-paths-icon.svg',
+    content: 'An accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.'
+},
+{
+    id: 'salaries',
+    title: 'Competitive Salaries',
+    icon: '/icons/salaries-icon.svg',
+    content: 'The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 12 LPA.'
+},
+{
+    id: 'growth-opportunities',
+    title: 'Future Growth Opportunities',
+    icon: '/icons/growth-opportunities-icon.svg',
+    content: 'Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.'
+}
 ];
 
 

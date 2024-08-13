@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { courses } from '../constants';
+import { courses } from '@/constants';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import {
@@ -69,7 +69,7 @@ const CoursesSection: React.FC = () => {
                                     </div>
                                     <div className="flex justify-center gap-5 mt-auto">
                                         <Button asChild className='bg-blue-90 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded'>
-                                            <Link href="/login">Learn More</Link>
+                                            <Link href="/courses">Learn More</Link>
                                         </Button>
                                         <Button asChild className='bg-[#FFC224] hover:bg-green-600 text-white font-bold py-2 px-4 rounded'>
                                             <Link href="/login">Enroll Now</Link>

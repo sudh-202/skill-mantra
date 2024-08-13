@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '@/styles/index';
-import { exploreWorlds } from '../constants';
-import { staggerContainer } from '../utils/motion';
+import { exploreWorlds } from '@/constants';
+import { staggerContainer } from '@/utils/motion'
 import {  TitleText, TypingText } from '@/components/CustomTexts';
 import ExploreCard from "@/components/ExploreCard"
 

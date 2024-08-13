@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { companiesimg } from '../constants';
+import { companiesimg } from '@/constants';
 
 const Companies: React.FC = () => {
     return (

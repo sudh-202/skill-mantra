@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import ContactForm from "@/components/ContactForm";
-import { patnerdata, partnersimg } from "../constants";
+import { patnerdata, partnersimg } from "@/constants";
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 

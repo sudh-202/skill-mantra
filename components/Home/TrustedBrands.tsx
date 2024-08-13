@@ -1,5 +1,5 @@
 import React from 'react';
-import { TRUSTED_BRANDS } from '../constants';
+import { TRUSTED_BRANDS } from '@/constants';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import Image from 'next/image';
 

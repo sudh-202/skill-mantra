@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEGREE_DATA } from '../constants';
+import { DEGREE_DATA } from '@/constants';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 
 const DegreeComparison: React.FC = () => {
