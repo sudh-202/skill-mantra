@@ -602,34 +602,143 @@ export const tabData = [
   {
     id: 'job-market',
     title: 'Vast Job Market',
-    icon: '/icons/job-market-icon.svg', // Use appropriate icons or illustrations
+    icon: '/courses/market.webp',
     content: 'India has more than 10L job openings in accounting and finance every year.'
 },
 {
     id: 'high-demand',
     title: 'High Demand in 2024',
-    icon: '/icons/high-demand-icon.svg',
+    icon: '/courses/diverse.webp',
     content: '96% of Indian companies are planning to hire Finance or Accounting staff in 2024.'
 },
 {
     id: 'career-paths',
     title: 'Diverse Career Paths',
-    icon: '/icons/career-paths-icon.svg',
+    icon: '/courses/demand.webp',
     content: 'An accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.'
 },
 {
     id: 'salaries',
     title: 'Competitive Salaries',
-    icon: '/icons/salaries-icon.svg',
+    icon: '/courses/money.webp',
     content: 'The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 12 LPA.'
 },
 {
     id: 'growth-opportunities',
     title: 'Future Growth Opportunities',
-    icon: '/icons/growth-opportunities-icon.svg',
+    icon: '/courses/tax.webp',
     content: 'Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.'
 }
 ];
+
+// why this course
+// constants/index.ts
+
+import { FiTool, FiBriefcase, FiLayers, FiUserCheck, FiTarget, FiTrendingUp, FiUsers, FiAward } from 'react-icons/fi';
+
+export const WhyCourseHeading = "Why Certified Corporate Accountant (CCA)";
+
+export const WhyCourse = [
+  {
+      title: "Skill Development",
+      icon: FiTool,
+  },
+  {
+      title: "Career Enhancement",
+      icon: FiBriefcase,
+  },
+  {
+      title: "Hands-On Applications",
+      icon: FiLayers,
+  },
+  {
+      title: "Expert Guidance",
+      icon: FiUserCheck,
+  },
+  {
+      title: "Strategic Insights",
+      icon: FiTarget,
+  },
+  {
+      title: "Organizational Impact",
+      icon: FiTrendingUp,
+  },
+  {
+      title: "Professional Community",
+      icon: FiUsers,
+  },
+  {
+      title: "Tailored for all levels",
+      icon: FiAward,
+  },
+];
+
+// course carousel 
+
+// constant/index.ts
+// constant/index.ts
+import { FaHandsHelping, FaChartLine, FaChalkboardTeacher } from "react-icons/fa";
+import { GiProgression, GiTeacher, GiArchiveResearch } from "react-icons/gi";
+
+export const carouselItems = [
+    {
+        title: "Overall Approach",
+        description: "Prepare to make your mark in accounting with a course designed to equip you for success.",
+        icon: FaHandsHelping,
+        bgColor: "bg-yellow-500",
+    },
+    {
+        title: "Program Structure",
+        description: "A 30+ hour journey of focused learning through theory and practice.",
+        icon: FaChalkboardTeacher,
+        bgColor: "bg-blue-200",
+    },
+    {
+        title: "Hands on practice",
+        description: "Candidates are directly involved in their learning with practical experience.",
+        icon: FaHandsHelping,
+        bgColor: "bg-cyan-400",
+    },
+    {
+        title: "Assessment & Career Edge",
+        description: "Culminating in a final exam opens doors for a successful Corporate career.",
+        icon: GiProgression,
+        bgColor: "bg-yellow-500",
+    },
+    {
+        title: "Tailored Learning",
+        description: "Experience Personalized coursework to fit your career goals.",
+        icon: GiTeacher,
+        bgColor: "bg-blue-200",
+    },
+    {
+        title: "Integrated Curriculum",
+        description: "Blends theory with practical skills for real-world use.",
+        icon: GiArchiveResearch,
+        bgColor: "bg-cyan-400",
+    },
+];
+
+export const assistanceData = [
+  {
+    title: "Placement Assistance & Process",
+    points: [
+      "Personalized guidance to help you secure your ideal job.",
+      "Dedicated support throughout your job search journey.",
+    ],
+  },
+  {
+    title: "CV Prep & Enhancement",
+    points: [
+      "Professional resume crafting to highlight your strengths.",
+      "Tailored CV advice to make you stand out to employers.",
+    ],
+  },
+];
+
+
+
+
 
 
 

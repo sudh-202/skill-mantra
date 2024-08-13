@@ -9,9 +9,12 @@ import FormSection from '@/components/Courses/FormSection';
 import TestimonialCarousel from '@/components/Home/Testimonials';
 import TargetSegment from '@/components/Home/TargetSegment';
 import Partners from '@/components/Home/Partners';
-import TrustedBrands from '@/components/Home/TrustedBrands';
+import { assistanceData } from '@/constants/';
 import Companies from '@/components/Home/Companies';
 import TabsSection from '@/components/TabSection';
+import WhyThis from '@/components/Courses/WhyThis';
+import CarouselIconSection from '@/components/Courses/CarouselIconSection';
+import AssistanceSection from '@/components/Courses/AssistanceSection';
 
 const CoursePage = () => {
   const { slug } = useParams(); // Get slug from URL parameters
@@ -40,6 +43,9 @@ const CoursePage = () => {
       <TargetSegment />
       <Partners />
       <TabsSection/>
+      <WhyThis/>
+      <CarouselIconSection/>
+      <AssistanceSection services={assistanceData} />
       <div className='px-[5vw] py-[2vw]'>
         <h1 className='text-3xl font-bold'>{course.title}</h1>
         <p className='text-lg'>{course.description}</p>
