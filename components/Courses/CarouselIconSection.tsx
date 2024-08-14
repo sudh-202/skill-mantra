@@ -11,7 +11,7 @@ import {
 
 const CarouselIconSection: FC = () => {
     return (
-        <section className="py-12 overflow-hidden border-b-2 border-blue-50">
+        <section className="py-12 overflow-hidden border-b-2 border-blue-10 bg-[url('/courses/lab.webp')] bg-no-repeat bg-cover bg-center bg-opacity-50">
             <div className="container mx-auto md:px-[2vw] ">
                 <Carousel>
                     <CarouselContent className="">
@@ -20,7 +20,7 @@ const CarouselIconSection: FC = () => {
                                 key={index}
                                 className={`md:basis-1/3 md:px-[3vw]  px-[10vw] cursor-grab  ${item.bgColor}`}
                             >
-                                <Card className="h-full py-[.125vw] border-w-2 border-blue-90">
+                                <Card className="h-full py-[.125vw] border-w-2 border-blue-90 bg-white">
                                     <CardContent className="flex flex-col items-center  justify-center h-full text-center ">
                                         <div className="mb-4 text-4xl text-white ">
                                             <item.icon className="w-[10vh] h-[10vh] bg-blue-90 rounded-full p-4"/>

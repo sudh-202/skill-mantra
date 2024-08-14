@@ -19,6 +19,8 @@ import Steps from '@/components/Courses/Steps';
 import Tools from '@/components/Courses/Tools';
 import CourseOfferings from '@/components/Courses/CourseOfferings';
 import {Certificate} from '@/components/Courses/Certificate';
+import Shopsy from '@/components/Courses/Shopsy';
+import WhyCourse from '@/components/Courses/Who';
 
 const CoursePage = () => {
   const { slug } = useParams(); // Get slug from URL parameters
@@ -54,10 +56,8 @@ const CoursePage = () => {
       <Tools/>
       <CourseOfferings/>
       <Certificate/>
-      <div className='px-[5vw] py-[2vw]'>
-        <h1 className='text-3xl font-bold'>{course.title}</h1>
-        <p className='text-lg'>{course.description}</p>
-      </div>
+      <Shopsy/>
+      <WhyCourse/>
     </main>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { clsx } from 'clsx';
+
 
 interface AssistanceSectionProps {
   services: { title: string; points: string[]; icon: React.ComponentType<{ className?: string }> }[];
@@ -7,8 +7,8 @@ interface AssistanceSectionProps {
 
 const AssistanceSection: React.FC<AssistanceSectionProps> = ({ services }) => {
   return (
-    <div className="p-2 rounded-lg mt-8 py-[7vw] ">
-      <div className="flex items-start justify-start">
+    <div className="p-2 rounded-lg mt-8  ">
+      <div className="flex items-start justify-start pb-10">
         {services.map((service, index) => (
           <div
             key={index}
