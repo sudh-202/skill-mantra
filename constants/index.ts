@@ -751,6 +751,25 @@ export const stepsData = [
   },
 ];
 
+export const toolsImage = [
+  {
+    img: "../courses/onedrive.webp",
+    alt: "drive",
+  },
+  {
+    img: "../courses/tally.webp",
+    alt: "drive",
+  },
+  {
+    img: "../courses/excel.webp",
+    alt: "drive",
+  },
+  {
+    img: "../courses/drive.webp",
+    alt: "drive",
+  },
+]
+
 
 
 
