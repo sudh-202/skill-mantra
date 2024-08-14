@@ -732,6 +732,26 @@ export const assistanceData = [
   },
 ];
 
+// steps data
+export const stepsData = [
+  {
+    step: "Step 1",
+    title: "Apply and appear for the Interview",
+    color: "#06b6d4",
+  },
+  {
+    step: "Step 2",
+    title: "Enroll and appear for assessments",
+    color: "#1e3a8a", 
+  },
+  {
+    step: "Step 3",
+    title: "True CV Interview Preparation",
+    color: "#f59e0b", 
+  },
+];
+
+
 
 
 

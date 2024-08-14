@@ -15,6 +15,7 @@ import TabsSection from '@/components/TabSection';
 import WhyThis from '@/components/Courses/WhyThis';
 import CarouselIconSection from '@/components/Courses/CarouselIconSection';
 import AssistanceSection from '@/components/Courses/AssistanceSection';
+import Steps from '@/components/Courses/Steps';
 
 const CoursePage = () => {
   const { slug } = useParams(); // Get slug from URL parameters
@@ -46,6 +47,7 @@ const CoursePage = () => {
       <WhyThis/>
       <CarouselIconSection/>
       <AssistanceSection services={assistanceData} />
+      <Steps/>
       <div className='px-[5vw] py-[2vw]'>
         <h1 className='text-3xl font-bold'>{course.title}</h1>
         <p className='text-lg'>{course.description}</p>
