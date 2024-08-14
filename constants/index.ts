@@ -715,6 +715,11 @@ export const carouselItems = [
         bgColor: "#22D3EE",  // bg-cyan-400
     },
 ];
+
+//Features 
+
+import { PiCertificateFill,PiStudentFill } from "react-icons/pi";
+
 export const assistanceData = [
   {
     title: "Placement Assistance & Process",
@@ -722,6 +727,7 @@ export const assistanceData = [
       "Personalized guidance to help you secure your ideal job.",
       "Dedicated support throughout your job search journey.",
     ],
+    icon: PiStudentFill,
   },
   {
     title: "CV Prep & Enhancement",
@@ -729,6 +735,7 @@ export const assistanceData = [
       "Professional resume crafting to highlight your strengths.",
       "Tailored CV advice to make you stand out to employers.",
     ],
+    icon: PiCertificateFill,
   },
 ];
 
@@ -769,6 +776,50 @@ export const toolsImage = [
     alt: "drive",
   },
 ]
+
+//features
+
+import { FaBook, FaVideo, FaFileAlt, FaUserGraduate } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa6";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { SiFreelancer } from "react-icons/si";
+
+
+export const courseOfferings = [
+  {
+    title: "Accounting Enthusiasts",
+    description: "For those passionate about accounting and looking to expand their knowledge.",
+    icon: FaBook,
+  },
+  {
+    title: "Career Changers",
+    description: "Perfect for professionals considering a transition into accounting.",
+    icon: FaUserGraduate,
+  },
+  {
+    title: "Recent Graduates",
+    description: "Fresh graduates looking to start their career in accounting.",
+    icon: FaSchool,
+  },
+  {
+    title: "Diverse Backgrounds",
+    description: "For individuals from various fields seeking to learn accounting.",
+    icon: BsFillPeopleFill,
+  },
+  {
+    title: "Freelance Experienced",
+    description: "Ideal for freelancers who want to refine their accounting skills.",
+    icon: SiFreelancer,
+  },
+
+];
+
+// certificate
+export const internshipData = {
+  heading: "Get Industry Recognised Certification",
+  img:"/courses/certificate.webp"
+};
+
 
 
 

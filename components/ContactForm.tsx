@@ -73,11 +73,11 @@ const ContactForm = () => {
                 height={100}
                 className="absolute right-[-350px] top-[-330px]  hidden lg:block z-[-10]"
             /> */}
-            <div className="flex flex-col items-center justify-between lg:p-14 p-8 bg-white rounded-2xl z-90">
+            <div className="flex flex-col md:items-center md:justify-between md:p-24 p-10  bg-white rounded-2xl z-90 md:mt-[4vw]">
                 <h1 className="lg:text-4xl text-2xl font-bold mb-6 text-blue-90">Enroll for Free Courses</h1>
                 <Form {...form}>
 
-                    <form onSubmit={form.handleSubmit(handleSubmit)} className="lg:max-w-xl w-full flex flex-col gap-4">
+                    <form onSubmit={form.handleSubmit(handleSubmit)} className="w-full flex flex-col gap-4">
                         <FormField
                             control={form.control}
                             name="name"

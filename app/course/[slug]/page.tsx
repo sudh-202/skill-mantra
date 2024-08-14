@@ -1,4 +1,4 @@
-// app/course/[slug]/page.tsx
+
 
 "use client";
 
@@ -17,6 +17,8 @@ import CarouselIconSection from '@/components/Courses/CarouselIconSection';
 import AssistanceSection from '@/components/Courses/AssistanceSection';
 import Steps from '@/components/Courses/Steps';
 import Tools from '@/components/Courses/Tools';
+import CourseOfferings from '@/components/Courses/CourseOfferings';
+import {Certificate} from '@/components/Courses/Certificate';
 
 const CoursePage = () => {
   const { slug } = useParams(); // Get slug from URL parameters
@@ -29,7 +31,7 @@ const CoursePage = () => {
   }
 
   return (
-    <main className='w-full h-screen'>
+    <main className='w-full h-screen '>
       <div className='flex flex-row-reverse justify-center items-center gap-10 bg-[url("/background.webp")] px-[5vw] py-[2vw]'>
         <Image src={course.imagePath} alt={course.title} width={100} height={100} className='w-[30vw]' />
         <h1 className='text-[4.5vw] leading-[6vw]'>
@@ -37,10 +39,10 @@ const CoursePage = () => {
         </h1>
       </div>
       <FormSection />
-      <div className='flex justify-center items-center px-[5vw] py-[5vw]'>
+      <div className='flex justify-center items-center px-[5vw] py-[5vw] border-b-2 border-blue-10'>
         <Image src="/courses/stats-panel.webp" alt='stats-panel' width={100} height={100} className='w-[100vw]' />
       </div>
-      <TestimonialCarousel />
+      {/* <TestimonialCarousel /> */}
       <Companies />
       <TargetSegment />
       <Partners />
@@ -50,6 +52,8 @@ const CoursePage = () => {
       <AssistanceSection services={assistanceData} />
       <Steps/>
       <Tools/>
+      <CourseOfferings/>
+      <Certificate/>
       <div className='px-[5vw] py-[2vw]'>
         <h1 className='text-3xl font-bold'>{course.title}</h1>
         <p className='text-lg'>{course.description}</p>

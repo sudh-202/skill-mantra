@@ -1,5 +1,3 @@
-// components/TabsSection.tsx
-
 import React, { useState } from 'react';
 import { tabData } from '@/constants';
 import Image from 'next/image';
@@ -14,22 +12,22 @@ const TabsSection: React.FC = () => {
     const activeTabData = tabData.find(tab => tab.id === activeTab);
 
     return (
-        <section className="py-[5vw] md:py-[7vw] px-[2vw] md:px-[8vw]">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+        <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] overflow-hidden">
+            <div className="flex flex-row flex-wrap gap-4 md:gap-8">
                 {tabData.map((tab) => (
                     <div
                         key={tab.id}
-                        className={`cursor-pointer flex flex-col items-center justify-center text-center p-5 md:p-8 rounded-lg h-[30vh] border ${
+                        className={`cursor-pointer flex flex-col-reverse items-center justify-center text-center p-5 md:p-8 rounded-lg md:h-[40vh] h-[30vh] border w-full md:w-1/6 ${
                             activeTab === tab.id ? 'bg-blue-90 ' : 'bg-[#defffd] border-gray-200'
-                        } flex-grow min-h-full`} // Updated class
+                        } md:flex-grow min-h-full`}
                         onClick={() => handleTabClick(tab.id)}
                     >
-                        <Image src={tab.icon} alt={tab.title} width={150} height={150} />
-                        <span className={`text-lg md:text-xl font-medium mt-4 ${
+                        <span className={`text-sm md:text-xl font-medium mt-4 ${
                             activeTab === tab.id ? 'text-white' : 'text-gray-800'
                         }`}>
                             {tab.title}
                         </span>
+                        <Image src={tab.icon} alt={tab.title} width={150} height={150} />
                     </div>
                 ))}
             </div>

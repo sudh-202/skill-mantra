@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button";
 
 const Partners = () => {
     return (
-        <section className='bg-blue-90'>
-            <div className='flex flex-col justify-center items-center lg:pt-24 px-8 pt-10'>
+        <section className='bg-blue-90 md:py-[7vw] py-[14vw]'>
+            <div className='flex flex-col justify-center items-center  px-8'>
                 <h2 className='text-white lg:text-7xl text-4xl mb-4'>Our Partners</h2>
                 <p className='text-white italic font-semibold mb-5 md:text-start text-center'>One Of The Best-Recognized Virtual Learning Institutes Helps Individuals Reach Their Goals.</p>
             </div>
-            <div className=" overflow-hidden bg-[#fffffff0] py-5 z-50">
+            <div className=" overflow-hidden bg-[#fffffff0] translate-y-[5vw] md:translate-y-0  z-50">
                 <div className="flex flex-nowrap animate-scroll hover:animate-pause gap-2">
                     {[...partnersimg, ...partnersimg].map((partner, index) => (
                         <div key={index} className="flex justify-center items-center w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/6">
@@ -28,14 +28,14 @@ const Partners = () => {
                     ))}
                 </div>
             </div>
-            <main className='flex md:flex-row flex-col justify-center items-center p-10 gap-32'>
-             <div className='flex flex-col  justify-center translate-y-[6rem]'>
-                <div className="flex">
-                    <div className="flex flex-col">
+            <main className='flex md:flex-row flex-col justify-center items-center gap-32 px-[10vw] md:px-[]'>
+             <div className='flex flex-col  translate-y-[6rem] '>
+                <div className="flex pb-[2vw] ">
+                    <div className="flex flex-col ">
                         {patnerdata.subsections.map((subsection, index) => (
-                            <div key={index} className="flex  justify-center md:justify-start  ">
+                            <div key={index} className="flex justify-start  ">
                                 <span className="italic text-xl md:text-3xl lg:text-4xl text-white font-semibold flex text-left mb-4">{subsection.title}</span>
-                                <p className=" ml-4 font-semibold text-white">{subsection.para}</p>
+                                <p className=" md:ml-4 font-semibold text-white">{subsection.para}</p>
                             </div>
                         ))}
                     </div>

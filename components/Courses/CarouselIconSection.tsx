@@ -11,14 +11,14 @@ import {
 
 const CarouselIconSection: FC = () => {
     return (
-        <section className="py-12 ">
-            <div className="container mx-auto px-[2vw] ">
+        <section className="py-12 overflow-hidden border-b-2 border-blue-50">
+            <div className="container mx-auto md:px-[2vw] ">
                 <Carousel>
                     <CarouselContent className="">
                         {carouselItems.map((item, index) => (
                             <CarouselItem
                                 key={index}
-                                className={`md:basis-1/2 lg:basis-1/3 px-[3vw]  ${item.bgColor}`}
+                                className={`md:basis-1/3 md:px-[3vw]  px-[10vw] cursor-grab  ${item.bgColor}`}
                             >
                                 <Card className="h-full py-[.125vw] border-w-2 border-blue-90">
                                     <CardContent className="flex flex-col items-center  justify-center h-full text-center ">

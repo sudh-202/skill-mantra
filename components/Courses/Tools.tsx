@@ -3,8 +3,8 @@ import { toolsImage } from "@/constants";
 
 const Tools = () => {
     return (
-        <main className="bg-[url('/courses/bg-section.webp')] bg-cover w-full h-[60vh] flex flex-row text-white items-center justify-center px-[10vw]">
-            <h1 className="text-[8vw] leading-[8vw] text-left">Tools &<br /> Platform</h1>
+        <main className="bg-[url('/courses/bg-section.webp')] bg-cover w-full lg:h-[60vh] h-[40vh] flex flex-row text-white items-center justify-center px-[10vw]">
+            <h1 className="md:text-[8vw] text-[10vw] md:leading-[8vw] leading-[10vw] text-left">Tools &<br /> Platform</h1>
             <Image
                 src="/courses/line.webp"
                 alt="line"
@@ -13,13 +13,13 @@ const Tools = () => {
                 className="w-[20vw] h-[.1vw] rotate-90 my-4"
                 loading="lazy"
             />
-            <div className="flex flex-wrap justify-center gap-10 w-[20vw]">
+            <div className="flex flex-wrap justify-center gap-10 md:w-[20vw]">
                 {toolsImage.map((feature, index) => (
                     <Image
                         key={index}
                         src={feature.img}
                         alt={feature.alt}
-                        className="h-[6vw] w-[7vw] mb-4"
+                        className="md:h-[6vw] h-[10vw] w-[10vw] md:w-[7vw] mb-4"
                         width={100}
                         height={100}
                     />

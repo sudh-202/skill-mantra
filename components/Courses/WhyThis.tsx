@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const WhyThis: FC = () => {
 
     return (
-        <section className="py-[5vw] bg-blue-90">
-            <div className="container mx-auto px-[1vw]">
-                <h2 className="text-[3vw] font-bold text-center mb-8 text-white">
+        <section className="py-[5vw] bg-blue-90 overflow-hidden">
+            <div className="container mx-auto md:px-[1vw] px-[10vw]">
+                <h2 className="md:text-[3vw] text-[7vw] font-bold text-center mb-8 text-white">
                     {WhyCourseHeading}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -29,7 +29,7 @@ const WhyThis: FC = () => {
             <div className="relative border-b-2 border-white overflow-hidden">
                 <motion.div
                     initial={{ x: '4vw', y: '2.8vw' }}
-                    animate={{ x: 'calc(100vw - 15vw)' }} // Adjust 200px according to the image width
+                    animate={{ x: 'calc(100vw - 225px)' }} // Adjust 200px according to the image width
                     transition={{
                         duration: 2, // Animation duration
                         ease: "easeInOut", // Easing function
