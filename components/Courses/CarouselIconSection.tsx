@@ -20,10 +20,10 @@ const CarouselIconSection: FC = () => {
                                 key={index}
                                 className={`md:basis-1/2 lg:basis-1/3 px-[3vw]  ${item.bgColor}`}
                             >
-                                <Card className="h-full py-[4vw] border-none  ">
+                                <Card className="h-full py-[.125vw] border-w-2 border-blue-90">
                                     <CardContent className="flex flex-col items-center  justify-center h-full text-center ">
                                         <div className="mb-4 text-4xl text-white ">
-                                            <item.icon className="w-[40vh] h-[10vh]"/>
+                                            <item.icon className="w-[10vh] h-[10vh] bg-blue-90 rounded-full p-4"/>
                                         </div>
                                         <h3 className="text-[2vw] font-semibold pb-2">{item.title}</h3>
                                         <p className="text-[1vw]">{item.description}</p>

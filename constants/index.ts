@@ -593,7 +593,6 @@ export const Coursesdata: Course[] = [
     description: 'Details about the HR Generalist course.',
     imagePath: '/courses/hr-generalist.webp' // Image path for HR Generalist course
   },
-  // Add more courses here with appropriate image paths
 ];
 
 // tabData.ts (or wherever you keep your tab data)
@@ -632,7 +631,6 @@ export const tabData = [
 ];
 
 // why this course
-// constants/index.ts
 
 import { FiTool, FiBriefcase, FiLayers, FiUserCheck, FiTarget, FiTrendingUp, FiUsers, FiAward } from 'react-icons/fi';
 
@@ -675,8 +673,7 @@ export const WhyCourse = [
 
 // course carousel 
 
-// constant/index.ts
-// constant/index.ts
+
 import { FaHandsHelping, FaChartLine, FaChalkboardTeacher } from "react-icons/fa";
 import { GiProgression, GiTeacher, GiArchiveResearch } from "react-icons/gi";
 
@@ -685,40 +682,39 @@ export const carouselItems = [
         title: "Overall Approach",
         description: "Prepare to make your mark in accounting with a course designed to equip you for success.",
         icon: FaHandsHelping,
-        bgColor: "bg-yellow-500",
+        bgColor: "#F59E0B",  // bg-yellow-500
     },
     {
         title: "Program Structure",
         description: "A 30+ hour journey of focused learning through theory and practice.",
         icon: FaChalkboardTeacher,
-        bgColor: "bg-blue-200",
+        bgColor: "#F0FDF4",  // bg-green-50
     },
     {
         title: "Hands on practice",
         description: "Candidates are directly involved in their learning with practical experience.",
         icon: FaHandsHelping,
-        bgColor: "bg-cyan-400",
+        bgColor: "#F0FDF4",  // bg-green-50
     },
     {
         title: "Assessment & Career Edge",
         description: "Culminating in a final exam opens doors for a successful Corporate career.",
         icon: GiProgression,
-        bgColor: "bg-yellow-500",
+        bgColor: "#F59E0B",  // bg-yellow-500
     },
     {
         title: "Tailored Learning",
         description: "Experience Personalized coursework to fit your career goals.",
         icon: GiTeacher,
-        bgColor: "bg-blue-200",
+        bgColor: "#BFDBFE",  // bg-blue-200
     },
     {
         title: "Integrated Curriculum",
         description: "Blends theory with practical skills for real-world use.",
         icon: GiArchiveResearch,
-        bgColor: "bg-cyan-400",
+        bgColor: "#22D3EE",  // bg-cyan-400
     },
 ];
-
 export const assistanceData = [
   {
     title: "Placement Assistance & Process",

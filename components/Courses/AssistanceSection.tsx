@@ -14,7 +14,7 @@ const AssistanceSection: React.FC<AssistanceSectionProps> = ({ services }) => {
             className="text-black bg-[url('/courses/paper.webp')] bg-cover bg-no-repeat h-[50vh] flex-1 flex flex-col items-center justify-center px-[6vw]  overflow-hidden text-start mx-[4vw]"
           >
             <h3 className="text-[2vw] font-bold text-start">{service.title}</h3>
-            <ul className="mt-4 list-disc list-inside space-y-2 leading-relaxed text-[1.2vw]">
+            <ul className="mt-4 list-disc list-inside space-y-2 leading-relaxed text-[1.2codevw]">
               {service.points.map((point, i) => (
                 <li key={i} className="whitespace-pre-wrap break-words">{point}</li>
               ))}
