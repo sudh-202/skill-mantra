@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { featuresNew } from "@/constants";
+import IconWrapper from '@/components/iconWrapper'; // Import the wrapper component
 
 interface FeatureCardProps {
   title: string;
@@ -11,7 +12,7 @@ const FeatureCard: FC<FeatureCardProps> = ({ title, description, icon: Icon }) =
   return (
     <div className="p-6 bg-white rounded-lg shadow-md md:rounded-xl flex flex-col items-start h-[30vh] justify-center">
       <div className="mb-4">
-        <Icon className="w-16 h-16 text-[#21355C]" /> 
+        <IconWrapper icon={Icon}  color="#21355C" />
       </div>
       <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
       <p className="mt-2 text-sm text-gray-700">{description}</p>
