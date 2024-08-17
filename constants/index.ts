@@ -1,8 +1,8 @@
-
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "/courses", key: "courses", label: "Courses" },
+  { href: "/about", key: "about", label: "About" },
 ];
 
 // CAMP SECTION
@@ -267,12 +267,12 @@ export const companiesimg = [
 
 // Testimonial section
 
-
 export const testimonials = [
   {
     name: "John Doe",
     position: "CEO at Example Corp",
-    testimonial: "This is an amazing product! It has changed the way our team works.",
+    testimonial:
+      "This is an amazing product! It has changed the way our team works.",
     image: "/path/to/john-doe.jpg",
     rating: 5,
   },
@@ -293,56 +293,62 @@ export const testimonials = [
   {
     name: "Bob Brown",
     position: "Product Manager at Tech Solutions",
-    testimonial: "The features are exactly what we needed. It's very intuitive and easy to use.",
+    testimonial:
+      "The features are exactly what we needed. It's very intuitive and easy to use.",
     image: "/path/to/bob-brown.jpg",
     rating: 4,
   },
   {
     name: "Emily White",
     position: "Designer at Creative Studio",
-    testimonial: "The design is sleek and modern. It fits perfectly with our brand.",
+    testimonial:
+      "The design is sleek and modern. It fits perfectly with our brand.",
     image: "/path/to/emily-white.jpg",
     rating: 5,
   },
   {
     name: "Michael Green",
     position: "Developer at DevWorks",
-    testimonial: "It's incredibly reliable. We haven't experienced any downtime since we started using it.",
+    testimonial:
+      "It's incredibly reliable. We haven't experienced any downtime since we started using it.",
     image: "/path/to/michael-green.jpg",
     rating: 5,
   },
   {
     name: "Sarah Black",
     position: "HR Manager at PeopleFirst",
-    testimonial: "It has streamlined our processes significantly. The team is much more productive now.",
+    testimonial:
+      "It has streamlined our processes significantly. The team is much more productive now.",
     image: "/path/to/sarah-black.jpg",
     rating: 4,
   },
   {
     name: "David Lee",
     position: "Sales Lead at GrowthCorp",
-    testimonial: "Our sales have increased by 30% since we integrated this tool into our workflow.",
+    testimonial:
+      "Our sales have increased by 30% since we integrated this tool into our workflow.",
     image: "/path/to/david-lee.jpg",
     rating: 5,
   },
   {
     name: "Samantha Taylor",
     position: "Consultant at BizAdvise",
-    testimonial: "The support team is fantastic. They're always quick to respond and very helpful.",
+    testimonial:
+      "The support team is fantastic. They're always quick to respond and very helpful.",
     image: "/path/to/samantha-taylor.jpg",
     rating: 5,
   },
   {
     name: "Chris Martin",
     position: "Founder at StartupX",
-    testimonial: "It’s a game-changer for startups. We’ve been able to scale quickly thanks to this solution.",
+    testimonial:
+      "It’s a game-changer for startups. We’ve been able to scale quickly thanks to this solution.",
     image: "/path/to/chris-martin.jpg",
     rating: 5,
   },
 ];
 
-
-// video section 
+// video section
 
 export const stats = [
   { label: "Careers Advanced", value: "1000+" },
@@ -359,25 +365,29 @@ export const stats = [
 export const features = [
   {
     title: "Expert Instructors",
-    description: "Learn from industry professionals with extensive experience and expertise in their respective fields.",
+    description:
+      "Learn from industry professionals with extensive experience and expertise in their respective fields.",
     icon: "/why/1.webp",
     link: "#",
   },
   {
     title: "Flexible Learning",
-    description: "Access our courses anytime, anywhere, with flexible learning options that fit your schedule.",
+    description:
+      "Access our courses anytime, anywhere, with flexible learning options that fit your schedule.",
     icon: "/why/2.webp",
     link: "#",
   },
   {
     title: "Practical Approach",
-    description: "Engage in hands-on learning with real-world case studies, projects, and practical exercises.",
+    description:
+      "Engage in hands-on learning with real-world case studies, projects, and practical exercises.",
     icon: "/why/3.webp",
     link: "#",
   },
   {
     title: "Career Support",
-    description: "Benefit from our career counselling, job placement assistance, and networking opportunities with industry leaders.",
+    description:
+      "Benefit from our career counselling, job placement assistance, and networking opportunities with industry leaders.",
     icon: "/why/4.webp",
     link: "#",
   },
@@ -391,8 +401,8 @@ export const trainers = [
     experience: "3.5 Years",
     qualification: "B.Com (Hons)",
     role: "German Language Trainer",
-    image: "/trainer/1.webp", 
-    course: "Payroll course "
+    image: "/trainer/1.webp",
+    course: "Payroll course ",
   },
   {
     name: "Isha Verma",
@@ -400,7 +410,7 @@ export const trainers = [
     qualification: "Btech (CSE)",
     role: "Passionate in teaching",
     image: "/trainer/2.webp",
-    course: "GST Course"
+    course: "GST Course",
   },
   {
     name: "CA Vivek Sharma",
@@ -408,24 +418,24 @@ export const trainers = [
     qualification: "Masters Of Science",
     role: "Hard work leads to success",
     image: "/trainer/3.webp",
-    course: "ITR Course"
-  }
-  , {
+    course: "ITR Course",
+  },
+  {
     name: "Shalini Kumari",
     experience: "4+ years ",
     qualification: "Masters Of Science",
     role: "Hard work leads to success",
     image: "/trainer/4.webp",
-    course: "Business Analytics "
-  } ,
-   {
+    course: "Business Analytics ",
+  },
+  {
     name: "Abhishek Sharma",
     experience: "4+ years ",
     qualification: "Masters Of Science",
     role: "Hard work leads to success",
     image: "/trainer/5.webp",
-    course: "Business Analytics "
-  }
+    course: "Business Analytics ",
+  },
 ];
 
 // mantra youtube videos
@@ -441,13 +451,26 @@ export const videos = [
 
 export const DEGREE_DATA = {
   title: "Make Your Degree Smart",
-  subtitle: "Get smart, get ahead by benefiting from the best of both worlds: a university degree and industry-ready training course.",
+  subtitle:
+    "Get smart, get ahead by benefiting from the best of both worlds: a university degree and industry-ready training course.",
   rows: [
     { label: "General teaching by university", traditional: true, smart: true },
     { label: "UGC recognized bachelors", traditional: true, smart: true },
-    { label: "Access to 1000+ hours of rich content", traditional: false, smart: true },
-    { label: "2500+ hours of hands on training", traditional: false, smart: true },
-    { label: "Courses designed by your future employer!", traditional: false, smart: true },
+    {
+      label: "Access to 1000+ hours of rich content",
+      traditional: false,
+      smart: true,
+    },
+    {
+      label: "2500+ hours of hands on training",
+      traditional: false,
+      smart: true,
+    },
+    {
+      label: "Courses designed by your future employer!",
+      traditional: false,
+      smart: true,
+    },
     { label: "Built-in income guaranteed", traditional: false, smart: true },
     { label: "VR simulation based training", traditional: false, smart: true },
   ],
@@ -457,33 +480,41 @@ export const DEGREE_DATA = {
 
 export const faqs = [
   {
-      id: "item-1",
-      question:"What courses does Skill Mantra offer?",
-      answer: "CCA courses, HR Payroll Program, HR Generalist, TDS course, GST courses, Excel Basic to Advance, Tally, and Accounting for Accounts.\n\nTo know more in detail about our courses, visit our website."
+    id: "item-1",
+    question: "What courses does Skill Mantra offer?",
+    answer:
+      "CCA courses, HR Payroll Program, HR Generalist, TDS course, GST courses, Excel Basic to Advance, Tally, and Accounting for Accounts.\n\nTo know more in detail about our courses, visit our website.",
   },
   {
-      id: "item-2",
-      question: "What are the eligibility criteria to enroll in Skill Mantra courses?",
-      answer: "Different courses offered by Skill Mantra have different eligibility requirements. Some of the courses may require a specific academic qualification, like 10+2, while others may be open to anyone with basic internet skills. And there are courses that require a bachelor’s degree. For your preferred course, check out our web page."
+    id: "item-2",
+    question:
+      "What are the eligibility criteria to enroll in Skill Mantra courses?",
+    answer:
+      "Different courses offered by Skill Mantra have different eligibility requirements. Some of the courses may require a specific academic qualification, like 10+2, while others may be open to anyone with basic internet skills. And there are courses that require a bachelor’s degree. For your preferred course, check out our web page.",
   },
   {
-      id: "item-3",
-      question: "What is the admission process to enroll in Skill Mantra Courses?",
-      answer: "Browse the Skill Mantra website or app to find the course you’re interested in, and use our online application form available on our website. Fill out the form with accurate information and upload the required documents. After successful submission, you’ll receive instructions on making the course fee payment."
+    id: "item-3",
+    question:
+      "What is the admission process to enroll in Skill Mantra Courses?",
+    answer:
+      "Browse the Skill Mantra website or app to find the course you’re interested in, and use our online application form available on our website. Fill out the form with accurate information and upload the required documents. After successful submission, you’ll receive instructions on making the course fee payment.",
   },
   {
-      id: "item-4",
-      question: "How can I access my Skill Mantra courses? Is it available on the website, app, or both?",
-      answer: "Accessing your Skill Mantra courses depends on the specific course you are enrolled in and the delivery method. Most of the courses are online through their learning platforms on the website. There are also certain blended learning programs that combine online modules with offline sessions, which might include course materials and assessments on the online platform as well.\n\nYes, Skill Mantra offers a mobile app where you can access some of their online courses on your smartphone or tablet. However, not all courses are available on the app yet."
+    id: "item-4",
+    question:
+      "How can I access my Skill Mantra courses? Is it available on the website, app, or both?",
+    answer:
+      "Accessing your Skill Mantra courses depends on the specific course you are enrolled in and the delivery method. Most of the courses are online through their learning platforms on the website. There are also certain blended learning programs that combine online modules with offline sessions, which might include course materials and assessments on the online platform as well.\n\nYes, Skill Mantra offers a mobile app where you can access some of their online courses on your smartphone or tablet. However, not all courses are available on the app yet.",
   },
   {
-      id: "item-5",
-      question: "Does Skill Mantra provide customer support?",
-      answer: "Yes, Skill Mantra provides customer support for learners. They offer various channels to reach their support team, ensuring you get the help you need."
+    id: "item-5",
+    question: "Does Skill Mantra provide customer support?",
+    answer:
+      "Yes, Skill Mantra provides customer support for learners. They offer various channels to reach their support team, ensuring you get the help you need.",
   },
 ];
 
-// Trusted Brands 
+// Trusted Brands
 
 export const TRUSTED_BRANDS = [
   {
@@ -495,10 +526,9 @@ export const TRUSTED_BRANDS = [
   {
     name: "AmbitionBox",
     rating: 4.5,
-    image: "/brands/2.webp", 
+    image: "/brands/2.webp",
     stars: 4.5,
   },
-  
 ];
 
 // Targert Segment section
@@ -529,41 +559,45 @@ export const target = [
 // last page
 export const exploreWorlds = [
   {
-    id: 'world-1',
-    imgUrl: '/account/1.webp',
-    title: 'Job Openings',
-    description: 'India has more than 10L job openings in accounting and finance every year.',
+    id: "world-1",
+    imgUrl: "/account/1.webp",
+    title: "Job Openings",
+    description:
+      "India has more than 10L job openings in accounting and finance every year.",
   },
   {
-    id: 'world-2',
-    imgUrl: '/account/2.webp',
-    title: 'Accounting Staff',
-    description: '96% of Indian companies are planning to hire Finance or Accounting staff in 2024.',
+    id: "world-2",
+    imgUrl: "/account/2.webp",
+    title: "Accounting Staff",
+    description:
+      "96% of Indian companies are planning to hire Finance or Accounting staff in 2024.",
   },
   {
-    id: 'world-3',
-    imgUrl: '/account/3.webp',
-    title: 'Accounting career',
-    description: 'Accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.',
+    id: "world-3",
+    imgUrl: "/account/3.webp",
+    title: "Accounting career",
+    description:
+      "Accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.",
   },
   {
-    id: 'world-4',
-    imgUrl: '/account/4.webp',
-    title: 'Accounting salary',
-    description: 'The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA and for senior-level profiles INR 7 - 12 LPA. ',
+    id: "world-4",
+    imgUrl: "/account/4.webp",
+    title: "Accounting salary",
+    description:
+      "The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA and for senior-level profiles INR 7 - 12 LPA. ",
   },
   {
-    id: 'world-5',
-    imgUrl: '/account/5.webp',
-    title: 'Accounting graduates',
-    description: 'Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.',
+    id: "world-5",
+    imgUrl: "/account/5.webp",
+    title: "Accounting graduates",
+    description:
+      "Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.",
   },
 ];
 
-
 // ------------------------------
 
-// Courses 
+// Courses
 
 // constant/index.ts
 
@@ -575,23 +609,23 @@ export interface Course {
 }
 
 export const Coursesdata: Course[] = [
-  { 
-    slug: 'cca', 
-    title: 'Certified Chartered Accountant', 
-    description: 'Details about the CCA course.',
-    imagePath: '/courses/cca.webp' // Image path for CCA course
+  {
+    slug: "cca",
+    title: "Certified Chartered Accountant",
+    description: "Details about the CCA course.",
+    imagePath: "/courses/cca.webp", // Image path for CCA course
   },
-  { 
-    slug: 'hr', 
-    title: 'HR Management', 
-    description: 'Details about the HR course.',
-    imagePath: '/courses/hr.webp' // Image path for HR Management course
+  {
+    slug: "hr",
+    title: "HR Management",
+    description: "Details about the HR course.",
+    imagePath: "/courses/hr.webp", // Image path for HR Management course
   },
-  { 
-    slug: 'hr-generalist', 
-    title: 'HR Generalist', 
-    description: 'Details about the HR Generalist course.',
-    imagePath: '/courses/hr-generalist.webp' // Image path for HR Generalist course
+  {
+    slug: "hr-generalist",
+    title: "HR Generalist",
+    description: "Details about the HR Generalist course.",
+    imagePath: "/courses/hr-generalist.webp", // Image path for HR Generalist course
   },
 ];
 
@@ -599,126 +633,147 @@ export const Coursesdata: Course[] = [
 
 export const tabData = [
   {
-    id: 'job-market',
-    title: 'Vast Job Market',
-    icon: '/courses/market.webp',
-    content: 'India has more than 10L job openings in accounting and finance every year.'
-},
-{
-    id: 'high-demand',
-    title: 'High Demand in 2024',
-    icon: '/courses/diverse.webp',
-    content: '96% of Indian companies are planning to hire Finance or Accounting staff in 2024.'
-},
-{
-    id: 'career-paths',
-    title: 'Diverse Career Paths',
-    icon: '/courses/demand.webp',
-    content: 'An accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.'
-},
-{
-    id: 'salaries',
-    title: 'Competitive Salaries',
-    icon: '/courses/money.webp',
-    content: 'The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 12 LPA.'
-},
-{
-    id: 'growth-opportunities',
-    title: 'Future Growth Opportunities',
-    icon: '/courses/tax.webp',
-    content: 'Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.'
-}
+    id: "job-market",
+    title: "Vast Job Market",
+    icon: "/courses/market.webp",
+    content:
+      "India has more than 10L job openings in accounting and finance every year.",
+  },
+  {
+    id: "high-demand",
+    title: "High Demand in 2024",
+    icon: "/courses/diverse.webp",
+    content:
+      "96% of Indian companies are planning to hire Finance or Accounting staff in 2024.",
+  },
+  {
+    id: "career-paths",
+    title: "Diverse Career Paths",
+    icon: "/courses/demand.webp",
+    content:
+      "An accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.",
+  },
+  {
+    id: "salaries",
+    title: "Competitive Salaries",
+    icon: "/courses/money.webp",
+    content:
+      "The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 12 LPA.",
+  },
+  {
+    id: "growth-opportunities",
+    title: "Future Growth Opportunities",
+    icon: "/courses/tax.webp",
+    content:
+      "Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.",
+  },
 ];
 
 // why this course
 
-import { FiTool, FiBriefcase, FiLayers, FiUserCheck, FiTarget, FiTrendingUp, FiUsers, FiAward } from 'react-icons/fi';
+import {
+  FiTool,
+  FiBriefcase,
+  FiLayers,
+  FiUserCheck,
+  FiTarget,
+  FiTrendingUp,
+  FiUsers,
+  FiAward,
+} from "react-icons/fi";
 
 export const WhyCourseHeading = "Why Certified Corporate Accountant (CCA)";
 
 export const WhyCourse = [
   {
-      title: "Skill Development",
-      icon: FiTool,
+    title: "Skill Development",
+    icon: FiTool,
   },
   {
-      title: "Career Enhancement",
-      icon: FiBriefcase,
+    title: "Career Enhancement",
+    icon: FiBriefcase,
   },
   {
-      title: "Hands-On Applications",
-      icon: FiLayers,
+    title: "Hands-On Applications",
+    icon: FiLayers,
   },
   {
-      title: "Expert Guidance",
-      icon: FiUserCheck,
+    title: "Expert Guidance",
+    icon: FiUserCheck,
   },
   {
-      title: "Strategic Insights",
-      icon: FiTarget,
+    title: "Strategic Insights",
+    icon: FiTarget,
   },
   {
-      title: "Organizational Impact",
-      icon: FiTrendingUp,
+    title: "Organizational Impact",
+    icon: FiTrendingUp,
   },
   {
-      title: "Professional Community",
-      icon: FiUsers,
+    title: "Professional Community",
+    icon: FiUsers,
   },
   {
-      title: "Tailored for all levels",
-      icon: FiAward,
+    title: "Tailored for all levels",
+    icon: FiAward,
   },
 ];
 
-// course carousel 
+// course carousel
 
-
-import { FaHandsHelping, FaChartLine, FaChalkboardTeacher } from "react-icons/fa";
+import {
+  FaHandsHelping,
+  FaChartLine,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 import { GiProgression, GiTeacher, GiArchiveResearch } from "react-icons/gi";
 
 export const carouselItems = [
-    {
-        title: "Overall Approach",
-        description: "Prepare to make your mark in accounting with a course designed to equip you for success.",
-        icon: FaHandsHelping,
-        bgColor: "#F59E0B",  // bg-yellow-500
-    },
-    {
-        title: "Program Structure",
-        description: "A 30+ hour journey of focused learning through theory and practice.",
-        icon: FaChalkboardTeacher,
-        bgColor: "#F0FDF4",  // bg-green-50
-    },
-    {
-        title: "Hands on practice",
-        description: "Candidates are directly involved in their learning with practical experience.",
-        icon: FaHandsHelping,
-        bgColor: "#F0FDF4",  // bg-green-50
-    },
-    {
-        title: "Assessment & Career Edge",
-        description: "Culminating in a final exam opens doors for a successful Corporate career.",
-        icon: GiProgression,
-        bgColor: "#F59E0B",  // bg-yellow-500
-    },
-    {
-        title: "Tailored Learning",
-        description: "Experience Personalized coursework to fit your career goals.",
-        icon: GiTeacher,
-        bgColor: "#BFDBFE",  // bg-blue-200
-    },
-    {
-        title: "Integrated Curriculum",
-        description: "Blends theory with practical skills for real-world use.",
-        icon: GiArchiveResearch,
-        bgColor: "#22D3EE",  // bg-cyan-400
-    },
+  {
+    title: "Overall Approach",
+    description:
+      "Prepare to make your mark in accounting with a course designed to equip you for success.",
+    icon: FaHandsHelping,
+    bgColor: "#F59E0B", // bg-yellow-500
+  },
+  {
+    title: "Program Structure",
+    description:
+      "A 30+ hour journey of focused learning through theory and practice.",
+    icon: FaChalkboardTeacher,
+    bgColor: "#F0FDF4", // bg-green-50
+  },
+  {
+    title: "Hands on practice",
+    description:
+      "Candidates are directly involved in their learning with practical experience.",
+    icon: FaHandsHelping,
+    bgColor: "#F0FDF4", // bg-green-50
+  },
+  {
+    title: "Assessment & Career Edge",
+    description:
+      "Culminating in a final exam opens doors for a successful Corporate career.",
+    icon: GiProgression,
+    bgColor: "#F59E0B", // bg-yellow-500
+  },
+  {
+    title: "Tailored Learning",
+    description: "Experience Personalized coursework to fit your career goals.",
+    icon: GiTeacher,
+    bgColor: "#BFDBFE", // bg-blue-200
+  },
+  {
+    title: "Integrated Curriculum",
+    description: "Blends theory with practical skills for real-world use.",
+    icon: GiArchiveResearch,
+    bgColor: "#22D3EE", // bg-cyan-400
+  },
 ];
 
-//Features 
+//Features
 
-import { PiCertificateFill,PiStudentFill } from "react-icons/pi";
+import { PiCertificateFill, PiStudentFill } from "react-icons/pi";
 
 export const assistanceData = [
   {
@@ -749,12 +804,12 @@ export const stepsData = [
   {
     step: "Step 2",
     title: "Enroll and appear for assessments",
-    color: "#1e3a8a", 
+    color: "#1e3a8a",
   },
   {
     step: "Step 3",
     title: "True CV Interview Preparation",
-    color: "#f59e0b", 
+    color: "#f59e0b",
   },
 ];
 
@@ -775,7 +830,7 @@ export const toolsImage = [
     img: "../courses/drive.webp",
     alt: "drive",
   },
-]
+];
 
 //features
 
@@ -784,16 +839,17 @@ import { FaSchool } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { SiFreelancer } from "react-icons/si";
 
-
 export const courseOfferings = [
   {
     title: "Accounting Enthusiasts",
-    description: "For those passionate about accounting and looking to expand their knowledge.",
+    description:
+      "For those passionate about accounting and looking to expand their knowledge.",
     icon: FaBook,
   },
   {
     title: "Career Changers",
-    description: "Perfect for professionals considering a transition into accounting.",
+    description:
+      "Perfect for professionals considering a transition into accounting.",
     icon: FaUserGraduate,
   },
   {
@@ -803,33 +859,61 @@ export const courseOfferings = [
   },
   {
     title: "Diverse Backgrounds",
-    description: "For individuals from various fields seeking to learn accounting.",
+    description:
+      "For individuals from various fields seeking to learn accounting.",
     icon: BsFillPeopleFill,
   },
   {
     title: "Freelance Experienced",
-    description: "Ideal for freelancers who want to refine their accounting skills.",
+    description:
+      "Ideal for freelancers who want to refine their accounting skills.",
     icon: SiFreelancer,
   },
-
 ];
 
 // certificate
 export const internshipData = {
   heading: "Get Industry Recognised Certification",
-  img:"/courses/certificate.webp"
+  img: "/courses/certificate.webp",
 };
 
+//about us
+export const tabData2 = [
+  {
+    id: "Our Mission",
+    title: "Our Mission",
+    icon: "/courses/market.webp",
+    content:
+      "Just as our name suggests, Skill Mantra’s vision is to up-skill and re-skill students and working professionals who are seeking career growth and job security. We believe that continuous learning and skill development are the keys to unlocking one's full potential and achieving long-term success.",
+  },
+  {
+    id: "Our Vision",
+    title: "Our Vision",
+    icon: "/courses/diverse.webp",
+    content:
+      "At Skill Mantra, our mission is to provide top-notch, industry-relevant education that bridges the gap between academic knowledge and real-world application. We are committed to:",
+  },
+];
+// constants/index.ts
+import { FaIndustry, FaLightbulb, FaHandshake } from "react-icons/fa"; // Import icons
 
-
-
-
-
-
-
-
-
-
-
-
-
+export const featuresNew = [
+  {
+    title: "Industry-Aligned Curriculum",
+    description:
+      "Delivering high-quality, accessible education that caters to the needs of students and professionals across various stages of their careers.",
+    icon: FaIndustry,
+  },
+  {
+    title: "Innovative Pedagogy",
+    description:
+      "Equipping our learners with the skills and knowledge required to excel in the competitive job market.",
+    icon: FaLightbulb,
+  },
+  {
+    title: "Strong Industry Connections",
+    description:
+      "Creating a supportive and engaging learning environment that fosters growth, innovation, and excellence.",
+    icon: FaHandshake,
+  },
+];
