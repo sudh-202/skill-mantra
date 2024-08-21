@@ -126,7 +126,7 @@ const ContactForm = () => {
                             name="accountType"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>I am a</FormLabel>
+                                    {/* <FormLabel>I am a</FormLabel> */}
                                     <Select value={field.value} onValueChange={field.onChange}>
                                         <FormControl>
                                             <SelectTrigger>
@@ -150,9 +150,9 @@ const ContactForm = () => {
                                 name="companyName"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Company Name</FormLabel>
+                                        {/* <FormLabel>Company Name</FormLabel> */}
                                         <FormControl>
-                                            <Input placeholder="Company name" {...field} />
+                                            <Input placeholder="Company Name" {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
