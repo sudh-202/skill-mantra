@@ -21,8 +21,8 @@ const TestimonialCarousel: FC = () => {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
                   <div className="p-4 h-full">
-                    <Card className="h-full flex flex-col justify-between bg-white">
-                      <CardContent className="flex flex-col items-center text-center p-6 h-full">
+                    <Card className="h-full flex flex-col justify-between items-end bg-white">
+                      <CardContent className="flex flex-col items-center justify-center text-center p-6 h-full">
                         {/* <img
                           src={testimonial.image}
                           alt={testimonial.name}
@@ -44,9 +44,9 @@ const TestimonialCarousel: FC = () => {
                         <button className="bg-blue-90 text-white font-semibold py-2 px-4 rounded-full">
                           {testimonial.name}
                         </button>
-                        <p className="text-sm font-light text-gray-600 mt-2">
+                        {/* <p className="text-sm font-light text-gray-600 mt-2">
                           {testimonial.position}
-                        </p>
+                        </p> */}
                       </CardContent>
                     </Card>
                   </div>
