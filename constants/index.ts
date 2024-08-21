@@ -270,8 +270,8 @@ export const companiesimg = [
 
 export const testimonials = [
   {
-    name: "John Doe",
-    position: "CEO at Example Corp",
+    name: "Amit Kumar",
+    // position: "CEO at Example Corp",
     testimonial:
       "This is an amazing product! It has changed the way our team works.",
     image: "/path/to/john-doe.jpg",
