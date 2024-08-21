@@ -612,7 +612,7 @@ export interface Course {
 export const Coursesdata: Course[] = [
   {
     slug: "cca",
-    title: "Certified Chartered Accountant",
+    title: "Certified Corporate Accountant",
     description: "Details about the CCA course.",
     imagePath: "/courses/cca.webp", // Image path for CCA course
   },
@@ -973,6 +973,37 @@ export const cardsData = [
     icon: FaSyncAlt,
   },
 ];
+
+export const footerData = [
+  {
+    title: 'Company',
+    links: [
+      { text: 'Home', href: '/home' },
+      { text: 'About', href: '/about' },
+      { text: 'Courses', href: '/courses' },
+      { text: 'Counselling', href: '/counselling' },
+    ],
+  },
+  {
+    title: 'Documentation',
+    links: [
+      { text: 'Help Centre', href: '/help-centre' },
+      { text: 'Contact', href: '/contact' },
+      { text: 'FAQ', href: '/faq' },
+      { text: 'Privacy Policy', href: '/privacy-policy' },
+    ],
+  },
+  {
+    title: 'Social',
+    links: [
+      { text: 'Facebook', href: 'https://www.facebook.com' },
+      { text: 'Instagram', href: 'https://www.instagram.com' },
+      { text: 'Youtube', href: 'https://www.youtube.com' },
+      { text: 'Twitter', href: 'https://www.twitter.com' },
+    ],
+  },
+];
+
 
 
 

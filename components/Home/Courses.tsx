@@ -27,7 +27,7 @@ const CoursesSection: React.FC = () => {
                     <CarouselContent className=''>
                         {courses.map((course, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 w-full">
-                                <div className="bg-[#89fff98e] pt-3 pb-8 px-3 rounded-2xl shadow-md flex flex-col h-full">
+                                <div className="bg-[#FFC224] pt-3 pb-8 px-3 rounded-2xl shadow-md flex flex-col h-full">
                                     <div className='bg-white rounded-2xl p-6 mb-4'>
                                         <h3 className="lg:text-4xl text-2xl font-semibold mb-2 border-b-2 border-blue-90 pb-4">{course.title}</h3>
 
@@ -71,7 +71,7 @@ const CoursesSection: React.FC = () => {
                                         <Button asChild className='bg-blue-90 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded'>
                                             <Link href="/courses">Learn More</Link>
                                         </Button>
-                                        <Button asChild className='bg-[#FFC224] hover:bg-green-600 text-white font-bold py-2 px-4 rounded'>
+                                        <Button asChild className=' bg-[#00E0D3] hover:bg-green-600 text-white font-bold py-2 px-4 rounded'>
                                             <Link href="/login">Enroll Now</Link>
                                         </Button>
                                     </div>
