@@ -5,53 +5,53 @@ import { companiesimg } from '@/constants';
 const Companies: React.FC = () => {
     return (
         <div className='w-full bg-white md:py-12 px-4 md:px-12 py-15 md:pb-[6vw] pb-[12vw]'>
-        <h2 className="text-[7vw] md:text-[3.4vw] font-bold  text-blue-90 text-center my-12 md:pl-12 ">Trusted by 200+ Companies Worldwide</h2>
-        <div className="flex flex-col md:flex-row items-center container mx-auto ">
-            
-            {/* Left side with logos */}
-            <div className="w-full md:w-1/2 flex flex-col items-center text-center md:text-left">
-                
-                {/* <p className="text-gray-700 mb-8">Dedicated Career Services team to help find your dream company.</p> */}
+            <h2 className="text-[7vw] md:text-[3.4vw] font-bold  text-blue-90 text-center my-12 md:pl-12 ">Trusted by 200+ Companies Worldwide</h2>
+            <div className="flex flex-col md:flex-row items-center container mx-auto ">
 
-                {/* First Line of Logos Moving Left to Right */}
-                <div className="overflow-hidden w-full mb-2">
-                    <div className="flex animate-marquee gap-7">
-                        {companiesimg.concat(companiesimg).map((company, index) => (
-                            <div key={index} className="flex-none flex justify-center items-center">
-                                <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain"  loading='lazy'/>
-                            </div>
-                        ))}
+                {/* Left side with logos */}
+                <div className="w-full md:w-1/2 flex flex-col items-center text-center md:text-left">
+
+                    {/* <p className="text-gray-700 mb-8">Dedicated Career Services team to help find your dream company.</p> */}
+
+                    {/* First Line of Logos Moving Left to Right */}
+                    <div className="overflow-hidden w-full mb-2">
+                        <div className="flex animate-marquee gap-7">
+                            {companiesimg.concat(companiesimg).map((company, index) => (
+                                <div key={index} className="flex-none flex justify-center items-center">
+                                    <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain" loading='lazy' />
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                {/* Second Line of Logos Moving Right to Left */}
-                <div className="overflow-hidden w-full mb-2">
-                    <div className="flex animate-marquee-reverse gap-7">
-                        {companiesimg.concat(companiesimg).map((company, index) => (
-                            <div key={index} className="flex-none  flex justify-center items-center">
-                                <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain"  loading='lazy'/>
-                            </div>
-                        ))}
+                    {/* Second Line of Logos Moving Right to Left */}
+                    <div className="overflow-hidden w-full mb-2">
+                        <div className="flex animate-marquee-reverse gap-7">
+                            {companiesimg.concat(companiesimg).map((company, index) => (
+                                <div key={index} className="flex-none  flex justify-center items-center">
+                                    <Image src={company.logo} alt={company.name} width={140} height={140} className="object-contain" loading='lazy' />
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                {/* <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                    {/* <Button asChild className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
                     <a href="/contact">Contact Us</a>
                 </Button> */}
-            </div>
+                </div>
 
-            {/* Right side with image */}
-            <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                <Image
-                    src="/companies-logos/company.webp"
-                    alt="Placement Image"
-                    width={500}
-                    height={500}
-                    className="rounded-lg"
-                    loading='lazy'
-                />
+                {/* Right side with image */}
+                <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                    <Image
+                        src="/companies-logos/company.webp"
+                        alt="Placement Image"
+                        width={500}
+                        height={500}
+                        className="rounded-lg"
+                        loading='lazy'
+                    />
+                </div>
             </div>
-        </div>
         </div>
     );
 };

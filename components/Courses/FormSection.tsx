@@ -18,7 +18,7 @@ const FormSection = () => {
                         <Link href="/login">Download Prospectus</Link>
                     </Button>
                     <Button asChild className="bg-[#00E0D3] py-4 md:py-8 px-6 md:px-8 text-[3vw] md:text-[1.5vw] rounded-xl text-blue-90 flex justify-center items-center ">
-                        <Link href="/login">Download Prospectus</Link>
+                        <Link href="/login">Apply Now</Link>
                     </Button>
                 </div>
             </div>
