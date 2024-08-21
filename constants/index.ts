@@ -273,7 +273,7 @@ export const testimonials = [
     name: "Amit Kumar",
     // position: "CEO at Example Corp",
     testimonial:
-      "Company is fully committed to enhance the skil set of youth of India by empowering them with theoretical knowledge and practical exposure in the field of accountancy and payroll.",
+      "Company is fully committed to enhance the skill-set of youth of India by empowering them with theoretical knowledge and practical exposure in the field of accountancy and payroll.",
     image: "/path/to/john-doe.jpg",
     rating: 5,
   },
@@ -287,7 +287,7 @@ export const testimonials = [
   {
     name: "Deepakshi Goswami",
     // position: "Marketing Director at Innovate Inc.",
-    testimonial: "Skil mantra offers the best online webinars and skill development programs",
+    testimonial: "Skill mantra offers the best online webinars and skill development programs",
     image: "/path/to/alice-johnson.jpg",
     rating: 5,
   },
