@@ -73,7 +73,7 @@ const ContactForm = () => {
                 height={100}
                 className="absolute right-[-350px] top-[-330px]  hidden lg:block z-[-10]"
             /> */}
-            <div className="flex flex-col md:items-center md:justify-between p-[2vw]  bg-white rounded-2xl z-90">
+            <div className="flex flex-col md:items-center md:justify-center p-[2vw]  bg-white rounded-2xl z-90">
                 <h1 className="lg:text-4xl text-2xl font-bold mb-6 text-blue-90">Enroll for Free Courses</h1>
                 <Form {...form}>
 
