@@ -83,9 +83,9 @@ const ContactForm = () => {
                             name="name"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Name</FormLabel>
+                                    {/* <FormLabel>Name</FormLabel> */}
                                     <FormControl>
-                                        <Input placeholder="John Doe" {...field} />
+                                        <Input placeholder="Name" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -96,9 +96,9 @@ const ContactForm = () => {
                             name="phone"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Phone Number</FormLabel>
+                                    {/* <FormLabel>Phone Number</FormLabel> */}
                                     <FormControl>
-                                        <Input placeholder="8561718721" {...field} />
+                                        <Input placeholder="Phone Number" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -109,10 +109,10 @@ const ContactForm = () => {
                             name="emailAddress"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Email Address</FormLabel>
+                                    {/* <FormLabel>Email Address</FormLabel> */}
                                     <FormControl>
                                         <Input
-                                            placeholder="johndoe@gmail.com"
+                                            placeholder="Email Address"
                                             type="email"
                                             {...field}
                                         />
@@ -164,9 +164,9 @@ const ContactForm = () => {
                             name="city"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>City/State</FormLabel>
+                                    {/* <FormLabel>City/State</FormLabel> */}
                                     <FormControl>
-                                        <Input placeholder="Mumbai" {...field} />
+                                        <Input placeholder="City/State" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
