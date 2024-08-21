@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const Partners = () => {
     return (
-        <section className='bg-blue-90 md:py-[7vw] py-[14vw]'>
+        <section className='bg-blue-90  py-[5vw]'>
             <div className='flex flex-col justify-center items-center  px-8'>
                 <h2 className='text-white lg:text-7xl text-4xl mb-4'>Our Partners</h2>
                 <p className='text-white italic font-semibold mb-5 md:text-start text-center'>One Of The Best-Recognized Virtual Learning Institutes Helps Individuals Reach Their Goals.</p>
