@@ -31,14 +31,14 @@ const Hero = () => {
                             <span className="text-xl md:text-3xl lg:text-4xl text-white font-semibold">{subsection.title}</span>
                         </div>
                     ))}
-                    <Image
+                    {/* <Image
                         src="/icons/dots.webp"
                         alt="dots"
                         width={100}
                         height={100}
                         className="absolute top-[780px] z-10 hidden lg:block"
                         loading='lazy'
-                    />
+                    /> */}
                 </div>
                 <div className="flex flex-wrap gap-4 md:gap-2 mt-6 flex-col lg:flex-row">
                     {data.stats.map((stat, index) => (

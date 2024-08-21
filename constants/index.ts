@@ -3,6 +3,7 @@ export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "/courses", key: "courses", label: "Courses" },
   { href: "/about", key: "about", label: "About" },
+  { href: "/counselling", key: "counselling", label: "Counselling" },
 ];
 
 // CAMP SECTION
@@ -917,3 +918,62 @@ export const featuresNew = [
     icon: FaHandshake,
   },
 ];
+
+
+// couselling 
+
+
+import { FaSearch, FaMapSigns, FaGraduationCap, FaBullseye, FaNetworkWired, FaChartBar, FaSyncAlt } from 'react-icons/fa';
+
+export const cardsData = [
+  
+  {
+    title: "Self Assessment",
+    description: "Understand your strengths and areas for growth.",
+    icon: FaSearch,
+  },
+  {
+    title: "Career Exploration",
+    description: "Explore potential career paths that align with your goals.",
+    icon: FaMapSigns,
+  },
+  {
+    title: "Education & Training",
+    description: "Identify necessary education and training to advance your career.",
+    icon: FaGraduationCap,
+  },
+  {
+    title: "Job Search Strategies",
+    description: "Learn effective job search techniques.",
+    icon: FaChartLine,
+  },
+  {
+    title: "Goal Setting and Planning",
+    description: "Set and achieve your career goals.",
+    icon: FaBullseye,
+  },
+  {
+    title: "Networking & Professional Development",
+    description: "Build your professional network and skills.",
+    icon: FaNetworkWired,
+  },
+  {
+    title: "Market Trends and Opportunities",
+    description: "Stay informed on the latest market trends.",
+    icon: FaChartBar,
+  },
+  {
+    title: "Decision Making Skills",
+    description: "Enhance your decision-making abilities.",
+    icon: FaLightbulb,
+  },
+  {
+    title: "Career Transitions",
+    description: "Navigate changes in your career smoothly.",
+    icon: FaSyncAlt,
+  },
+];
+
+
+
+
