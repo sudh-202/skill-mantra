@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 
 const FormSection = () => {
     return (
-        <section className="flex flex-col md:flex-row justify-center items-center gap-[15vw]  bg-blue-90 px-[4vw] py-[15vw] md:py-[4vw]"> 
-            <div className="w-full md:w-[40vw] mb-8 md:mb-0">
+        <section className="flex flex-col md:flex-row justify-center items-center gap-[15vw]  bg-blue-90 md:px-[4vw] px-[5vw] space-x-[26vw] md:space-x-0 py-[15vw] md:py-[4vw]"> 
+            <div className="w-full md:w-[40vw] mb-8 md:mb-0 ">
                 <span className="md:text-[4.8vw] text-[7vw] md:leading-[6vw] leading-[7vw] text-white md:text-left text-center block">
                     Want to take a customised counselling before enrolling?
                 </span>

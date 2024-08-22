@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:justify-between items-center space-y-8 sm:space-y-0">
         {/* Logo and Sign-Up Form */}
         <div className="flex flex-col items-center sm:items-start space-y-4 w-full sm:w-auto sm:mr-16">
-          <Image src="/logo.webp" alt="Skill Mantra Logo" className="w-[20vw] sm:w-[15vw]" width={100} height={100} />
+          <Image src="/logo.webp" alt="Skill Mantra Logo" className=" md:w-[20vw] w-[70vw]" width={100} height={100} />
           <p className="text-center sm:text-left">Stay in the loop and sign up for the Skill Mantra:</p>
           <form className="flex w-full sm:w-auto">
             <input
@@ -27,10 +27,10 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Links Section */}
-        <div className="flex flex-col sm:flex-row justify-center sm:justify-between w-full sm:w-auto space-y-8 sm:space-y-0 sm:space-x-12">
+        <div className="flex flex-col sm:flex-row md:justify-center justify-start w-full  space-y-8 sm:space-y-0 sm:space-x-12">
           {footerData.map((section) => (
             <div key={section.title} className="flex flex-col items-center sm:items-start space-y-2">
-              <h2 className="text-[1.8vw] font-semibold text-center sm:text-left">{section.title}</h2>
+              <h2 className="md:text-[1.8vw] text-[6vw] font-semibold text-center sm:text-left">{section.title}</h2>
               <ul className="space-y-1">
                 {section.links.map((link) => (
                   <li key={link.text}>

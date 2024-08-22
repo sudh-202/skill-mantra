@@ -55,7 +55,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
   const { WhyCourseHeading, WhyCourse } = courseDetails;
 
   return (
-    <>
+    <main className='overflow-hidden'>
       <CourseHero />
       <Companies />
       <TargetSegment />
@@ -72,7 +72,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <Who />
       <FormSection />
       <CourseCarousel currentCourseId={currentCourse.id} />
-    </>
+    </main>
   );
 };
 

@@ -26,7 +26,7 @@ const CourseCarousel: React.FC<CourseCarouselProps> = ({ currentCourseId }) => {
           {filteredCourses.map((course) => (
             <CarouselItem key={course.id} className="flex-shrink-0 cursor-pointer md:basis-1/3 lg:basis-1/3">
               <Link href={course.link} className='flex flex-col justify-center items-center gap-5'>
-                <div className="relative w-[20vw] h-[20vw]  overflow-hidden">
+                <div className="relative md:w-[20vw] w-[70vw] md:h-[20vw] h-[70vw] overflow-hidden">
                   <Image 
                     src={course.imagePath} 
                     alt={course.title} 
@@ -34,17 +34,17 @@ const CourseCarousel: React.FC<CourseCarouselProps> = ({ currentCourseId }) => {
                     style={{ objectFit: 'cover' }} 
                   />
                 </div>
-                <p className="text-center text-blue-90 mt-4 text-[1.2vw] font-semibold">{course.title}</p>
+                <p className="text-center text-blue-90 mt-4 md:text-[1.2vw] text-[7vw] font-semibold">{course.title}</p>
               </Link>
             </CarouselItem>
           ))}
         </CarouselContent>
-        {/* <CarouselPrevious className="text-white ">
+        <CarouselPrevious className="text-black ">
      
         </CarouselPrevious>
-        <CarouselNext className="text-white">
+        <CarouselNext className="text-black">
           
-        </CarouselNext> */}
+        </CarouselNext>
       </Carousel>
     </section>
   );

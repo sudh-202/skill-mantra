@@ -31,21 +31,21 @@ const CourseHero = () => {
         <>
             <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[5vw]">
                 <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-[10vw]">
-                    <div className="relative rounded-full overflow-hidden w-[35vw] h-[35vw]">
+                    <div className="relative rounded-full overflow-hidden w-[45vw] h-[45vw] md:w-[35vw] md:h-[35vw]">
                         <Image src={image} alt="Offer Image" layout="fill" objectFit="cover" />
                     </div>
-                    <div className="flex flex-col items-center justify-center">
-                        <div className="bg-blue-90 text-white px-10 py-16 rounded-2xl flex flex-col items-center justify-center">
-                            <h3 className="text-[1.5vw]">{offerText}</h3>
-                            <p className="mt-2 text-[2vw] font-semibold">{scholarshipText}</p>
+                    <div className="flex flex-col items-center justify-center ">
+                        <div className="bg-blue-90 text-white px-10 py-16 rounded-2xl flex flex-col items-center justify-center ">
+                            <h3 className="md:text-[1.5vw] text-[5vw]">{offerText}</h3>
+                            <p className="mt-2 md:text-[2vw] text-[6vw] font-semibold">{scholarshipText}</p>
                             <a
                                 href={downloadLink}
-                                className="mt-4 bg-yellow-500 text-black py-2 px-4 rounded-lg font-bold text-[2.4vw] flex gap-3 items-center"
+                                className="mt-4 bg-yellow-500 text-black py-2 px-4 rounded-lg font-bold md:text-[2.4vw] text-[6.4vw] flex gap-3 items-center"
                             >
                                 <MdDownloadForOffline />
                                 {downloadText}
                             </a>
-                            <div className="flex justify-between mt-[5vw] text-center gap-10">
+                            <div className="flex justify-between md:mt-[5vw] mt-[10vw] text-center gap-10">
                                 <div className="bg-white text-blue-90 py-4 px-8 rounded-2xl">
                                     <span className="block text-2xl font-bold">{countdown.days}</span>
                                     <span className="block text-sm">Days</span>
@@ -62,7 +62,7 @@ const CourseHero = () => {
                         </div>
                     </div>
                 </div>
-                <h2 className="text-[5vw] font-bold text-center text-blue-90">{title}</h2>
+                <h2 className="md:text-[5vw] text-[8vw] font-bold text-center text-blue-90 md:mt-[0vw] mt-[4vw]">{title}</h2>
             </section>
             <FormSection />
         </>

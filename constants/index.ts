@@ -1232,7 +1232,7 @@ import { SiFreelancer } from "react-icons/si";
 
 
 const courseOfferingsMap = {
-  "CCA": {
+  "cca": {
     heading: "Who Can Join CCA",
     offerings: [
       {

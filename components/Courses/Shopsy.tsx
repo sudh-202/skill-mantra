@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Shopsy = () => {
     return ( 
-        <main className="w-full h-[85vh] px-[10vw] flex bg-[url('/courses/grid.webp')]">
+        <main className="w-full h-[85vh] px-[10vw] flex bg-[url('/courses/grid.webp')] flex-wrap overflow-hidden">
             <div className="flex flex-col justify-center items-center text-center">
             <h2 className="text-black font-medium text-[3vw] text-center leading-[3vw]">Our </h2>
             <h3 className="text-blue-90 font-bold text-[5vw] text-center leading-[7vw]">Finance Partner</h3>
