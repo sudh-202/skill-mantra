@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { COURSES, tabData } from '@/constants/index';
+import { COURSES, tabData, COURSE_DETAILS } from '@/constants/index';
 import CourseHero from '@/components/Courses/CourseHero';
 import Companies from '@/components/Home/Companies';
 import TargetSegment from '@/components/Home/TargetSegment';
@@ -15,7 +15,7 @@ import Tools from '@/components/Courses/Tools';
 import CourseOfferings from '@/components/Courses/CourseOfferings';
 import { Certificate } from '@/components/Courses/Certificate';
 import Shopsy from '@/components/Courses/Shopsy';
-import WhyCourse from '@/components/Courses/Who';
+import Who from '@/components/Courses/Who';
 import FormSection from '@/components/Courses/FormSection';
 import CourseCarousel from '@/components/Courses/CourseCarousel';
 import { assistanceData } from '@/constants/';
@@ -37,6 +37,22 @@ const CoursePage = ({ params }: CoursePageProps) => {
   // Extract courseSlug from the currentCourse
   const courseSlug = currentCourse.link;
 
+  // Debugging log
+  console.log('courseSlug:', courseSlug);
+
+  const courseDetails = COURSE_DETAILS[courseSlug];
+
+  // Debugging log
+  console.log('courseDetails:', courseDetails);
+
+  // Check if courseDetails exists to avoid runtime errors
+  if (!courseDetails) {
+    notFound();
+    return null;
+  }
+
+  const { WhyCourseHeading, WhyCourse } = courseDetails;
+
   return (
     <>
       <CourseHero />
@@ -44,7 +60,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <TargetSegment />
       <Partners />
       <TabsSection courseSlug={courseSlug as keyof typeof tabData} />
-      <WhyThis />
+      <WhyThis WhyCourseHeading={WhyCourseHeading} WhyCourse={WhyCourse} />
       <CarouselIconSection />
       <AssistanceSection services={assistanceData} />
       <Steps />
@@ -52,7 +68,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <CourseOfferings />
       <Certificate />
       <Shopsy />
-      <WhyCourse />
+      <Who />
       <FormSection />
       <CourseCarousel currentCourseId={currentCourse.id} />
     </>

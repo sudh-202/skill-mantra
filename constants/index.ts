@@ -1081,6 +1081,9 @@ export const tabData: TabData = {
 
 // why this course
 
+
+
+// Define COURSE_DETAILS with the CourseDetail type
 import {
   FiTool,
   FiBriefcase,
@@ -1092,42 +1095,140 @@ import {
   FiAward,
 } from "react-icons/fi";
 
-export const WhyCourseHeading = "Why Certified Corporate Accountant (CCA)";
+interface CourseDetail {
+  WhyCourseHeading: string;
+  WhyCourse: {
+    title: string;
+    icon: React.ComponentType<{ size: number }>; // Correctly typed icon component
+  }[];
+}
 
-export const WhyCourse = [
-  {
-    title: "Skill Development",
-    icon: FiTool,
+// Define COURSE_DETAILS with the CourseDetail type
+export const COURSE_DETAILS: Record<string, CourseDetail> = {
+  cca: {
+    WhyCourseHeading: "Why Certified Corporate Accountant (CCA)?",
+    WhyCourse: [
+      { title: "Skill Development", icon: FiTool },
+      { title: "Career Enhancement", icon: FiBriefcase },
+      { title: "Hands-On Applications", icon: FiLayers },
+      { title: "Expert Guidance", icon: FiUserCheck },
+      { title: "Strategic Insights", icon: FiTarget },
+      { title: "Organizational Impact", icon: FiTrendingUp },
+      { title: "Professional Community", icon: FiUsers },
+      { title: "Tailored for all levels", icon: FiAward },
+    ],
   },
-  {
-    title: "Career Enhancement",
-    icon: FiBriefcase,
+  'hr-payroll-program': {
+    WhyCourseHeading: "Why Certified HR Payroll & Compliance?",
+    WhyCourse: [
+      { title: "Enterprise Systems", icon: FiTool },
+      { title: "Legal Compliance", icon: FiBriefcase },
+      { title: "Hands-On Application", icon: FiLayers },
+      { title: "Efficient Processing", icon: FiUserCheck },
+      { title: "Payroll Application", icon: FiTarget },
+      { title: "Career Enhancement", icon: FiTrendingUp },
+      { title: "Expert Guidance", icon: FiUsers },
+      { title: "Career Achievement", icon: FiAward },
+    ],
   },
-  {
-    title: "Hands-On Applications",
-    icon: FiLayers,
+  'hr-generalist': {
+    WhyCourseHeading: "Why Certified HR Generalist?",
+    WhyCourse: [
+      { title: "Comprehensive HR Knowledge", icon: FiTool },
+      { title: "Strategic HR Management", icon: FiBriefcase },
+      { title: "Legal Compliance", icon: FiLayers },
+      { title: "Employee Relations", icon: FiUserCheck },
+      { title: "Recruitment Expertise", icon: FiTarget },
+      { title: "Performance Management", icon: FiTrendingUp },
+      { title: "Training & Development", icon: FiUsers },
+      { title: "HR Best Practices", icon: FiAward },
+    ],
   },
-  {
-    title: "Expert Guidance",
-    icon: FiUserCheck,
+  'gst-course': {
+    WhyCourseHeading: "Why Certified GST Professional?",
+    WhyCourse: [
+      { title: "Mastery of GST Essentials", icon: FiTool },
+      { title: "Industry-Recognized", icon: FiBriefcase },
+      { title: "Career Advancement", icon: FiLayers },
+      { title: "In-Depth Legal Compliance", icon: FiUserCheck },
+      { title: "Enhanced Financial Decisions", icon: FiTarget },
+      { title: "Extended Professional Network", icon: FiTrendingUp },
+      { title: "Confident Decision Making", icon: FiUsers },
+      { title: "Industry Interaction", icon: FiAward },
+    ],
   },
-  {
-    title: "Strategic Insights",
-    icon: FiTarget,
+  'tds-course': {
+    WhyCourseHeading: "Why Certified TDS Professional?",
+    WhyCourse: [
+      { title: "Mastery of TDS Essentials", icon: FiTool },
+      { title: "Industry-Recognized", icon: FiBriefcase },
+      { title: "Strategic Career", icon: FiLayers },
+      { title: "In-Depth Legal Compliance", icon: FiUserCheck },
+      { title: "Enhanced Financial Decisions", icon: FiTarget },
+      { title: "Extended Professional Network", icon: FiTrendingUp },
+      { title: "Confident Decision Making", icon: FiUsers },
+      { title: "Industry Interaction", icon: FiAward },
+    ],
   },
-  {
-    title: "Organizational Impact",
-    icon: FiTrendingUp,
+  'accounting-for-accountants': {
+    WhyCourseHeading: "Why Accounting for Accountants?",
+    WhyCourse: [
+      { title: "Advanced Accounting Skills", icon: FiTool },
+      { title: "Industry Standards", icon: FiBriefcase },
+      { title: "Financial Reporting", icon: FiLayers },
+      { title: "Analytical Skills", icon: FiUserCheck },
+      { title: "Taxation Expertise", icon: FiTarget },
+      { title: "Regulatory Compliance", icon: FiTrendingUp },
+      { title: "Professional Growth", icon: FiUsers },
+      { title: "Career Advancement", icon: FiAward },
+    ],
   },
-  {
-    title: "Professional Community",
-    icon: FiUsers,
+  'financial-modelling': {
+    WhyCourseHeading: "Why Certified Financial Modelling?",
+    WhyCourse: [
+      { title: "Versatility in Skill", icon: FiTool },
+      { title: "Industry-Recognized", icon: FiBriefcase },
+      { title: "Career Accelerated", icon: FiLayers },
+      { title: "Mastery of Legal", icon: FiUserCheck },
+      { title: "Professional Network", icon: FiTarget },
+      { title: "Expert Guidance", icon: FiTrendingUp },
+      { title: "Decision-Making Confidence", icon: FiUsers },
+      { title: "Strategic Insights", icon: FiAward },
+    ],
   },
-  {
-    title: "Tailored for all levels",
-    icon: FiAward,
+  'tally-basic-to-advance': {
+    WhyCourseHeading: "Why Tally (Basic to Advance)?",
+    WhyCourse: [
+      { title: "Comprehensive Tally Training", icon: FiTool },
+      { title: "Advanced Financial Management", icon: FiBriefcase },
+      { title: "Hands-On Practice", icon: FiLayers },
+      { title: "Efficient Accounting Processes", icon: FiUserCheck },
+      { title: "Detailed Reporting", icon: FiTarget },
+      { title: "Career Prospects", icon: FiTrendingUp },
+      { title: "Expert Guidance", icon: FiUsers },
+      { title: "Certification Value", icon: FiAward },
+    ],
   },
-];
+  'office-automation': {
+    WhyCourseHeading: "Why Enroll In Our Office Automation Course?",
+    WhyCourse: [
+      { title: "Startup-Centric Focus", icon: FiTool },
+      { title: "Comprehensive Training", icon: FiBriefcase },
+      { title: "Expert-Led Training", icon: FiLayers },
+      { title: "Advanced Certification", icon: FiUserCheck },
+      { title: "Networking Opportunities", icon: FiTarget },
+      { title: "Hands-On Learning", icon: FiTrendingUp },
+      { title: "Confident Decision Making", icon: FiUsers },
+      { title: "Industry Interaction", icon: FiAward },
+    ],
+  },
+
+
+};
+
+
+
+
 
 // course carousel
 
