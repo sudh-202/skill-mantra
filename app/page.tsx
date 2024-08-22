@@ -21,10 +21,10 @@ export default function Home() {
       <Hero />
       <VideoSection />
       <TargetSegment/>
-      <Companies />
+      <TrustedBrands/>
       <Courses />
       <Partners />
-      <TrustedBrands/>
+      <Companies /> 
       <TestimonialCarousel />
       <WhyUs />
       <OurTrainer />
