@@ -966,6 +966,82 @@ export const footerData = [
 ];
 
 
+// courses hero
+
+export const OFFER_DETAILS = {
+  imagePath: '/courses/hero.webp',
+  offerText: 'Limited Time Offer',
+  scholarshipText: 'Get Scholarship Up To 50%',
+  downloadText: 'Download Prospectus',
+  downloadLink: '#', 
+  countdown: {
+    days: 0,
+    hours: 0,
+    minutes: 0,
+  },
+  title: 'Certified Corporate Accounting',
+};
+
+
+// course cards
+
+export const COURSES = [
+  {
+    id: 1,
+    title: 'HR Payroll Program',
+    imagePath: '/courses/carousel/1.webp', 
+    link: '/courses/hr-payroll-program', 
+  },
+  {
+    id: 2,
+    title: 'HR Generalist',
+    imagePath: '/courses/carousel/2.webp',
+    link: '/courses/hr-generalist',
+  },
+  {
+    id: 3,
+    title: 'GST Course',
+    imagePath: '/courses/carousel/2.webp',
+    link: '/courses/gst-course',
+  },
+  {
+    id: 4,
+    title: 'TDS Course',
+    imagePath: '/courses/carousel/4.webp',
+    link: '/courses/tds-course',
+  },
+  {
+    id: 5,
+    title: 'Accounting for accountants',
+    imagePath: '/courses/carousel/5.webp',
+    link: '/courses/accounting-for-accountants',
+  },
+  {
+    id: 6,
+    title: 'Financial Modelling',
+    imagePath: '/courses/carousel/6.webp',
+    link: '/courses/financial-modelling',
+  },
+  {
+    id: 7,
+    title: 'Tally (Basic to Advance)',
+    imagePath: '/courses/carousel/7.webp',
+    link: '/courses/tally-basic-to-advance',
+  },
+  {
+    id: 8,
+    title: 'Office Automation',
+    imagePath: '/courses/carousel/8.webp',
+    link: '/courses/office-automation',
+  },
+  {
+    id: 9,
+    title: 'Certified Corporate Accountant',
+    imagePath: '/courses/carousel/9.webp', 
+    link: '/courses/cca', 
+  },
+];
+
 
 
 
