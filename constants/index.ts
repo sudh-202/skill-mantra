@@ -1222,9 +1222,289 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Industry Interaction", icon: FiAward },
     ],
   },
-
-
 };
+
+//features
+import { FaBook, FaVideo, FaFileAlt, FaUserGraduate } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa6";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { SiFreelancer } from "react-icons/si";
+
+
+const courseOfferingsMap = {
+  "CCA": {
+    heading: "Who Can Join CCA",
+    offerings: [
+      {
+        title: "Accounting Enthusiasts",
+        description: "For those passionate about accounting and looking to expand their knowledge.",
+        icon: FaBook,
+      },
+      {
+        title: "Career Changers",
+        description: "Perfect for professionals considering a transition into accounting.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Recent Graduates",
+        description: "Fresh graduates looking to start their career in accounting.",
+        icon: FaSchool,
+      },
+      {
+        title: "Diverse Backgrounds",
+        description: "For individuals from various fields seeking to learn accounting.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Freelance Experienced",
+        description: "Ideal for freelancers who want to refine their accounting skills.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "financial-modelling": {
+    heading: "Who Can Join Financial Modelling",
+    offerings: [
+      {
+        title: "Finance Professionals",
+        description: "For finance professionals looking to enhance their modelling skills.",
+        icon: FaBook,
+      },
+      {
+        title: "Investment Analysts",
+        description: "Ideal for investment analysts seeking to improve their financial modelling techniques.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Business Consultants",
+        description: "Perfect for consultants who need to incorporate financial models into their strategies.",
+        icon: FaSchool,
+      },
+      {
+        title: "Corporate Managers",
+        description: "For corporate managers who need to understand and use financial models.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Aspiring Modellers",
+        description: "For those aspiring to build a career in financial modelling.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "office-automation": {
+    heading: "Who Can Join Office Automation",
+    offerings: [
+      {
+        title: "Administrative Assistants",
+        description: "For those in administrative roles looking to improve efficiency with automation tools.",
+        icon: FaBook,
+      },
+      {
+        title: "Office Managers",
+        description: "Ideal for office managers who want to streamline office operations.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "IT Professionals",
+        description: "Perfect for IT professionals focusing on office automation solutions.",
+        icon: FaSchool,
+      },
+      {
+        title: "Project Coordinators",
+        description: "For project coordinators aiming to enhance their automation skills.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Tech Enthusiasts",
+        description: "For those passionate about technology and office automation.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "gst-course": {
+    heading: "Who Can Join GST ",
+    offerings: [
+      {
+        title: "Tax Consultants",
+        description: "For tax consultants specializing in GST compliance and advisory.",
+        icon: FaBook,
+      },
+      {
+        title: "Accountants",
+        description: "Ideal for accountants who need to master GST processes.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Business Owners",
+        description: "Perfect for business owners responsible for GST filing and compliance.",
+        icon: FaSchool,
+      },
+      {
+        title: "Financial Analysts",
+        description: "For financial analysts needing to understand GST implications.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Compliance Officers",
+        description: "For compliance officers focusing on GST regulations.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "tds-course": {
+    heading: "Who Can Join TDS ",
+    offerings: [
+      {
+        title: "Tax Professionals",
+        description: "For tax professionals specializing in TDS management.",
+        icon: FaBook,
+      },
+      {
+        title: "Payroll Managers",
+        description: "Ideal for payroll managers responsible for TDS calculations and compliance.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Finance Managers",
+        description: "Perfect for finance managers overseeing TDS processes.",
+        icon: FaSchool,
+      },
+      {
+        title: "Accountants",
+        description: "For accountants handling TDS-related tasks.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Compliance Managers",
+        description: "For compliance managers focusing on TDS regulations.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "accounting-for-accountants": {
+    heading: "Who Can Join Accounting for Accountants",
+    offerings: [
+      {
+        title: "Experienced Accountants",
+        description: "For experienced accountants looking to update their skills.",
+        icon: FaBook,
+      },
+      {
+        title: "Senior Financial Professionals",
+        description: "Ideal for senior financial professionals seeking advanced accounting knowledge.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Finance Directors",
+        description: "Perfect for finance directors who need deeper accounting insights.",
+        icon: FaSchool,
+      },
+      {
+        title: "Auditors",
+        description: "For auditors who want to enhance their accounting expertise.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Accounting Managers",
+        description: "For accounting managers needing advanced skills in accounting.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "tally-basic-to-advance": {
+    heading: "Who Can Join Tally (Basic to Advance)",
+    offerings: [
+      {
+        title: "Entry-Level Accountants",
+        description: "For entry-level accountants who want to learn Tally from scratch.",
+        icon: FaBook,
+      },
+      {
+        title: "Business Owners",
+        description: "Ideal for business owners needing to manage their accounts using Tally.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Finance Students",
+        description: "Perfect for finance students wanting practical experience with Tally.",
+        icon: FaSchool,
+      },
+      {
+        title: "Small Business Accountants",
+        description: "For accountants in small businesses who use Tally for their accounting needs.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Aspiring Tally Experts",
+        description: "For those aiming to become experts in Tally software.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "hr-generalist": {
+    heading: "Who Can Join HR Generalist",
+    offerings: [
+      {
+        title: "HR Professionals",
+        description: "For HR professionals looking to broaden their generalist skills.",
+        icon: FaBook,
+      },
+      {
+        title: "Recruitment Specialists",
+        description: "Ideal for recruitment specialists who need a broader HR perspective.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Office Managers",
+        description: "Perfect for office managers handling HR functions.",
+        icon: FaSchool,
+      },
+      {
+        title: "Training Coordinators",
+        description: "For training coordinators seeking to enhance their HR knowledge.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "HR Assistants",
+        description: "For HR assistants looking to advance their skills.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+  "hr-payroll-program": {
+    heading: "Who Can Join HR Payroll Program",
+    offerings: [
+      {
+        title: "Payroll Specialists",
+        description: "For payroll specialists who want to deepen their knowledge.",
+        icon: FaBook,
+      },
+      {
+        title: "HR Managers",
+        description: "Ideal for HR managers responsible for payroll administration.",
+        icon: FaUserGraduate,
+      },
+      {
+        title: "Accounting Professionals",
+        description: "Perfect for accounting professionals focusing on payroll.",
+        icon: FaSchool,
+      },
+      {
+        title: "Business Owners",
+        description: "For business owners managing their own payroll processes.",
+        icon: BsFillPeopleFill,
+      },
+      {
+        title: "Finance Teams",
+        description: "For finance teams handling payroll functions.",
+        icon: SiFreelancer,
+      },
+    ],
+  },
+};
+
+export default courseOfferingsMap;
 
 
 
@@ -1343,44 +1623,8 @@ export const toolsImage = [
   },
 ];
 
-//features
 
-import { FaBook, FaVideo, FaFileAlt, FaUserGraduate } from "react-icons/fa";
-import { FaSchool } from "react-icons/fa6";
-import { BsFillPeopleFill } from "react-icons/bs";
-import { SiFreelancer } from "react-icons/si";
 
-export const courseOfferings = [
-  {
-    title: "Accounting Enthusiasts",
-    description:
-      "For those passionate about accounting and looking to expand their knowledge.",
-    icon: FaBook,
-  },
-  {
-    title: "Career Changers",
-    description:
-      "Perfect for professionals considering a transition into accounting.",
-    icon: FaUserGraduate,
-  },
-  {
-    title: "Recent Graduates",
-    description: "Fresh graduates looking to start their career in accounting.",
-    icon: FaSchool,
-  },
-  {
-    title: "Diverse Backgrounds",
-    description:
-      "For individuals from various fields seeking to learn accounting.",
-    icon: BsFillPeopleFill,
-  },
-  {
-    title: "Freelance Experienced",
-    description:
-      "Ideal for freelancers who want to refine their accounting skills.",
-    icon: SiFreelancer,
-  },
-];
 
 // certificate
 export const internshipData = {
