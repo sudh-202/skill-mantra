@@ -43,7 +43,6 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <Companies />
       <TargetSegment />
       <Partners />
-      {/* Pass the dynamic courseSlug to TabsSection */}
       <TabsSection courseSlug={courseSlug as keyof typeof tabData} />
       <WhyThis />
       <CarouselIconSection />

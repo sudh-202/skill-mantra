@@ -19,14 +19,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Courses />
-      <Partners />
-      <Companies />
-      <TestimonialCarousel />
-      <TrustedBrands/>
-      <WhyUs />
       <VideoSection />
       <TargetSegment/>
+      <Companies />
+      <Courses />
+      <Partners />
+      <TrustedBrands/>
+      <TestimonialCarousel />
+      <WhyUs />
       <OurTrainer />
       <YoutubeVideo />
       <DegreeComparison />
