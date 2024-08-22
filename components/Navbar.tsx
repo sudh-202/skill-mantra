@@ -56,11 +56,11 @@ const Navbar = () => {
         </ul>
 
         <Button asChild variant="outline" className="border-2 border-blue-90 text-blue-90 text-lg">
-          <Link href="/login">Login</Link>
+          <Link href="https://courses.skillmantra.in/login">Login</Link>
         </Button>
 
         <Button asChild className="border-2 border-[#FFC224] bg-[#FFC224] text-blue-90 text-lg">
-          <Link href="/register">Register</Link>
+          <Link href="https://courses.skillmantra.in/register">Register</Link>
         </Button>
       </div>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
         />
         {isMobileMenuOpen && (
           <div className="fixed top-[100px] left-0 right-0 bottom-0 bg-white p-4 flex flex-col items-center w-full h-[45vh]">
-            <button 
+            <button
               className="absolute top-2 right-2 p-2"
               onClick={toggleMobileMenu}
               aria-label="Close menu"
