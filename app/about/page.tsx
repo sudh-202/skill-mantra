@@ -14,7 +14,7 @@ const About = () => {
     const activetabData2 = tabData2.find(tab => tab.id === activeTab);
     return (
         <main>
-        <div className='flex flex-row-reverse items-center justify-center gap-10 bg-[url("/background.webp")] px-[5vw] py-[2vw]'>
+        <div className='flex md:flex-row-reverse flex-col items-center justify-center gap-10 bg-[url("/background.webp")] px-[5vw] py-[2vw] border-gray-10 border-b-2'>
             <Image src="/about/grad.webp" alt='title' width={100} height={100} className='w-[150vw]' />
             <div className="">
                 <h1 className="text-[3.9vw] leading-[4vw] pb-[1.4vw]">
@@ -29,7 +29,7 @@ const About = () => {
                 </p>
             </div>
         </div>
-        <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] overflow-hidden">
+        <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] overflow-hidden border-gray-10 border-b-2 ">
             <div className="flex flex-row flex-wrap gap-4 md:gap-8">
                 {tabData2.map((tab) => (
                     <div
@@ -56,8 +56,8 @@ const About = () => {
                 </p>
             </div>
         </section>
-        <div>
-            <h2 className='text-[3vw]  font-semibold text-center text-blue-90'>Skill-Mantra Advantage</h2>
+        <div className='mt-[10vw] md:mt-0 border-gray-10 border-b-2 '>
+            <h2 className='md:text-[3vw] text-[10vw]  font-semibold text-center text-blue-90'>Skill-Mantra Advantage</h2>
             <FeaturesSection/>
             
         </div>
