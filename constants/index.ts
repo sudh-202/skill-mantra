@@ -628,49 +628,49 @@ export const Coursesdata: Course[] = [
     slug: "hr-payroll-program",
     title: "HR Payroll Program",
     description: "Details about the HR Payroll Program course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/carousel/1.webp", 
   },
   {
     slug: "hr-generalist",
     title: "HR Generalist",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/carousel/2.webp", 
   },
   {
     slug: "gst-course",
     title: "GST Course",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/carousel/4.webp", 
   },
   {
     slug: "tds-course",
     title: "TDS Course",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "5.webp", 
   },
   {
     slug: "accounting-for-accountants",
     title: "Accounting for accountants",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/carousel/6.webp", 
   },
   {
     slug: "financial-modelling",
     title: "Financial Modelling",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/carousel/7.webp", 
   },
   {
     slug: "tally-basic-to-advance",
     title: "Tally (Basic to Advance)",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/carousel/8.webp", 
   },
   {
     slug: "office-automation",
     title: "Office Automation",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/carousel/9.webp", 
   },
 ];
 
@@ -737,7 +737,6 @@ export const COURSES = [
 
 // Static offer details
 export const STATIC_OFFER_DETAILS = {
-  imagePath: '/courses/hero.webp',
   offerText: 'Limited Time Offer',
   scholarshipText: 'Get Scholarship Up To 50%',
   downloadText: 'Download Prospectus',
@@ -761,47 +760,292 @@ export const COURSE_TITLES = {
   'office-automation': 'Office Automation',
   'cca': 'Certified Corporate Accountant',
 };
+// Dynamic images
+export const COURSE_IMAGES = {
+  'hr-payroll-program': '/courses/carousel/1.webp',
+  'hr-generalist': '/courses/carousel/2.webp',
+  'gst-course': '/courses/carousel/4.webp',
+  'tds-course': '/courses/carousel/5.webp',
+  'accounting-for-accountants': '/courses/carousel/6.webp',
+  'financial-modelling': '/courses/carousel/7.webp',
+  'tally-basic-to-advance': '/courses/carousel/8.webp',
+  'office-automation': '/courses/carousel/9.webp',
+  'cca': '/courses/hero.webp',
+};
 
 
 // tabData.ts (or wherever you keep your tab data)
 
-export const tabData = [
-  {
-    id: "job-market",
-    title: "Vast Job Market",
-    icon: "/courses/market.webp",
-    content:
-      "India has more than 10L job openings in accounting and finance every year.",
-  },
-  {
-    id: "high-demand",
-    title: "High Demand in 2024",
-    icon: "/courses/diverse.webp",
-    content:
-      "96% of Indian companies are planning to hire Finance or Accounting staff in 2024.",
-  },
-  {
-    id: "career-paths",
-    title: "Diverse Career Paths",
-    icon: "/courses/demand.webp",
-    content:
-      "An accounting career provides various job opportunities such as Accountants, Senior Accountants, Chief Revenue Officers, Financial Analysts, etc.",
-  },
-  {
-    id: "salaries",
-    title: "Competitive Salaries",
-    icon: "/courses/money.webp",
-    content:
-      "The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 12 LPA.",
-  },
-  {
-    id: "growth-opportunities",
-    title: "Future Growth Opportunities",
-    icon: "/courses/tax.webp",
-    content:
-      "Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS, CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.",
-  },
-];
+type Tab = {
+  id: string;
+  title: string;
+  icon: string;
+  content: string;
+};
+
+type TabData = {
+  [key: string]: Tab[];
+};
+
+export const tabData: TabData = {
+  "hr-payroll-program": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content: "India has more than 8L job openings in HR and Payroll every year.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content: "94% of Indian companies are planning to hire HR Payroll staff in 2024.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content: "HR Payroll offers various job opportunities such as Payroll Executives, HR Managers, Payroll Analysts, Compensation & Benefits Managers, etc.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content: "The salary offered at entry-level positions in HR Payroll ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 10 LPA.",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content: "HR Payroll professionals can either continue to advance in HR roles or choose to pursue further options such as certifications in Payroll Management, HR Analytics, MBA in HR, etc.",
+    },
+  ],
+  "gst-course": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content: "Over 8 lakh GST-related job openings are available in India each year.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content: "90% of Indian companies plan to hire GST professionals in 2024.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content: "GST careers offer roles like GST Practitioner, Compliance Manager, and Auditor.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content: "GST professionals can earn between INR 2 - 15 LPA, depending on experience.",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content: "GST professionals can advance with certifications like CA, CS, or specialized courses in taxation.",
+    },
+  ],
+  "hr-generalist": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content: "Over 8 lakh HR Generalist jobs in India each year.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content: "94% of companies plan to hire HR Generalists in 2024.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content: "Roles include HR Manager, Recruitment Specialist, and Employee Relations Manager.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content: "Salaries range from INR 3 - 5 LPA (entry), INR 5 - 8 LPA (mid), to INR 8 - 12 LPA (senior).",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content: "Opportunities to advance to HR Director or pursue further qualifications.",
+    },
+  ],
+  "tds-course": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content: "India has over 5 lakh TDS job openings annually.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content: "96% of companies will need TDS professionals in coming years.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content: "Includes TDS Executives, Tax Analysts, and Compliance Managers.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content: "INR 2 - 4 LPA (entry), INR 4 - 7 LPA (mid), INR 7 - 12 LPA (senior).",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content: "Further study options like CA or CPA can enhance career prospects.",
+    },
+  ],
+    "accounting-for-accountants": [
+      {
+        id: "job-market",
+        title: "Vast Job Market",
+        icon: "/courses/market.webp",
+        content: "India has over 10 lakh accounting and finance job openings annually.",
+      },
+      {
+        id: "high-demand",
+        title: "High Demand in 2024",
+        icon: "/courses/diverse.webp",
+        content: "96% of Indian companies plan to hire accounting or finance staff in 2024.",
+      },
+      {
+        id: "career-paths",
+        title: "Diverse Career Paths",
+        icon: "/courses/demand.webp",
+        content: "Opportunities include roles like Accountant, Financial Analyst, and Chief Revenue Officer.",
+      },
+      {
+        id: "salaries",
+        title: "Competitive Salaries",
+        icon: "/courses/money.webp",
+        content: "Entry-level: INR 2-4 LPA, Mid-level: INR 4-7 LPA, Senior-level: INR 7-12 LPA.",
+      },
+      {
+        id: "growth-opportunities",
+        title: "Future Growth Opportunities",
+        icon: "/courses/tax.webp",
+        content: "Pursue CA, CS, CPA, CFA, MBA in Finance, or CMA for career advancement.",
+      },
+    ],
+    "financial-modelling": [
+      {
+        id: "job-market",
+        title: "Vast Job Market",
+        icon: "/courses/market.webp",
+        content: "India's financial sector presents over 2 lakh job openings annually, with a significant demand for financial modelling expertise.",
+      },
+      {
+        id: "high-demand",
+        title: "High Demand in 2024",
+        icon: "/courses/diverse.webp",
+        content: "85% of Indian companies in finance and investment sectors plan to hire professionals skilled in financial modelling in 2024.",
+      },
+      {
+        id: "career-paths",
+        title: "Diverse Career Paths",
+        icon: "/courses/demand.webp",
+        content: "Financial modelling skills can lead to roles such as Financial Analyst, Investment Banker, and Portfolio Manager, offering diverse career options.",
+      },
+      {
+        id: "salaries",
+        title: "Competitive Salaries",
+        icon: "/courses/money.webp",
+        content: "Financial modelers earn competitive salaries: Entry-level: INR 4-6 LPA, Mid-level: INR 7-12 LPA, Senior-level: INR 12-25 LPA.",
+      },
+      {
+        id: "growth-opportunities",
+        title: "Future Growth Opportunities",
+        icon: "/courses/tax.webp",
+        content: "Advance your career by pursuing certifications like CFA, FRM, or an MBA in Finance, paving the way to senior positions in the financial industry.",
+      },
+    ],
+    "tally-basic-to-advance": [
+      {
+        id: "job-market",
+        title: "Vast Job Market",
+        icon: "/courses/market.webp",
+        content: "India has over 5 lakh job openings annually for Tally professionals in accounting and finance.",
+      },
+      {
+        id: "high-demand",
+        title: "High Demand in 2024",
+        icon: "/courses/diverse.webp",
+        content: "85% of Indian companies plan to hire Tally-skilled accounting or finance staff in 2024.",
+      },
+      {
+        id: "career-paths",
+        title: "Diverse Career Paths",
+        icon: "/courses/demand.webp",
+        content: "Tally expertise leads to roles like Accountant, Bookkeeper, and Accounts Manager.",
+      },
+      {
+        id: "salaries",
+        title: "Competitive Salaries",
+        icon: "/courses/money.webp",
+        content: "Tally professionals earn between INR 2-3 LPA at entry-level, INR 3-5 LPA at mid-level, and INR 5-8 LPA at senior-level positions.",
+      },
+      {
+        id: "growth-opportunities",
+        title: "Future Growth Opportunities",
+        icon: "/courses/tax.webp",
+        content: "Tally proficiency can pave the way for further qualifications like CA, CS, or certifications in Financial Accounting and Taxation for career advancement.",
+      },
+    ],
+    "office-automation": [
+      {
+        id: "job-market",
+        title: "Vast Job Market",
+        icon: "/courses/market.webp",
+        content: "India has over 4 lakh job openings annually for Office Automation professionals across industries.",
+      },
+      {
+        id: "high-demand",
+        title: "High Demand in 2024",
+        icon: "/courses/diverse.webp",
+        content: "78% of Indian companies plan to hire professionals with Office Automation skills in 2024.",
+      },
+      {
+        id: "career-paths",
+        title: "Diverse Career Paths",
+        icon: "/courses/demand.webp",
+        content: "Office Automation expertise opens up roles like Office Administrator, Data Entry Operator, and Executive Assistant.",
+      },
+      {
+        id: "salaries",
+        title: "Competitive Salaries",
+        icon: "/courses/money.webp",
+        content: "Office Automation professionals earn between INR 1.5-2.5 LPA at entry-level, INR 2.5-4 LPA at mid-level, and INR 4-6 LPA at senior-level positions.",
+      },
+      {
+        id: "growth-opportunities",
+        title: "Future Growth Opportunities",
+        icon: "/courses/tax.webp",
+        content: "Office Automation skills can lead to further qualifications in Data Management, IT, or certifications in Advanced MS Office and Digital Operations for career advancement.",
+      },
+    ],
+};
+
 
 // why this course
 

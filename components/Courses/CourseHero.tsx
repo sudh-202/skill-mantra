@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image';
 import FormSection from '@/components/Courses/FormSection';
-import { MdDownloadForOffline } from "react-icons/md";
+import { MdDownloadForOffline } from 'react-icons/md';
 import { useParams } from 'next/navigation';
-import { Coursesdata, STATIC_OFFER_DETAILS, COURSE_TITLES } from '@/constants';
+import { Coursesdata, STATIC_OFFER_DETAILS, COURSE_TITLES, COURSE_IMAGES } from '@/constants';
 
 const CourseHero = () => {
     const { slug } = useParams(); // Get slug from URL parameters
@@ -16,7 +16,6 @@ const CourseHero = () => {
 
     // Get static offer details
     const {
-        imagePath,
         offerText,
         scholarshipText,
         downloadText,
@@ -24,15 +23,16 @@ const CourseHero = () => {
         countdown
     } = STATIC_OFFER_DETAILS;
 
-    // Get dynamic title based on course slug
+    // Get dynamic title and image based on course slug
     const title = COURSE_TITLES[slug as keyof typeof COURSE_TITLES] || 'Course Title';
+    const image = COURSE_IMAGES[slug as keyof typeof COURSE_IMAGES] || '/courses/default.webp'; // Default image if dynamic image is not found
 
     return (
         <>
             <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[5vw]">
                 <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-[10vw]">
                     <div className="relative rounded-full overflow-hidden w-[35vw] h-[35vw]">
-                        <Image src={imagePath} alt="Offer Image" layout="fill" objectFit="cover" />
+                        <Image src={image} alt="Offer Image" layout="fill" objectFit="cover" />
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <div className="bg-blue-90 text-white px-10 py-16 rounded-2xl flex flex-col items-center justify-center">
@@ -67,6 +67,6 @@ const CourseHero = () => {
             <FormSection />
         </>
     );
-}
+};
 
 export default CourseHero;

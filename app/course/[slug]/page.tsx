@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { COURSES } from '@/constants/index';
+import { COURSES, tabData } from '@/constants/index';
 import CourseHero from '@/components/Courses/CourseHero';
 import Companies from '@/components/Home/Companies';
 import TargetSegment from '@/components/Home/TargetSegment';
@@ -25,20 +25,26 @@ interface CoursePageProps {
 }
 
 const CoursePage = ({ params }: CoursePageProps) => {
-  const currentCourse = COURSES.find(course => course.link.includes(params.slug));
+  // Find the current course based on the slug
+  const currentCourse = COURSES.find(course => course.link === params.slug);
 
+  // If no course is found, show a 404 page
   if (!currentCourse) {
-    notFound(); // Returns a 404 page if course not found
+    notFound();
+    return null; // Ensure nothing is rendered if course is not found
   }
+
+  // Extract courseSlug from the currentCourse
+  const courseSlug = currentCourse.link;
 
   return (
     <>
-      
       <CourseHero />
       <Companies />
       <TargetSegment />
       <Partners />
-      <TabsSection />
+      {/* Pass the dynamic courseSlug to TabsSection */}
+      <TabsSection courseSlug={courseSlug as keyof typeof tabData} />
       <WhyThis />
       <CarouselIconSection />
       <AssistanceSection services={assistanceData} />
