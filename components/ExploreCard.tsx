@@ -26,10 +26,10 @@ const ExploreCard: React.FC<ExploreCardProps> = ({ id, imgUrl, title, descriptio
       alt="planet-04"
       width={100}
       height={100}
-      className="absolute w-full h-full object-cover rounded-[24px]"
+      className="absolute w-full h-full object-cover rounded-[24px] opacity-60"
     />
     {active !== id ? (
-      <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
+      <h3 className=" text-[26px] md:text-[2.5vw] text-white font-bold absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
         {title}
       </h3>
     ) : (
