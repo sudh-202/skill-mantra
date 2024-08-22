@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import { NAV_LINKS, Coursesdata } from "@/constants";
 import Image from "next/image";
@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { MdClose } from 'react-icons/md'; // Import React Icons
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -63,7 +64,7 @@ const Navbar = () => {
         </Button>
       </div>
 
-      <div className="lg:hidden">
+      <div className="lg:hidden relative">
         <Image
           src="/menu.svg"
           alt="menu"
@@ -73,13 +74,20 @@ const Navbar = () => {
           onClick={toggleMobileMenu}
         />
         {isMobileMenuOpen && (
-          <div className="absolute top-16 right-0 bg-white w-full p-4">
-            <ul className="flex flex-col gap-4">
+          <div className="fixed top-[100px] left-0 right-0 bottom-0 bg-white p-4 flex flex-col items-center w-full h-[45vh]">
+            <button 
+              className="absolute top-2 right-2 p-2"
+              onClick={toggleMobileMenu}
+              aria-label="Close menu"
+            >
+              <MdClose size={24} />
+            </button>
+            <ul className="flex flex-col gap-4 w-full items-center">
               {NAV_LINKS.map((link) => (
-                <li key={link.key}>
+                <li key={link.key} className="w-full">
                   {link.key === 'courses' ? (
                     <DropdownMenu>
-                      <DropdownMenuTrigger className="text-blue-90 text-xl flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
+                      <DropdownMenuTrigger className="text-blue-90 text-xl flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold w-full text-center">
                         {link.label}
                       </DropdownMenuTrigger>
                       <DropdownMenuContent className="bg-white">
@@ -94,19 +102,19 @@ const Navbar = () => {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   ) : (
-                    <Link href={link.href} className="text-blue-90 text-xl flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
+                    <Link href={link.href} className="text-blue-90 text-xl flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold w-full text-center">
                       {link.label}
                     </Link>
                   )}
                 </li>
               ))}
               <li>
-                <Button asChild variant="outline" className="border-2 border-blue-90 text-blue-90 text-lg">
+                <Button asChild variant="outline" className="border-2 border-blue-90 text-blue-90 md:text-lg text-[7vw] md:w-full w-[35vw] h-[15vw] md:h-0 text-center">
                   <Link href="/login">Login</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild className="border-2 border-[#FFC224] bg-[#FFC224] text-blue-90 text-lg">
+                <Button asChild className="border-2 border-[#FFC224] bg-[#FFC224] text-blue-90 md:text-lg text-[7vw] md:w-full w-[35vw] h-[15vw] md:h-0 text-center">
                   <Link href="/register">Register</Link>
                 </Button>
               </li>
