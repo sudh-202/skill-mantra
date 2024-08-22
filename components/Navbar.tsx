@@ -110,12 +110,12 @@ const Navbar = () => {
               ))}
               <li>
                 <Button asChild variant="outline" className="border-2 border-blue-90 text-blue-90 md:text-lg text-[7vw] md:w-full w-[35vw] h-[15vw] md:h-0 text-center">
-                  <Link href="/login">Login</Link>
+                  <Link href="https://courses.skillmantra.in/login">Login</Link>
                 </Button>
               </li>
               <li>
                 <Button asChild className="border-2 border-[#FFC224] bg-[#FFC224] text-blue-90 md:text-lg text-[7vw] md:w-full w-[35vw] h-[15vw] md:h-0 text-center">
-                  <Link href="/register">Register</Link>
+                  <Link href="https://courses.skillmantra.in/register">Register</Link>
                 </Button>
               </li>
             </ul>
