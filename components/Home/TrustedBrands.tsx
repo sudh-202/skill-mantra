@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const TrustedBrands: React.FC = () => {
   return (
-    <div className="bg-white py-20 px-4">
+    <div className="bg-white py-20 px-4  border-b-[1px] border-grey">
       <h2 className="text-5xl font-abril ml-4 font-semibold text-center md:mb-12">Ratings section from various portals</h2>
       <div className="flex flex-col sm:flex-row justify-between items-center gap-6 max-w-5xl mx-auto">
         {TRUSTED_BRANDS.map((brand, index) => (
