@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
     return (
-        <section className=" flex justify-center md:flex-row flex-col items-center px-[5vw] py-[5vw] gap-32 bg-blue-90">
+        <section className=" flex justify-center md:flex-row flex-col items-center px-[5vw] md:py-[5vw] py-[10vw] gap-32 bg-blue-90">
 
             <div className="">
 
@@ -62,7 +62,7 @@ const Hero = () => {
 
             </div>
 
-            <div className="relative z-20  flex-col pt-16 md:pt-0  ">
+            <div className="relative z-20  flex-col -mt-[20vw] md:mt-[0vw] md:pt-0  ">
                 <ContactForm />
 
             </div>
