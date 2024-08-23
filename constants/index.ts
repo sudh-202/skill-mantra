@@ -1410,7 +1410,7 @@ const courseOfferingsMap = {
     ],
   },
   "hr-payroll-program": {
-    heading: "Who Can Join HR Payroll Course?",
+    heading: "Who Can Join HR Payroll",
     offerings: [
       {
         title: "Fresher",
@@ -1523,7 +1523,7 @@ const courseOfferingsMap = {
     ],
   },
   "tally-basic-to-advance": {
-    heading: "Who Can Join Tally Course?",
+    heading: "Who Can Join Tally",
     offerings: [
       {
         title: "Aspiring Accountants",
@@ -1564,7 +1564,7 @@ const courseOfferingsMap = {
     ],
   },
   "office-automation": {
-    heading: "Who Can Join Office Automation Course?",
+    heading: "Who Can Join Office Automation ",
     offerings: [
       {
         title: "Seeking Specialization",

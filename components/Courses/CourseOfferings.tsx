@@ -18,7 +18,7 @@ const CourseOfferings: FC<CourseOfferingsProps> = ({ courseTitle }) => {
     <section className="md:py-[4vw] py-[7vw] bg-white text-white">
       <div className="">
         <h2 className="md:text-[3.6vw] text-[7vw] font-bold text-center mb-8 text-blue-90">
-          {heading} Course
+          {heading} Course ?
         </h2>
         <div className="flex flex-wrap justify-center gap-6 md:flex-row flex-col px-[7vw]">
           {offerings.map((course, index) => {
