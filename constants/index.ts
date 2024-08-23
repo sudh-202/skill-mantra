@@ -1267,6 +1267,7 @@ import {
   FaFileAlt,
   FaUserGraduate,
   FaBriefcase,
+  FaChartLine,
 } from "react-icons/fa";
 import { FaSchool } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
@@ -1610,55 +1611,62 @@ export default courseOfferingsMap;
 
 // course carousel
 
-import {
-  FaHandsHelping,
-  FaChartLine,
-  FaChalkboardTeacher,
-} from "react-icons/fa";
+import { FaHandsHelping, FaChalkboardTeacher } from "react-icons/fa";
 import { GiProgression, GiTeacher, GiArchiveResearch } from "react-icons/gi";
+
+export const coursesNew = [
+  { title: "GST Professional", slug: "gst-course", duration: "25+" },
+  { title: "HR Generalist", slug: "hr-generalist", duration: "40+" },
+  { title: "TDS Professional", slug: "tds-course", duration: "25+" },
+  { title: "HR Payroll Program", slug: "hr-payroll-program", duration: "30+" },
+  { title: "Financial Modelling", slug: "financial-modelling", duration: "25+" },
+  { title: "Accounting for Accountants", slug: "accounting-for-accountants", duration: "100+" },
+  { title: "Tally", slug: "tally-basic-to-advance", duration: "25+" },
+  { title: "Office Automation", slug: "office-automation", duration: "40+" },
+];
 
 export const carouselItems = [
   {
     title: "Overall Approach",
-    description:
-      "Prepare to make your mark in accounting with a course designed to equip you for success.",
+    description: "Prepare to make your mark in accounting with a course designed to equip you for success.",
     icon: FaHandsHelping,
-    bgColor: "#F59E0B", // bg-yellow-500
   },
   {
     title: "Program Structure",
-    description:
-      "A 30+ hour journey of focused learning through theory and practice.",
+    description: "", // This will be dynamically updated in the component
     icon: FaChalkboardTeacher,
-    bgColor: "#F0FDF4", // bg-green-50
   },
   {
     title: "Hands on practice",
-    description:
-      "Candidates are directly involved in their learning with practical experience.",
+    description: "Candidates are directly involved in their learning with practical experience.",
     icon: FaHandsHelping,
-    bgColor: "#F0FDF4", // bg-green-50
   },
   {
     title: "Assessment & Career Edge",
-    description:
-      "Culminating in a final exam opens doors for a successful Corporate career.",
+    description: "Culminating in a final exam opens doors for a successful Corporate career.",
     icon: GiProgression,
-    bgColor: "#F59E0B", // bg-yellow-500
   },
   {
     title: "Tailored Learning",
     description: "Experience Personalized coursework to fit your career goals.",
     icon: GiTeacher,
-    bgColor: "#BFDBFE", // bg-blue-200
   },
   {
     title: "Integrated Curriculum",
     description: "Blends theory with practical skills for real-world use.",
     icon: GiArchiveResearch,
-    bgColor: "#22D3EE", // bg-cyan-400
   },
 ];
+
+export const durationMap: Record<string, string> = {
+  gst: "25+",
+  "hr-generalist": "40+",
+  tds: "25+",
+  "financial-modelling": "25+",
+  "accounting-for-accountants": "100+",
+  tally: "25+",
+  "office-automation": "40+",
+};
 
 //Features
 

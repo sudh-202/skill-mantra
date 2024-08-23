@@ -62,7 +62,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <Partners />
       <TabsSection courseSlug={courseSlug} />
       <WhyThis WhyCourseHeading={WhyCourseHeading} WhyCourse={WhyCourse} />
-      <CarouselIconSection />
+      <CarouselIconSection courseSlug={courseSlug} />
       <AssistanceSection services={assistanceData} />
       <Steps />
       <Tools />
