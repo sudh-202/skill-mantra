@@ -79,8 +79,8 @@ const CoursesSection: React.FC = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-9 lg:-translate-x-12 bg-gray-700 text-white p-1 lg:p-4 rounded-full" />
-                    <CarouselNext className="block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-9 lg:translate-x-12 bg-gray-700 text-white p-1 lg:p-4 rounded-full" />
+                    <CarouselPrevious className="block absolute  left-0 top-1/2 transform -translate-y-1/2 md:-translate-x-12 -translate-x-8 bg-transparent text-blue-90  border-transparent " />
+                    <CarouselNext className="block absolute right-0 top-1/2 transform -translate-y-1/2 md:translate-x-12 translate-x-10 bg-transparent text-blue-90  border-transparent" />
                 </Carousel>
                 <Image
                     src="/icons/dotsv2.webp"
