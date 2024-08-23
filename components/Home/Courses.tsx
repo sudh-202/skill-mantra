@@ -79,8 +79,8 @@ const CoursesSection: React.FC = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 bg-gray-700 text-white p-2 rounded-full" />
-                    <CarouselNext className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 bg-gray-700 text-white p-2 rounded-full" />
+                    <CarouselPrevious className="block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-9 lg:-translate-x-12 bg-gray-700 text-white p-1 lg:p-4 rounded-full" />
+                    <CarouselNext className="block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-9 lg:translate-x-12 bg-gray-700 text-white p-1 lg:p-4 rounded-full" />
                 </Carousel>
                 <Image
                     src="/icons/dotsv2.webp"
@@ -90,9 +90,7 @@ const CoursesSection: React.FC = () => {
                     className="absolute bottom-[-120px] left-0 z-10 hidden lg:block"
                     loading='lazy'
                 />
-                
             </div>
-            
         </div>
     );
 };
