@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         {/* Logo and Sign-Up Form */}
         <div className="flex flex-col items-center sm:items-start space-y-4 w-full sm:w-auto sm:mr-16">
           <Image src="/logo.webp" alt="Skill Mantra Logo" className=" md:w-[20vw] w-[70vw]" width={100} height={100} />
-          <p className="text-center sm:text-left">Stay in the loop and sign up for the Skill Mantra:</p>
+          <p className="text-center sm:text-left">Stay in the loop and sign up to Skill Mantra:</p>
           <form className="flex w-full sm:w-auto">
             <input
               type="email"

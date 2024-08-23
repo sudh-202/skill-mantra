@@ -793,13 +793,13 @@ export const tabData: TabData = {
       id: "job-market",
       title: "Vast Job Market",
       icon: "/courses/market.webp",
-      content: "India has more than 10L job openings in accounting and finance every year",
+      content: "India has more than 10L job openings in accounting and finance every year.",
     },
     {
       id: "high-demand",
       title: "High Demand in 2024",
       icon: "/courses/diverse.webp",
-      content: "96% of Indian companies are planning to hire Finance or Accounting staff in 2024",
+      content: "96% of Indian companies are planning to hire Finance or Accounting staff in 2024.",
     },
     {
       id: "career-paths",
