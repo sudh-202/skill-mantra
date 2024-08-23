@@ -12,7 +12,7 @@ import Link from "next/link";
 const TargetSegment: React.FC = () => {
   return (
     <div className="py-20 px-2 bg-[#FFC224] text-white">
-      <h2 className="md:text-[5vw]  text-[9vw] font-semibold text-center text-black mb-8">Target Segment Definition</h2>
+      {/* <h2 className="md:text-[5vw]  text-[9vw] font-semibold text-center text-black mb-8">Target Segment Definition</h2> */}
       <div className="flex flex-col md:flex-row justify-center gap-4 w-[70%] md:w-full translate-x-[20%] md:translate-x-0">
         {target.map((feature, index) => (
           <Card key={index} className="flex flex-col items-center justify-center text-center md:w-1/5  bg-blue-90 py-[2vw] px-[1vw]">
