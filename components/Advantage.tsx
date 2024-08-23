@@ -15,7 +15,7 @@ const FeatureCard: FC<FeatureCardProps> = ({ title, description, icon: Icon }) =
       <div className="">
         {/* <IconWrapper icon={Icon}  color="#21355C" size="45px"/> */}
       </div>
-      <h3 className="mdtext-[1.8vw] text-[5vw] font-semibold text-gray-900">{title}</h3>
+      <h3 className="md:text-[1.8vw] text-[5vw] font-semibold text-gray-900">{title}</h3>
       <p className="mt-2 md:text-sm text-gray-700">{description}</p>
     </div>
   );
