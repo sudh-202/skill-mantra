@@ -28,7 +28,7 @@ const CourseHero = () => {
     const image = COURSE_IMAGES[slug as keyof typeof COURSE_IMAGES] || '/courses/default.webp'; // Default image if dynamic image is not found
 
     return (
-        <main className='flex flex-col md:flex-row justify-center items-center mx-auto'>
+       <>
             <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[5vw]">
                 <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-[10vw]">
                     <div className="relative rounded-full overflow-hidden w-[45vw] h-[45vw] md:w-[35vw] md:h-[35vw]">
@@ -65,7 +65,7 @@ const CourseHero = () => {
                 <h2 className="md:text-[5vw] text-[8vw] font-bold text-center text-blue-90 md:mt-[0vw] mt-[4vw]">{title}</h2>
             </section>
             <FormSection />
-        </main>
+            </>
     );
 };
 
