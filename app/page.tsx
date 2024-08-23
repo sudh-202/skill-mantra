@@ -17,7 +17,7 @@ import Scope from "@/components/Home/scope";
 
 export default function Home() {
   return (
-    <>
+    <main className="overflow-hidden">
       <Hero />
       <VideoSection />
       <TargetSegment/>
@@ -32,6 +32,6 @@ export default function Home() {
       <DegreeComparison />
       <Scope/>
       <FAQS/>
-    </>
+    </main>
   )
 }

@@ -17,8 +17,8 @@ const CoursesSection: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <div className="w-full py-16 bg-white text-blue-900 flex flex-col items-center md:px-12 px-10">
-            <h2 className="text-center lg:text-7xl text-4xl font-semibold mb-8">Our Courses</h2>
+        <div className="w-full py-16  text-blue-900 flex flex-col items-center md:px-12 px-10 bg-blue-90 border-b-2 border-white">
+            <h2 className="text-center lg:text-7xl text-4xl  mb-8 text-white">Our Courses</h2>
             <div className="relative w-full max-w-[1320px] pb-24">
                 <Carousel
                     opts={{ align: "start" }}
@@ -26,10 +26,10 @@ const CoursesSection: React.FC = () => {
                 >
                     <CarouselContent className=''>
                         {courses.map((course, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 w-full">
-                                <div className="bg-[#FFC224] pt-3 pb-8 px-3 rounded-2xl shadow-md flex flex-col h-full">
-                                    <div className='bg-white rounded-2xl p-6 mb-4'>
-                                        <h3 className="lg:text-4xl text-2xl font-semibold mb-2 border-b-2 border-blue-90 pb-4">{course.title}</h3>
+                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 w-full ">
+                                <div className="bg-[#FFC224] py-8 px-3 rounded-2xl shadow-md flex flex-col h-full">
+                                    <div className='bg-white  p-6 mb-4'>
+                                        <h3 className="md:text-2xl text-2xl font-semibold mb-2 border-b-2 border-blue-90 pb-4">{course.title}</h3>
 
                                         <div className="mb-2 flex flex-row justify-between border-b-2 border-blue-90 py-3">
                                             <div className='flex flex-col'>
@@ -60,7 +60,7 @@ const CoursesSection: React.FC = () => {
                                         </div>
                                         <ul className="list-none text-black mb-4 font-semibold italic mt-5">
                                             {course.description.map((desc, idx) => (
-                                                <li key={idx} className="flex items-center">
+                                                <li key={idx} className="flex items-center md:text-[1vw] text-[3vw]">
                                                     <FaCheckCircle className="mr-2 text-green-600" />
                                                     {desc}
                                                 </li>

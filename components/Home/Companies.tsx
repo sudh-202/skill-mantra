@@ -4,8 +4,15 @@ import { companiesimg } from '@/constants';
 
 const Companies: React.FC = () => {
     return (
-        <div className='w-full bg-white md:py-12 px-4 md:px-12 py-15 md:pb-[6vw] pb-[12vw]'>
-            <h2 className="text-[7vw] md:text-[3.4vw] font-bold  text-blue-90 text-center my-12 md:pl-12 ">Trusted by 200+ Companies Worldwide</h2>
+        <div className='w-full bg-white md:py-12 px-4 md:px-12 py-15 md:pb-[6vw] pb-[12vw] relative'>
+             <Image
+                src="/circle.webp"
+                alt="circle"
+                width={750}
+                height={100}
+                className="absolute -right-[30%]  hidden md:block  "
+            />
+            <h2 className="text-[7vw] md:text-[3.4vw]   text-blue-90 text-center my-12 md:pl-12 ">Trusted by 200+ Companies Worldwide</h2>
             <div className="flex flex-col md:flex-row items-center container mx-auto ">
 
                 {/* Left side with logos */}

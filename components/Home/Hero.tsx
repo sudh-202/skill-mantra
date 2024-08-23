@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
     return (
-        <section className=" flex justify-center md:flex-row flex-col items-center px-[5vw] md:py-[5vw] py-[10vw] gap-32 bg-blue-90">
+        <section className=" flex justify-center md:flex-row flex-col items-center px-[5vw] md:py-[5vw] py-[10vw] gap-32 bg-blue-90 overflow-hidden">
 
             <div className="">
 
@@ -31,14 +31,14 @@ const Hero = () => {
                             <span className="text-xl md:text-3xl lg:text-4xl text-white font-semibold">{subsection.title}</span>
                         </div>
                     ))}
-                    {/* <Image
+                    <Image
                         src="/icons/dots.webp"
                         alt="dots"
                         width={100}
                         height={100}
-                        className="absolute top-[780px] z-10 hidden lg:block"
+                        className="absolute top-[760px] z-10 hidden md:block"
                         loading='lazy'
-                    /> */}
+                    />
                 </div>
                 <div className="flex flex-wrap gap-4 md:gap-2 mt-6 flex-col lg:flex-row">
                     {data.stats.map((stat, index) => (
@@ -54,7 +54,7 @@ const Hero = () => {
                         alt="arrow"
                         width={40}
                         height={100}
-                        className="absolute top-[480px] z-10 hidden lg:block translate-x-[32rem] "
+                        className="absolute top-[480px] z-10 hidden lg:block translate-x-[39rem] "
                         loading='lazy'
                     />
 
@@ -63,6 +63,13 @@ const Hero = () => {
             </div>
 
             <div className="relative z-20  flex-col -mt-[20vw] md:mt-[0vw] md:pt-0  ">
+                <Image
+                src="/circle.webp"
+                alt="circle"
+                width={1050}
+                height={100}
+                className="absolute right-[-350px] top-[-330px]  hidden md:block z-[-60] "
+            />
                 <ContactForm />
 
             </div>

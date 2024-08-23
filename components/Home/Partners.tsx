@@ -9,12 +9,15 @@ import { Button } from "@/components/ui/button";
 const Partners = () => {
     return (
         <section className='bg-blue-90  py-[5vw]'>
+             
             <div className='flex flex-col justify-center items-center  px-8'>
                 <h2 className='text-white lg:text-7xl text-4xl mb-4'>Our Partners</h2>
                 <p className='text-white italic font-semibold mb-5 md:text-start text-center'>One Of The Best-Recognized Virtual Learning Institutes Helps Individuals Reach Their Goals.</p>
             </div>
             <div className=" overflow-hidden bg-[#fffffff0] translate-y-[5vw] md:translate-y-0  z-50">
+           
                 <div className="flex flex-nowrap animate-scroll hover:animate-pause gap-2">
+              
                     {[...partnersimg, ...partnersimg].map((partner, index) => (
                         <div key={index} className="flex justify-center items-center w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/6">
                             <Image
@@ -28,7 +31,8 @@ const Partners = () => {
                     ))}
                 </div>
             </div>
-            <main className='flex md:flex-row flex-col justify-center items-center gap-32 px-[10vw] md:px-[]'>
+            <main className='flex md:flex-row flex-col justify-center items-center gap-32 px-[10vw] md:px-[] '>
+           
                 <div className='flex flex-col  translate-y-[6rem] '>
                     <div className="flex pb-[2vw] ">
                         <div className="flex flex-col ">
@@ -68,12 +72,20 @@ const Partners = () => {
                 </div>
 
 
-                <div >
+                <div className='relative'>
+                
                     <ContactForm />
 
                 </div>
-
+                <Image
+                src="/circle2.webp"
+                alt="circle"
+                width={750}
+                height={100}
+                className="absolute -left-[38%] top[10%] hidden md:block  "
+            />
             </main>
+            
         </section>
     );
 };

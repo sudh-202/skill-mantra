@@ -77,12 +77,12 @@ const ContactForm = () => {
                 <h1 className="lg:text-4xl text-2xl font-bold mb-6 text-blue-90 text-center">Enroll for Free Courses</h1>
                 <Form {...form}>
 
-                    <form onSubmit={form.handleSubmit(handleSubmit)} className="w-full flex flex-col gap-4">
+                    <form onSubmit={form.handleSubmit(handleSubmit)} className="w-full flex flex-col gap-4 ">
                         <FormField
                             control={form.control}
                             name="name"
                             render={({ field }) => (
-                                <FormItem>
+                                <FormItem className=''>
                                     {/* <FormLabel>Name</FormLabel> */}
                                     <FormControl>
                                         <Input placeholder="Name" {...field} />

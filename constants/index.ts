@@ -109,7 +109,7 @@ export const data = {
 
 export const courses = [
   {
-    title: "Certified Corporate Accountant (CCA) Course",
+    title: "CCA Course",
     duration: "9 Months",
     eligibility: "12th Pass or B.Com/M.Com",
     modules: "7 modules",

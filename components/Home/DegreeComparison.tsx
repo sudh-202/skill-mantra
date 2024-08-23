@@ -1,12 +1,20 @@
 import React from 'react';
 import { DEGREE_DATA } from '@/constants';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
+import Image from 'next/image';
 
 const DegreeComparison: React.FC = () => {
   return (
-    <div className="p-4 bg-white py-24 flex items-center justify-center flex-col">
-                <h1 className="text-5xl font-bold text-center mb-4">{DEGREE_DATA.title}</h1>
-                <p className="text-center mb-8">{DEGREE_DATA.subtitle}</p>
+    <div className="p-4 bg-white py-24 flex items-center justify-center flex-col relative">
+      <Image
+        src="/circle2.webp"
+        alt="circle"
+        width={750}
+        height={100}
+        className="absolute -right-[30%] -translate-y-[25%] hidden md:block  "
+      />
+      <h1 className="text-5xl font-bold text-center mb-4">{DEGREE_DATA.title}</h1>
+      <p className="text-center mb-8">{DEGREE_DATA.subtitle}</p>
       <div className=" w-full max-w-5xl">
 
         <div className="overflow-x-auto ">
