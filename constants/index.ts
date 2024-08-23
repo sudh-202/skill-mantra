@@ -335,7 +335,8 @@ export const testimonials = [
   {
     name: "Deepakshi Goswami",
     // position: "Marketing Director at Innovate Inc.",
-    testimonial: "Skill mantra offers the best online webinars and skill development programs",
+    testimonial:
+      "Skill mantra offers the best online webinars and skill development programs",
     image: "/path/to/alice-johnson.jpg",
     rating: 5,
   },
@@ -355,7 +356,6 @@ export const testimonials = [
     image: "/path/to/emily-white.jpg",
     rating: 5,
   },
-  
 ];
 
 // video section
@@ -609,7 +609,6 @@ export const exploreWorlds = [
 
 // Courses
 
-
 export interface Course {
   slug: string;
   title: string;
@@ -622,55 +621,55 @@ export const Coursesdata: Course[] = [
     slug: "cca",
     title: "Certified Corporate Accountant",
     description: "Details about the CCA course.",
-    imagePath: "/courses/cca.webp", 
+    imagePath: "/courses/cca.webp",
   },
   {
     slug: "hr-payroll-program",
     title: "HR Payroll Program",
     description: "Details about the HR Payroll Program course.",
-    imagePath: "/courses/carousel/1.webp", 
+    imagePath: "/courses/carousel/1.webp",
   },
   {
     slug: "hr-generalist",
     title: "HR Generalist",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/carousel/2.webp", 
+    imagePath: "/courses/carousel/2.webp",
   },
   {
     slug: "gst-course",
     title: "GST Course",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/carousel/4.webp", 
+    imagePath: "/courses/carousel/4.webp",
   },
   {
     slug: "tds-course",
     title: "TDS Course",
     description: "Details about the HR Generalist course.",
-    imagePath: "5.webp", 
+    imagePath: "5.webp",
   },
   {
     slug: "accounting-for-accountants",
     title: "Accounting for accountants",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/carousel/6.webp", 
+    imagePath: "/courses/carousel/6.webp",
   },
   {
     slug: "financial-modelling",
     title: "Financial Modelling",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/carousel/7.webp", 
+    imagePath: "/courses/carousel/7.webp",
   },
   {
     slug: "tally-basic-to-advance",
     title: "Tally (Basic to Advance)",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/carousel/8.webp", 
+    imagePath: "/courses/carousel/8.webp",
   },
   {
     slug: "office-automation",
     title: "Office Automation",
     description: "Details about the HR Generalist course.",
-    imagePath: "/courses/carousel/9.webp", 
+    imagePath: "/courses/carousel/9.webp",
   },
 ];
 
@@ -679,57 +678,57 @@ export const Coursesdata: Course[] = [
 export const COURSES = [
   {
     id: 1,
-    title: 'HR Payroll Program',
-    imagePath: '/courses/carousel/1.webp', 
-    link: 'hr-payroll-program', 
+    title: "HR Payroll Program",
+    imagePath: "/courses/carousel/1.webp",
+    link: "hr-payroll-program",
   },
   {
     id: 2,
-    title: 'HR Generalist',
-    imagePath: '/courses/carousel/2.webp',
-    link: 'hr-generalist',
+    title: "HR Generalist",
+    imagePath: "/courses/carousel/2.webp",
+    link: "hr-generalist",
   },
   {
     id: 3,
-    title: 'GST Course',
-    imagePath: '/courses/carousel/4.webp',
-    link: 'gst-course',
+    title: "GST Course",
+    imagePath: "/courses/carousel/4.webp",
+    link: "gst-course",
   },
   {
     id: 4,
-    title: 'TDS Course',
-    imagePath: '/courses/carousel/5.webp',
-    link: 'tds-course',
+    title: "TDS Course",
+    imagePath: "/courses/carousel/5.webp",
+    link: "tds-course",
   },
   {
     id: 5,
-    title: 'Accounting for accountants',
-    imagePath: '/courses/carousel/6.webp',
-    link: 'accounting-for-accountants',
+    title: "Accounting for accountants",
+    imagePath: "/courses/carousel/6.webp",
+    link: "accounting-for-accountants",
   },
   {
     id: 6,
-    title: 'Financial Modelling',
-    imagePath: '/courses/carousel/7.webp',
-    link: 'financial-modelling',
+    title: "Financial Modelling",
+    imagePath: "/courses/carousel/7.webp",
+    link: "financial-modelling",
   },
   {
     id: 7,
-    title: 'Tally (Basic to Advance)',
-    imagePath: '/courses/carousel/8.webp',
-    link: 'tally-basic-to-advance',
+    title: "Tally (Basic to Advance)",
+    imagePath: "/courses/carousel/8.webp",
+    link: "tally-basic-to-advance",
   },
   {
     id: 8,
-    title: 'Office Automation',
-    imagePath: '/courses/carousel/9.webp',
-    link: 'office-automation',
+    title: "Office Automation",
+    imagePath: "/courses/carousel/9.webp",
+    link: "office-automation",
   },
   {
     id: 9,
-    title: 'Certified Corporate Accountant',
-    imagePath: '/courses/hero.webp', 
-    link: 'cca', 
+    title: "Certified Corporate Accountant",
+    imagePath: "/courses/hero.webp",
+    link: "cca",
   },
 ];
 
@@ -737,10 +736,10 @@ export const COURSES = [
 
 // Static offer details
 export const STATIC_OFFER_DETAILS = {
-  offerText: 'Limited Time Offer',
-  scholarshipText: 'Get Scholarship Up To 50%',
-  downloadText: 'Download Prospectus',
-  downloadLink: '#',
+  offerText: "Limited Time Offer",
+  scholarshipText: "Get Scholarship Up To 50%",
+  downloadText: "Download Prospectus",
+  downloadLink: "#",
   countdown: {
     days: 0,
     hours: 0,
@@ -750,29 +749,28 @@ export const STATIC_OFFER_DETAILS = {
 
 // Dynamic titles
 export const COURSE_TITLES = {
-  'hr-payroll-program': 'HR Payroll Program',
-  'hr-generalist': 'HR Generalist',
-  'gst-course': 'GST Course',
-  'tds-course': 'TDS Course',
-  'accounting-for-accountants': 'Accounting for Accountants',
-  'financial-modelling': 'Financial Modelling',
-  'tally-basic-to-advance': 'Tally (Basic to Advance)',
-  'office-automation': 'Office Automation',
-  'cca': 'Certified Corporate Accountant',
+  "hr-payroll-program": "HR Payroll Program",
+  "hr-generalist": "HR Generalist",
+  "gst-course": "GST Course",
+  "tds-course": "TDS Course",
+  "accounting-for-accountants": "Accounting for Accountants",
+  "financial-modelling": "Financial Modelling",
+  "tally-basic-to-advance": "Tally (Basic to Advance)",
+  "office-automation": "Office Automation",
+  cca: "Certified Corporate Accountant",
 };
 // Dynamic images
 export const COURSE_IMAGES = {
-  'hr-payroll-program': '/courses/carousel/1.webp',
-  'hr-generalist': '/courses/carousel/2.webp',
-  'gst-course': '/courses/carousel/4.webp',
-  'tds-course': '/courses/carousel/5.webp',
-  'accounting-for-accountants': '/courses/carousel/6.webp',
-  'financial-modelling': '/courses/carousel/7.webp',
-  'tally-basic-to-advance': '/courses/carousel/8.webp',
-  'office-automation': '/courses/carousel/9.webp',
-  'cca': '/courses/hero.webp',
+  "hr-payroll-program": "/courses/carousel/1.webp",
+  "hr-generalist": "/courses/carousel/2.webp",
+  "gst-course": "/courses/carousel/4.webp",
+  "tds-course": "/courses/carousel/5.webp",
+  "accounting-for-accountants": "/courses/carousel/6.webp",
+  "financial-modelling": "/courses/carousel/7.webp",
+  "tally-basic-to-advance": "/courses/carousel/8.webp",
+  "office-automation": "/courses/carousel/9.webp",
+  cca: "/courses/hero.webp",
 };
-
 
 // tabData.ts (or wherever you keep your tab data)
 
@@ -788,36 +786,41 @@ type TabData = {
 };
 
 export const tabData: TabData = {
-  "cca": [
+  cca: [
     {
       id: "job-market",
       title: "Vast Job Market",
       icon: "/courses/market.webp",
-      content: "India has more than 10L job openings in accounting and finance every year.",
+      content:
+        "India has more than 10L job openings in accounting and finance every year.",
     },
     {
       id: "high-demand",
       title: "High Demand in 2024",
       icon: "/courses/diverse.webp",
-      content: "96% of Indian companies are planning to hire Finance or Accounting staff in 2024.",
+      content:
+        "96% of Indian companies are planning to hire Finance or Accounting staff in 2024.",
     },
     {
       id: "career-paths",
       title: "Diverse Career Paths",
       icon: "/courses/demand.webp",
-      content: "Accounting career provides various job opportunities such as Accountants, Senior Accountants,Chief Revenue Officers, Financial Analysts, etc.",
+      content:
+        "Accounting career provides various job opportunities such as Accountants, Senior Accountants,Chief Revenue Officers, Financial Analysts, etc.",
     },
     {
       id: "salaries",
       title: "Competitive Salaries",
       icon: "/courses/money.webp",
-      content: "The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA and for senior-level profiles INR 7 - 12 LPA.",
+      content:
+        "The Accounting salary offered at entry-level positions ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA and for senior-level profiles INR 7 - 12 LPA.",
     },
     {
       id: "growth-opportunities",
       title: "Future Growth Opportunities",
       icon: "/courses/tax.webp",
-      content: "Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS,CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.",
+      content:
+        "Accounting graduates can either go for jobs or choose to pursue further options such as CA, CS,CPA, CFA, MBA in Finance, CMA, Diploma in Taxation, etc.",
     },
   ],
   "hr-payroll-program": [
@@ -825,31 +828,36 @@ export const tabData: TabData = {
       id: "job-market",
       title: "Vast Job Market",
       icon: "/courses/market.webp",
-      content: "India has more than 8L job openings in HR and Payroll every year.",
+      content:
+        "India has more than 8L job openings in HR and Payroll every year.",
     },
     {
       id: "high-demand",
       title: "High Demand in 2024",
       icon: "/courses/diverse.webp",
-      content: "94% of Indian companies are planning to hire HR Payroll staff in 2024.",
+      content:
+        "94% of Indian companies are planning to hire HR Payroll staff in 2024.",
     },
     {
       id: "career-paths",
       title: "Diverse Career Paths",
       icon: "/courses/demand.webp",
-      content: "HR Payroll offers various job opportunities such as Payroll Executives, HR Managers, Payroll Analysts, Compensation & Benefits Managers, etc.",
+      content:
+        "HR Payroll offers various job opportunities such as Payroll Executives, HR Managers, Payroll Analysts, Compensation & Benefits Managers, etc.",
     },
     {
       id: "salaries",
       title: "Competitive Salaries",
       icon: "/courses/money.webp",
-      content: "The salary offered at entry-level positions in HR Payroll ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 10 LPA.",
+      content:
+        "The salary offered at entry-level positions in HR Payroll ranges between INR 2 - 4 LPA, for mid-level profiles INR 4 - 7 LPA, and for senior-level profiles INR 7 - 10 LPA.",
     },
     {
       id: "growth-opportunities",
       title: "Future Growth Opportunities",
       icon: "/courses/tax.webp",
-      content: "HR Payroll professionals can either continue to advance in HR roles or choose to pursue further options such as certifications in Payroll Management, HR Analytics, MBA in HR, etc.",
+      content:
+        "HR Payroll professionals can either continue to advance in HR roles or choose to pursue further options such as certifications in Payroll Management, HR Analytics, MBA in HR, etc.",
     },
   ],
   "gst-course": [
@@ -857,31 +865,36 @@ export const tabData: TabData = {
       id: "job-market",
       title: "Vast Job Market",
       icon: "/courses/market.webp",
-      content: "Over 8 lakh GST-related job openings are available in India each year.",
+      content:
+        "Over 8 lakh GST-related job openings are available in India each year.",
     },
     {
       id: "high-demand",
       title: "High Demand in 2024",
       icon: "/courses/diverse.webp",
-      content: "90% of Indian companies plan to hire GST professionals in 2024.",
+      content:
+        "90% of Indian companies plan to hire GST professionals in 2024.",
     },
     {
       id: "career-paths",
       title: "Diverse Career Paths",
       icon: "/courses/demand.webp",
-      content: "GST careers offer roles like GST Practitioner, Compliance Manager, and Auditor.",
+      content:
+        "GST careers offer roles like GST Practitioner, Compliance Manager, and Auditor.",
     },
     {
       id: "salaries",
       title: "Competitive Salaries",
       icon: "/courses/money.webp",
-      content: "GST professionals can earn between INR 2 - 15 LPA, depending on experience.",
+      content:
+        "GST professionals can earn between INR 2 - 15 LPA, depending on experience.",
     },
     {
       id: "growth-opportunities",
       title: "Future Growth Opportunities",
       icon: "/courses/tax.webp",
-      content: "GST professionals can advance with certifications like CA, CS, or specialized courses in taxation.",
+      content:
+        "GST professionals can advance with certifications like CA, CS, or specialized courses in taxation.",
     },
   ],
   "hr-generalist": [
@@ -901,19 +914,22 @@ export const tabData: TabData = {
       id: "career-paths",
       title: "Diverse Career Paths",
       icon: "/courses/demand.webp",
-      content: "Roles include HR Manager, Recruitment Specialist, and Employee Relations Manager.",
+      content:
+        "Roles include HR Manager, Recruitment Specialist, and Employee Relations Manager.",
     },
     {
       id: "salaries",
       title: "Competitive Salaries",
       icon: "/courses/money.webp",
-      content: "Salaries range from INR 3 - 5 LPA (entry), INR 5 - 8 LPA (mid), to INR 8 - 12 LPA (senior).",
+      content:
+        "Salaries range from INR 3 - 5 LPA (entry), INR 5 - 8 LPA (mid), to INR 8 - 12 LPA (senior).",
     },
     {
       id: "growth-opportunities",
       title: "Future Growth Opportunities",
       icon: "/courses/tax.webp",
-      content: "Opportunities to advance to HR Director or pursue further qualifications.",
+      content:
+        "Opportunities to advance to HR Director or pursue further qualifications.",
     },
   ],
   "tds-course": [
@@ -933,155 +949,175 @@ export const tabData: TabData = {
       id: "career-paths",
       title: "Diverse Career Paths",
       icon: "/courses/demand.webp",
-      content: "Includes TDS Executives, Tax Analysts, and Compliance Managers.",
+      content:
+        "Includes TDS Executives, Tax Analysts, and Compliance Managers.",
     },
     {
       id: "salaries",
       title: "Competitive Salaries",
       icon: "/courses/money.webp",
-      content: "INR 2 - 4 LPA (entry), INR 4 - 7 LPA (mid), INR 7 - 12 LPA (senior).",
+      content:
+        "INR 2 - 4 LPA (entry), INR 4 - 7 LPA (mid), INR 7 - 12 LPA (senior).",
     },
     {
       id: "growth-opportunities",
       title: "Future Growth Opportunities",
       icon: "/courses/tax.webp",
-      content: "Further study options like CA or CPA can enhance career prospects.",
+      content:
+        "Further study options like CA or CPA can enhance career prospects.",
     },
   ],
-    "accounting-for-accountants": [
-      {
-        id: "job-market",
-        title: "Vast Job Market",
-        icon: "/courses/market.webp",
-        content: "India has over 10 lakh accounting and finance job openings annually.",
-      },
-      {
-        id: "high-demand",
-        title: "High Demand in 2024",
-        icon: "/courses/diverse.webp",
-        content: "96% of Indian companies plan to hire accounting or finance staff in 2024.",
-      },
-      {
-        id: "career-paths",
-        title: "Diverse Career Paths",
-        icon: "/courses/demand.webp",
-        content: "Opportunities include roles like Accountant, Financial Analyst, and Chief Revenue Officer.",
-      },
-      {
-        id: "salaries",
-        title: "Competitive Salaries",
-        icon: "/courses/money.webp",
-        content: "Entry-level: INR 2-4 LPA, Mid-level: INR 4-7 LPA, Senior-level: INR 7-12 LPA.",
-      },
-      {
-        id: "growth-opportunities",
-        title: "Future Growth Opportunities",
-        icon: "/courses/tax.webp",
-        content: "Pursue CA, CS, CPA, CFA, MBA in Finance, or CMA for career advancement.",
-      },
-    ],
-    "financial-modelling": [
-      {
-        id: "job-market",
-        title: "Vast Job Market",
-        icon: "/courses/market.webp",
-        content: "India's financial sector presents over 2 lakh job openings annually, with a significant demand for financial modelling expertise.",
-      },
-      {
-        id: "high-demand",
-        title: "High Demand in 2024",
-        icon: "/courses/diverse.webp",
-        content: "85% of Indian companies in finance and investment sectors plan to hire professionals skilled in financial modelling in 2024.",
-      },
-      {
-        id: "career-paths",
-        title: "Diverse Career Paths",
-        icon: "/courses/demand.webp",
-        content: "Financial modelling skills can lead to roles such as Financial Analyst, Investment Banker, and Portfolio Manager, offering diverse career options.",
-      },
-      {
-        id: "salaries",
-        title: "Competitive Salaries",
-        icon: "/courses/money.webp",
-        content: "Financial modelers earn competitive salaries: Entry-level: INR 4-6 LPA, Mid-level: INR 7-12 LPA, Senior-level: INR 12-25 LPA.",
-      },
-      {
-        id: "growth-opportunities",
-        title: "Future Growth Opportunities",
-        icon: "/courses/tax.webp",
-        content: "Advance your career by pursuing certifications like CFA, FRM, or an MBA in Finance, paving the way to senior positions in the financial industry.",
-      },
-    ],
-    "tally-basic-to-advance": [
-      {
-        id: "job-market",
-        title: "Vast Job Market",
-        icon: "/courses/market.webp",
-        content: "India has over 5 lakh job openings annually for Tally professionals in accounting and finance.",
-      },
-      {
-        id: "high-demand",
-        title: "High Demand in 2024",
-        icon: "/courses/diverse.webp",
-        content: "85% of Indian companies plan to hire Tally-skilled accounting or finance staff in 2024.",
-      },
-      {
-        id: "career-paths",
-        title: "Diverse Career Paths",
-        icon: "/courses/demand.webp",
-        content: "Tally expertise leads to roles like Accountant, Bookkeeper, and Accounts Manager.",
-      },
-      {
-        id: "salaries",
-        title: "Competitive Salaries",
-        icon: "/courses/money.webp",
-        content: "Tally professionals earn between INR 2-3 LPA at entry-level, INR 3-5 LPA at mid-level, and INR 5-8 LPA at senior-level positions.",
-      },
-      {
-        id: "growth-opportunities",
-        title: "Future Growth Opportunities",
-        icon: "/courses/tax.webp",
-        content: "Tally proficiency can pave the way for further qualifications like CA, CS, or certifications in Financial Accounting and Taxation for career advancement.",
-      },
-    ],
-    "office-automation": [
-      {
-        id: "job-market",
-        title: "Vast Job Market",
-        icon: "/courses/market.webp",
-        content: "India has over 4 lakh job openings annually for Office Automation professionals across industries.",
-      },
-      {
-        id: "high-demand",
-        title: "High Demand in 2024",
-        icon: "/courses/diverse.webp",
-        content: "78% of Indian companies plan to hire professionals with Office Automation skills in 2024.",
-      },
-      {
-        id: "career-paths",
-        title: "Diverse Career Paths",
-        icon: "/courses/demand.webp",
-        content: "Office Automation expertise opens up roles like Office Administrator, Data Entry Operator, and Executive Assistant.",
-      },
-      {
-        id: "salaries",
-        title: "Competitive Salaries",
-        icon: "/courses/money.webp",
-        content: "Office Automation professionals earn between INR 1.5-2.5 LPA at entry-level, INR 2.5-4 LPA at mid-level, and INR 4-6 LPA at senior-level positions.",
-      },
-      {
-        id: "growth-opportunities",
-        title: "Future Growth Opportunities",
-        icon: "/courses/tax.webp",
-        content: "Office Automation skills can lead to further qualifications in Data Management, IT, or certifications in Advanced MS Office and Digital Operations for career advancement.",
-      },
-    ],
+  "accounting-for-accountants": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content:
+        "India has over 10 lakh accounting and finance job openings annually.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content:
+        "96% of Indian companies plan to hire accounting or finance staff in 2024.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content:
+        "Opportunities include roles like Accountant, Financial Analyst, and Chief Revenue Officer.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content:
+        "Entry-level: INR 2-4 LPA, Mid-level: INR 4-7 LPA, Senior-level: INR 7-12 LPA.",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content:
+        "Pursue CA, CS, CPA, CFA, MBA in Finance, or CMA for career advancement.",
+    },
+  ],
+  "financial-modelling": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content:
+        "India's financial sector presents over 2 lakh job openings annually, with a significant demand for financial modelling expertise.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content:
+        "85% of Indian companies in finance and investment sectors plan to hire professionals skilled in financial modelling in 2024.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content:
+        "Financial modelling skills can lead to roles such as Financial Analyst, Investment Banker, and Portfolio Manager, offering diverse career options.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content:
+        "Financial modelers earn competitive salaries: Entry-level: INR 4-6 LPA, Mid-level: INR 7-12 LPA, Senior-level: INR 12-25 LPA.",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content:
+        "Advance your career by pursuing certifications like CFA, FRM, or an MBA in Finance, paving the way to senior positions in the financial industry.",
+    },
+  ],
+  "tally-basic-to-advance": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content:
+        "India has over 5 lakh job openings annually for Tally professionals in accounting and finance.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content:
+        "85% of Indian companies plan to hire Tally-skilled accounting or finance staff in 2024.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content:
+        "Tally expertise leads to roles like Accountant, Bookkeeper, and Accounts Manager.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content:
+        "Tally professionals earn between INR 2-3 LPA at entry-level, INR 3-5 LPA at mid-level, and INR 5-8 LPA at senior-level positions.",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content:
+        "Tally proficiency can pave the way for further qualifications like CA, CS, or certifications in Financial Accounting and Taxation for career advancement.",
+    },
+  ],
+  "office-automation": [
+    {
+      id: "job-market",
+      title: "Vast Job Market",
+      icon: "/courses/market.webp",
+      content:
+        "India has over 4 lakh job openings annually for Office Automation professionals across industries.",
+    },
+    {
+      id: "high-demand",
+      title: "High Demand in 2024",
+      icon: "/courses/diverse.webp",
+      content:
+        "78% of Indian companies plan to hire professionals with Office Automation skills in 2024.",
+    },
+    {
+      id: "career-paths",
+      title: "Diverse Career Paths",
+      icon: "/courses/demand.webp",
+      content:
+        "Office Automation expertise opens up roles like Office Administrator, Data Entry Operator, and Executive Assistant.",
+    },
+    {
+      id: "salaries",
+      title: "Competitive Salaries",
+      icon: "/courses/money.webp",
+      content:
+        "Office Automation professionals earn between INR 1.5-2.5 LPA at entry-level, INR 2.5-4 LPA at mid-level, and INR 4-6 LPA at senior-level positions.",
+    },
+    {
+      id: "growth-opportunities",
+      title: "Future Growth Opportunities",
+      icon: "/courses/tax.webp",
+      content:
+        "Office Automation skills can lead to further qualifications in Data Management, IT, or certifications in Advanced MS Office and Digital Operations for career advancement.",
+    },
+  ],
 };
 
-
 // why this course
-
-
 
 // Define COURSE_DETAILS with the CourseDetail type
 import {
@@ -1118,7 +1154,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Tailored for all levels", icon: FiAward },
     ],
   },
-  'hr-payroll-program': {
+  "hr-payroll-program": {
     WhyCourseHeading: "Why Certified HR Payroll & Compliance?",
     WhyCourse: [
       { title: "Enterprise Systems", icon: FiTool },
@@ -1131,7 +1167,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Career Achievement", icon: FiAward },
     ],
   },
-  'hr-generalist': {
+  "hr-generalist": {
     WhyCourseHeading: "Why Certified HR Generalist?",
     WhyCourse: [
       { title: "Comprehensive HR Knowledge", icon: FiTool },
@@ -1144,7 +1180,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "HR Best Practices", icon: FiAward },
     ],
   },
-  'gst-course': {
+  "gst-course": {
     WhyCourseHeading: "Why Certified GST Professional?",
     WhyCourse: [
       { title: "Mastery of GST Essentials", icon: FiTool },
@@ -1157,7 +1193,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Industry Interaction", icon: FiAward },
     ],
   },
-  'tds-course': {
+  "tds-course": {
     WhyCourseHeading: "Why Certified TDS Professional?",
     WhyCourse: [
       { title: "Mastery of TDS Essentials", icon: FiTool },
@@ -1170,7 +1206,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Industry Interaction", icon: FiAward },
     ],
   },
-  'accounting-for-accountants': {
+  "accounting-for-accountants": {
     WhyCourseHeading: "Why Accounting for Accountants?",
     WhyCourse: [
       { title: "Advanced Accounting Skills", icon: FiTool },
@@ -1183,7 +1219,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Career Advancement", icon: FiAward },
     ],
   },
-  'financial-modelling': {
+  "financial-modelling": {
     WhyCourseHeading: "Why Certified Financial Modelling?",
     WhyCourse: [
       { title: "Versatility in Skill", icon: FiTool },
@@ -1196,7 +1232,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Strategic Insights", icon: FiAward },
     ],
   },
-  'tally-basic-to-advance': {
+  "tally-basic-to-advance": {
     WhyCourseHeading: "Why Tally (Basic to Advance)?",
     WhyCourse: [
       { title: "Comprehensive Tally Training", icon: FiTool },
@@ -1209,7 +1245,7 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
       { title: "Certification Value", icon: FiAward },
     ],
   },
-  'office-automation': {
+  "office-automation": {
     WhyCourseHeading: "Why Enroll In Our Office Automation Course?",
     WhyCourse: [
       { title: "Startup-Centric Focus", icon: FiTool },
@@ -1225,39 +1261,49 @@ export const COURSE_DETAILS: Record<string, CourseDetail> = {
 };
 
 //features
-import { FaBook, FaVideo, FaFileAlt, FaUserGraduate, FaBriefcase } from "react-icons/fa";
+import {
+  FaBook,
+  FaVideo,
+  FaFileAlt,
+  FaUserGraduate,
+  FaBriefcase,
+} from "react-icons/fa";
 import { FaSchool } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { SiFreelancer } from "react-icons/si";
 
-
 const courseOfferingsMap = {
-  "cca": {
+  cca: {
     heading: "Who Can Join CCA",
     offerings: [
       {
         title: "Accounting Enthusiasts",
-        description: "For those passionate about accounting and looking to expand their knowledge.",
+        description:
+          "For those passionate about accounting and looking to expand their knowledge.",
         icon: FaBook,
       },
       {
         title: "Career Changers",
-        description: "Perfect for professionals considering a transition into accounting.",
+        description:
+          "Perfect for professionals considering a transition into accounting.",
         icon: FaUserGraduate,
       },
       {
         title: "Recent Graduates",
-        description: "Fresh graduates looking to start their career in accounting.",
+        description:
+          "Fresh graduates looking to start their career in accounting.",
         icon: FaSchool,
       },
       {
         title: "Diverse Backgrounds",
-        description: "For individuals from various fields seeking to learn accounting.",
+        description:
+          "For individuals from various fields seeking to learn accounting.",
         icon: BsFillPeopleFill,
       },
       {
         title: "Freelance Experienced",
-        description: "Ideal for freelancers who want to refine their accounting skills.",
+        description:
+          "Ideal for freelancers who want to refine their accounting skills.",
         icon: SiFreelancer,
       },
     ],
@@ -1267,27 +1313,32 @@ const courseOfferingsMap = {
     offerings: [
       {
         title: "Finance Professionals",
-        description: "For finance professionals looking to enhance their modelling skills.",
+        description:
+          "For finance professionals looking to enhance their modelling skills.",
         icon: FaBook,
       },
       {
         title: "Investment Analysts",
-        description: "Ideal for investment analysts seeking to improve their financial modelling techniques.",
+        description:
+          "Ideal for investment analysts seeking to improve their financial modelling techniques.",
         icon: FaUserGraduate,
       },
       {
         title: "Business Consultants",
-        description: "Perfect for consultants who need to incorporate financial models into their strategies.",
+        description:
+          "Perfect for consultants who need to incorporate financial models into their strategies.",
         icon: FaSchool,
       },
       {
         title: "Corporate Managers",
-        description: "For corporate managers who need to understand and use financial models.",
+        description:
+          "For corporate managers who need to understand and use financial models.",
         icon: BsFillPeopleFill,
       },
       {
         title: "Aspiring Modellers",
-        description: "For those aspiring to build a career in financial modelling.",
+        description:
+          "For those aspiring to build a career in financial modelling.",
         icon: SiFreelancer,
       },
     ],
@@ -1297,7 +1348,8 @@ const courseOfferingsMap = {
     offerings: [
       {
         title: "Tax Consultants",
-        description: "For tax consultants specializing in GST compliance and advisory.",
+        description:
+          "For tax consultants specializing in GST compliance and advisory.",
         icon: FaBook,
       },
       {
@@ -1307,12 +1359,14 @@ const courseOfferingsMap = {
       },
       {
         title: "Business Owners",
-        description: "Perfect for business owners responsible for GST filing and compliance.",
+        description:
+          "Perfect for business owners responsible for GST filing and compliance.",
         icon: FaSchool,
       },
       {
         title: "Financial Analysts",
-        description: "For financial analysts needing to understand GST implications.",
+        description:
+          "For financial analysts needing to understand GST implications.",
         icon: BsFillPeopleFill,
       },
       {
@@ -1327,12 +1381,14 @@ const courseOfferingsMap = {
     offerings: [
       {
         title: "HR Professionals",
-        description: "For HR professionals looking to broaden their generalist skills.",
+        description:
+          "For HR professionals looking to broaden their generalist skills.",
         icon: FaBook,
       },
       {
         title: "Recruitment Specialists",
-        description: "Ideal for recruitment specialists who need a broader HR perspective.",
+        description:
+          "Ideal for recruitment specialists who need a broader HR perspective.",
         icon: FaUserGraduate,
       },
       {
@@ -1342,7 +1398,8 @@ const courseOfferingsMap = {
       },
       {
         title: "Training Coordinators",
-        description: "For training coordinators seeking to enhance their HR knowledge.",
+        description:
+          "For training coordinators seeking to enhance their HR knowledge.",
         icon: BsFillPeopleFill,
       },
       {
@@ -1357,32 +1414,38 @@ const courseOfferingsMap = {
     offerings: [
       {
         title: "Fresher",
-        description: "Kickstart your career with HR payroll skills and gain an advantage in the job market.",
+        description:
+          "Kickstart your career with HR payroll skills and gain an advantage in the job market.",
         icon: FaBook,
       },
       {
         title: "Field Changer",
-        description: "Make a successful transition into HR payroll from a different field and boost your career prospects.",
+        description:
+          "Make a successful transition into HR payroll from a different field and boost your career prospects.",
         icon: FaUserGraduate,
       },
       {
         title: "Accountant",
-        description: "Enhance your accounting expertise with in-depth payroll knowledge for greater career opportunities.",
+        description:
+          "Enhance your accounting expertise with in-depth payroll knowledge for greater career opportunities.",
         icon: FaSchool,
       },
       {
         title: "Entrepreneurs",
-        description: "Manage payroll effectively for your business and ensure compliance with regulations.",
+        description:
+          "Manage payroll effectively for your business and ensure compliance with regulations.",
         icon: BsFillPeopleFill,
       },
       {
         title: "Anyone in Finance",
-        description: "Broaden your skillset by adding payroll proficiency to your finance capabilities.",
+        description:
+          "Broaden your skillset by adding payroll proficiency to your finance capabilities.",
         icon: SiFreelancer,
       },
       {
         title: "Employees",
-        description: "Upskill to take on HR payroll responsibilities within your current role and advance in your career.",
+        description:
+          "Upskill to take on HR payroll responsibilities within your current role and advance in your career.",
         icon: FaBriefcase,
       },
     ],
@@ -1397,7 +1460,8 @@ const courseOfferingsMap = {
       },
       {
         title: "Payroll Managers",
-        description: "Ideal for payroll managers responsible for TDS calculations and compliance.",
+        description:
+          "Ideal for payroll managers responsible for TDS calculations and compliance.",
         icon: FaUserGraduate,
       },
       {
@@ -1415,39 +1479,45 @@ const courseOfferingsMap = {
         description: "For compliance managers focusing on TDS regulations.",
         icon: SiFreelancer,
       },
-    ]
+    ],
   },
   "accounting-for-accountants": {
     heading: "Who Can Join Accounting for Accountants",
     offerings: [
       {
         title: "Aspiring Accountants",
-        description: "Individuals seeking to build a foundation in accounting, taxation, and financial management.",
+        description:
+          "Individuals seeking to build a foundation in accounting, taxation, and financial management.",
         icon: FaBook,
       },
       {
         title: "Finance Professionals",
-        description: "Accountants and finance experts looking to enhance their skills in the financial field.",
+        description:
+          "Accountants and finance experts looking to enhance their skills in the financial field.",
         icon: FaUserGraduate,
       },
       {
         title: "Business Owners",
-        description: "Entrepreneurs seeking to better manage and understand their company’s financial operations.",
+        description:
+          "Entrepreneurs seeking to better manage and understand their company’s financial operations.",
         icon: FaSchool,
       },
       {
         title: "Students and Graduates",
-        description: "Accounting students aiming to gain practical skills for real-world applications.",
+        description:
+          "Accounting students aiming to gain practical skills for real-world applications.",
         icon: BsFillPeopleFill,
       },
       {
         title: "Administrative Professionals",
-        description: "Office administrators interested in financial management related to bookkeeping and reporting.",
+        description:
+          "Office administrators interested in financial management related to bookkeeping and reporting.",
         icon: SiFreelancer,
       },
       {
         title: "Career Changers",
-        description: "Individuals switching careers into accounting to learn essential accounting and financial management skills.",
+        description:
+          "Individuals switching careers into accounting to learn essential accounting and financial management skills.",
         icon: FaBriefcase,
       },
     ],
@@ -1457,32 +1527,38 @@ const courseOfferingsMap = {
     offerings: [
       {
         title: "Aspiring Accountants",
-        description: "Individuals aiming to build a career in accounting by mastering Tally.",
+        description:
+          "Individuals aiming to build a career in accounting by mastering Tally.",
         icon: FaBook,
       },
       {
         title: "Finance Professionals",
-        description: "Professionals looking to enhance their financial management skills with Tally expertise.",
+        description:
+          "Professionals looking to enhance their financial management skills with Tally expertise.",
         icon: FaUserGraduate,
       },
       {
         title: "Business Owners",
-        description: "Entrepreneurs and small business owners who want to manage their accounts effectively.",
+        description:
+          "Entrepreneurs and small business owners who want to manage their accounts effectively.",
         icon: FaSchool,
       },
       {
         title: "Students and Graduates",
-        description: "Students pursuing commerce or finance degrees who want to strengthen their practical knowledge.",
+        description:
+          "Students pursuing commerce or finance degrees who want to strengthen their practical knowledge.",
         icon: BsFillPeopleFill,
       },
       {
         title: "Administrative Professionals",
-        description: "Office staff who need to manage accounts and financial records.",
+        description:
+          "Office staff who need to manage accounts and financial records.",
         icon: SiFreelancer,
       },
       {
         title: "Career Changers",
-        description: "Individuals considering a shift to accounting or finance, seeking to learn Tally from scratch.",
+        description:
+          "Individuals considering a shift to accounting or finance, seeking to learn Tally from scratch.",
         icon: FaBriefcase,
       },
     ],
@@ -1492,32 +1568,38 @@ const courseOfferingsMap = {
     offerings: [
       {
         title: "Seeking Specialization",
-        description: "Students and professionals aiming to specialize in office automation tools and techniques.",
+        description:
+          "Students and professionals aiming to specialize in office automation tools and techniques.",
         icon: FaBook,
       },
       {
         title: "Business Enthusiasts",
-        description: "Entrepreneurs and business owners looking to streamline operations with automation.",
+        description:
+          "Entrepreneurs and business owners looking to streamline operations with automation.",
         icon: FaUserGraduate,
       },
       {
         title: "Administrative Personnel",
-        description: "Office staff needing to upgrade their skills to manage automated systems effectively.",
+        description:
+          "Office staff needing to upgrade their skills to manage automated systems effectively.",
         icon: FaSchool,
       },
       {
         title: "Tech Enthusiasts",
-        description: "Individuals with a keen interest in learning new technologies to improve workplace efficiency.",
+        description:
+          "Individuals with a keen interest in learning new technologies to improve workplace efficiency.",
         icon: BsFillPeopleFill,
       },
       {
         title: "Career Transition Seekers",
-        description: "Professionals aiming to switch careers or add automation skills to their existing expertise.",
+        description:
+          "Professionals aiming to switch careers or add automation skills to their existing expertise.",
         icon: SiFreelancer,
       },
       {
         title: "Anyone Eager to Learn",
-        description: "Open to anyone passionate about learning office automation, regardless of background or experience.",
+        description:
+          "Open to anyone passionate about learning office automation, regardless of background or experience.",
         icon: FaGraduationCap,
       },
     ],
@@ -1525,10 +1607,6 @@ const courseOfferingsMap = {
 };
 
 export default courseOfferingsMap;
-
-
-
-
 
 // course carousel
 
@@ -1643,9 +1721,6 @@ export const toolsImage = [
   },
 ];
 
-
-
-
 // certificate
 export const internshipData = {
   heading: "Get Industry Recognised Certification",
@@ -1666,7 +1741,7 @@ export const tabData2 = [
     title: "Our Vision",
     icon: "/courses/diverse.webp",
     content:
-      "At Skill Mantra, our mission is to provide top-notch, industry-relevant education that bridges the gap between academic knowledge and real-world application. We are committed to:",
+      "At Skill Mantra, our mission is to provide top-notch, industry-relevant education that bridges the gap between academic knowledge and real-world application. We are committed to empowering learners with the practical skills and insights needed to excel in their careers, fostering innovation through hands-on experiences, and ensuring that our education is accessible and relevant to individuals from all walks of life.",
   },
 ];
 // constants/index.ts
@@ -1693,14 +1768,19 @@ export const featuresNew = [
   },
 ];
 
+// couselling
 
-// couselling 
-
-
-import { FaSearch, FaMapSigns, FaGraduationCap, FaBullseye, FaNetworkWired, FaChartBar, FaSyncAlt } from 'react-icons/fa';
+import {
+  FaSearch,
+  FaMapSigns,
+  FaGraduationCap,
+  FaBullseye,
+  FaNetworkWired,
+  FaChartBar,
+  FaSyncAlt,
+} from "react-icons/fa";
 
 export const cardsData = [
-  
   {
     title: "Self Assessment",
     description: "Understand your strengths and areas for growth.",
@@ -1713,7 +1793,8 @@ export const cardsData = [
   },
   {
     title: "Education & Training",
-    description: "Identify necessary education and training to advance your career.",
+    description:
+      "Identify necessary education and training to advance your career.",
     icon: FaGraduationCap,
   },
   {
@@ -1750,40 +1831,30 @@ export const cardsData = [
 
 export const footerData = [
   {
-    title: 'Company',
+    title: "Company",
     links: [
-      { text: 'Home', href: '/home' },
-      { text: 'About', href: '/about' },
-      { text: 'Courses', href: '/courses' },
-      { text: 'Counselling', href: '/counselling' },
+      { text: "Home", href: "/home" },
+      { text: "About", href: "/about" },
+      { text: "Courses", href: "/courses" },
+      { text: "Counselling", href: "/counselling" },
     ],
   },
   {
-    title: 'Documentation',
+    title: "Documentation",
     links: [
-      { text: 'Help Centre', href: '/help-centre' },
-      { text: 'Contact', href: '/contact' },
-      { text: 'FAQ', href: '/faq' },
-      { text: 'Privacy Policy', href: '/privacy-policy' },
+      { text: "Help Centre", href: "/help-centre" },
+      { text: "Contact", href: "/contact" },
+      { text: "FAQ", href: "/faq" },
+      { text: "Privacy Policy", href: "/privacy-policy" },
     ],
   },
   {
-    title: 'Social',
+    title: "Social",
     links: [
-      { text: 'Facebook', href: 'https://www.facebook.com' },
-      { text: 'Instagram', href: 'https://www.instagram.com' },
-      { text: 'Youtube', href: 'https://www.youtube.com' },
-      { text: 'Twitter', href: 'https://www.twitter.com' },
+      { text: "Facebook", href: "https://www.facebook.com" },
+      { text: "Instagram", href: "https://www.instagram.com" },
+      { text: "Youtube", href: "https://www.youtube.com" },
+      { text: "Twitter", href: "https://www.twitter.com" },
     ],
   },
 ];
-
-
-
-
-
-
-
-
-
-
