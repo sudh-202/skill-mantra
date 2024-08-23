@@ -17,7 +17,7 @@ const CoursesSection: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <div className="w-full py-16 bg-white text-blue-900 flex flex-col items-center lg:px-12 px-4">
+        <div className="w-full py-16 bg-white text-blue-900 flex flex-col items-center md:px-12 px-10">
             <h2 className="text-center lg:text-7xl text-4xl font-semibold mb-8">Our Courses</h2>
             <div className="relative w-full max-w-[1320px] pb-24">
                 <Carousel

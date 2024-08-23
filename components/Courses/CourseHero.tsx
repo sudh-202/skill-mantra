@@ -28,7 +28,7 @@ const CourseHero = () => {
     const image = COURSE_IMAGES[slug as keyof typeof COURSE_IMAGES] || '/courses/default.webp'; // Default image if dynamic image is not found
 
     return (
-        <>
+        <main className='flex flex-col md:flex-row justify-center items-center mx-auto'>
             <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[5vw]">
                 <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-[10vw]">
                     <div className="relative rounded-full overflow-hidden w-[45vw] h-[45vw] md:w-[35vw] md:h-[35vw]">
@@ -40,12 +40,12 @@ const CourseHero = () => {
                             <p className="mt-2 md:text-[2vw] text-[6vw] font-semibold">{scholarshipText}</p>
                             <a
                                 href={downloadLink}
-                                className="mt-4 bg-yellow-500 text-black py-2 px-4 rounded-lg font-bold md:text-[2.4vw] text-[6.4vw] flex gap-3 items-center"
+                                className="mt-4 bg-yellow-500 text-black py-2 px-4 rounded-lg font-bold md:text-[2.4vw] text-[6.2vw] flex gap-3 items-center"
                             >
                                 <MdDownloadForOffline />
                                 {downloadText}
                             </a>
-                            <div className="flex justify-between md:mt-[5vw] mt-[10vw] text-center gap-10">
+                            <div className="flex justify-between md:mt-[5vw] mt-[10vw] text-center gap-6">
                                 <div className="bg-white text-blue-90 py-4 px-8 rounded-2xl">
                                     <span className="block text-2xl font-bold">{countdown.days}</span>
                                     <span className="block text-sm">Days</span>
@@ -65,7 +65,7 @@ const CourseHero = () => {
                 <h2 className="md:text-[5vw] text-[8vw] font-bold text-center text-blue-90 md:mt-[0vw] mt-[4vw]">{title}</h2>
             </section>
             <FormSection />
-        </>
+        </main>
     );
 };
 
