@@ -64,12 +64,12 @@ const Hero = () => {
 
             <div className="relative z-20  flex-col -mt-[20vw] md:mt-[0vw] md:pt-0  ">
                 <Image
-                src="/circle.webp"
-                alt="circle"
-                width={1050}
-                height={100}
-                className="absolute right-[-350px] top-[-330px]  hidden md:block z-[-60] "
-            />
+                    src="/circle.webp"
+                    alt="circle"
+                    width={1050}
+                    height={100}
+                    className="absolute right-[-350px] top-[-330px]  hidden md:block z-[-60] "
+                />
                 <ContactForm />
 
             </div>

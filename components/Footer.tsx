@@ -1,16 +1,24 @@
 import React from 'react';
-import { footerData } from '../constants';
+import Link from 'next/link';
+import { footerData, Coursesdata } from '../constants';
 import Image from 'next/image';
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:justify-between items-center space-y-8 sm:space-y-0">
+    <footer className="bg-[#c2cee8] py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8">
         {/* Logo and Sign-Up Form */}
-        <div className="flex flex-col items-center sm:items-start space-y-4 w-full sm:w-auto sm:mr-16">
+        <div className="flex flex-col items-center sm:items-start space-y-4">
           <Image src="/logo.webp" alt="Skill Mantra Logo" className=" md:w-[20vw] w-[70vw]" width={100} height={100} />
-          <p className="text-center sm:text-left">Stay in the loop and sign up to Skill Mantra:</p>
+          <p className="text-center sm:text-left text-black">Stay in the loop and sign up for <br />Skill Mantra:</p>
           <form className="flex w-full sm:w-auto">
             <input
               type="email"
@@ -19,30 +27,64 @@ const Footer: React.FC = () => {
             />
             <button
               type="submit"
-              className="bg-blue-90 hover:bg-blue-600 text-white px-4 py-2 rounded-r-md"
+              className="bg-[#20014b] hover:bg-blue-600 text-white px-4 py-2 rounded-r-md"
             >
               <FaArrowRight />
             </button>
           </form>
+          {/* Social Media Icons */}
+          <div className="flex space-x-4 mt-4">
+            <a href="#" className="text-blue-600 hover:text-blue-800">
+              <FaFacebookF size={24} />
+            </a>
+            <a href="#" className="text-green-500 hover:text-green-700">
+              <FaWhatsapp size={24} />
+            </a>
+            <a href="#" className="text-pink-500 hover:text-pink-700">
+              <FaInstagram size={24} />
+            </a>
+            <a href="#" className="text-blue-700 hover:text-blue-900">
+              <FaLinkedinIn size={24} />
+            </a>
+            <a href="#" className="text-blue-400 hover:text-blue-600">
+              <FaTwitter size={24} />
+            </a>
+          </div>
         </div>
 
         {/* Links Section */}
-        <div className="flex flex-col sm:flex-row md:justify-center justify-start w-full  space-y-8 sm:space-y-0 sm:space-x-12">
-          {footerData.map((section) => (
-            <div key={section.title} className="flex flex-col items-center sm:items-start space-y-2">
-              <h2 className="md:text-[1.8vw] text-[6vw] font-semibold text-center sm:text-left">{section.title}</h2>
+        {footerData.map((section) => (
+          <div key={section.title} className="relative flex flex-col items-center sm:items-start space-y-2">
+            <h2 className="md:text-[1.8vw] text-[4vw] font-semibold text-center sm:text-left text-black">{section.title}</h2>
+            {section.title === 'Courses' ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger className="text-gray-700 hover:text-gray-900 text-center sm:text-left">
+                  {section.title}
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="absolute left-0 z-50 bg-white">
+                  <DropdownMenuSeparator />
+                  {Coursesdata.map((course) => (
+                    <DropdownMenuItem key={course.slug}>
+                      <Link href={`/course/${course.slug}`} className="text-black block px-4 py-2 hover:bg-gray-100">
+                        {course.title}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
               <ul className="space-y-1">
                 {section.links.map((link) => (
                   <li key={link.text}>
-                    <a href={link.href} className="text-gray-600 hover:text-gray-800">
+                    <a href={link.href} className="text-gray-700 hover:text-gray-900">
                       {link.text}
                     </a>
                   </li>
                 ))}
               </ul>
-            </div>
-          ))}
-        </div>
+            )}
+          </div>
+        ))}
       </div>
     </footer>
   );

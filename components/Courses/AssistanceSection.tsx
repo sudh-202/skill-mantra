@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 
 interface AssistanceSectionProps {
   services: { title: string; points: string[]; icon: React.ComponentType<{ className?: string }> }[];
@@ -7,7 +7,14 @@ interface AssistanceSectionProps {
 
 const AssistanceSection: React.FC<AssistanceSectionProps> = ({ services }) => {
   return (
-    <div className="p-2 rounded-lg mt-8  ">
+    <div className="p-2 rounded-lg mt-8  relative">
+      <Image
+                src="/circle2.webp"
+                alt="circle"
+                width={750}
+                height={100}
+                className="absolute -left-[500px] translate-y-[10vw]  hidden md:block"
+            />
       <div className="flex items-start justify-start pb-10">
         {services.map((service, index) => (
           <div

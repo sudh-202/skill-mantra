@@ -28,13 +28,22 @@ const CourseHero = () => {
     const image = COURSE_IMAGES[slug as keyof typeof COURSE_IMAGES] || '/courses/default.webp'; // Default image if dynamic image is not found
 
     return (
-       <>
+        <main className='relative'>
             <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[5vw]">
-                <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-[10vw]">
+                <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-[10vw] relative">
+
+                    <Image
+                        src="/circle.webp"
+                        alt="circle"
+                        width={700}
+                        height={100}
+                        className="absolute right-[-450px] top-[-430px]  hidden md:block z-10"
+                    />
+
                     <div className="relative rounded-full overflow-hidden w-[45vw] h-[45vw] md:w-[35vw] md:h-[35vw]">
                         <Image src={image} alt="Offer Image" layout="fill" objectFit="cover" />
                     </div>
-                    <div className="flex flex-col items-center justify-center ">
+                    <div className="flex flex-col items-center justify-center z-20">
                         <div className="bg-blue-90 text-white px-10 py-16 rounded-2xl flex flex-col items-center justify-center ">
                             <h3 className="md:text-[1.5vw] text-[5vw]">{offerText}</h3>
                             <p className="mt-2 md:text-[2vw] text-[6vw] font-semibold">{scholarshipText}</p>
@@ -64,8 +73,22 @@ const CourseHero = () => {
                 </div>
                 <h2 className="md:text-[5vw] text-[8vw] font-bold text-center text-blue-90 md:mt-[0vw] mt-[4vw]">{title}</h2>
             </section>
+            <Image
+                src="/circle2.webp"
+                alt="circle"
+                width={750}
+                height={100}
+                className="absolute -left-[500px]   hidden md:block"
+            />
             <FormSection />
-            </>
+            <Image
+                src="/courses/stats-panel.webp"
+                alt="circle"
+                width={100}
+                height={100}
+                className="mx-auto my-[5vw] w-[90vw]"
+            />
+        </main>
     );
 };
 

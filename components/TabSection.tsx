@@ -28,7 +28,14 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
     : undefined;
 
   return (
-    <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] overflow-hidden">
+    <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] relative">
+      <Image
+        src="/circle2.webp"
+        alt="circle"
+        width={700}
+        height={100}
+        className="absolute translate-y-[20%] -right-[25%] hidden md:block "
+      />
       <div className="flex flex-row flex-wrap gap-4 md:gap-8">
         {courseSlug in tabData && tabData[courseSlug].map((tab) => (
           <div

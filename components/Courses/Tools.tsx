@@ -19,7 +19,7 @@ const Tools = () => {
                         key={index}
                         src={feature.img}
                         alt={feature.alt}
-                        className="md:h-[6vw] h-[10vw] w-[10vw] md:w-[7vw] mb-4"
+                        className="md:h-[8vw] h-[10vw] w-[10vw] md:w-[8vw] mb-4"
                         width={100}
                         height={100}
                     />

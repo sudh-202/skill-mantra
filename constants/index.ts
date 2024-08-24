@@ -1619,8 +1619,16 @@ export const coursesNew = [
   { title: "HR Generalist", slug: "hr-generalist", duration: "40+" },
   { title: "TDS Professional", slug: "tds-course", duration: "25+" },
   { title: "HR Payroll Program", slug: "hr-payroll-program", duration: "30+" },
-  { title: "Financial Modelling", slug: "financial-modelling", duration: "25+" },
-  { title: "Accounting for Accountants", slug: "accounting-for-accountants", duration: "100+" },
+  {
+    title: "Financial Modelling",
+    slug: "financial-modelling",
+    duration: "25+",
+  },
+  {
+    title: "Accounting for Accountants",
+    slug: "accounting-for-accountants",
+    duration: "100+",
+  },
   { title: "Tally", slug: "tally-basic-to-advance", duration: "25+" },
   { title: "Office Automation", slug: "office-automation", duration: "40+" },
 ];
@@ -1628,7 +1636,8 @@ export const coursesNew = [
 export const carouselItems = [
   {
     title: "Overall Approach",
-    description: "Prepare to make your mark in accounting with a course designed to equip you for success.",
+    description:
+      "Prepare to make your mark in accounting with a course designed to equip you for success.",
     icon: FaHandsHelping,
   },
   {
@@ -1638,12 +1647,14 @@ export const carouselItems = [
   },
   {
     title: "Hands on practice",
-    description: "Candidates are directly involved in their learning with practical experience.",
+    description:
+      "Candidates are directly involved in their learning with practical experience.",
     icon: FaHandsHelping,
   },
   {
     title: "Assessment & Career Edge",
-    description: "Culminating in a final exam opens doors for a successful Corporate career.",
+    description:
+      "Culminating in a final exam opens doors for a successful Corporate career.",
     icon: GiProgression,
   },
   {
@@ -1837,7 +1848,17 @@ export const cardsData = [
   },
 ];
 
-export const footerData = [
+export interface FooterLink {
+  text: string;
+  href: string;
+}
+
+export interface FooterSection {
+  title: string;
+  links: FooterLink[];
+}
+
+export const footerData: FooterSection[] = [
   {
     title: "Company",
     links: [
@@ -1850,19 +1871,50 @@ export const footerData = [
   {
     title: "Documentation",
     links: [
-      { text: "Help Centre", href: "/help-centre" },
-      { text: "Contact", href: "/contact" },
+      { text: "Terms & Conditions", href: "/" },
+      { text: "Cookies", href: "/" },
       { text: "FAQ", href: "/faq" },
       { text: "Privacy Policy", href: "/privacy-policy" },
     ],
   },
   {
-    title: "Social",
+    title: "Contact",
     links: [
-      { text: "Facebook", href: "https://www.facebook.com" },
-      { text: "Instagram", href: "https://www.instagram.com" },
-      { text: "Youtube", href: "https://www.youtube.com" },
-      { text: "Twitter", href: "https://www.twitter.com" },
+      { text: "+91 99718 92146", href: "tel:+919971892146" }, // Clickable phone number link
+      { text: "info@skillmantra.in", href: "mailto:info@skillmantra.in" }, // Clickable email link
+      {
+        text: "A-45, Sector - 2, Noida, Gautam Buddha Nagar, Uttar Pradesh, 201301",
+        href: "https://goo.gl/maps/4F5z4", // Link to Google Maps location
+      },
     ],
+  },
+];
+
+
+// constant/index.ts
+export const statsData = [
+  {
+    id: 1,
+    value: "10,000+",
+    description: "Learners Believe In Us",
+    imageUrl: "/courses/10k.webp",
+  },
+  {
+    id: 2,
+    value: "78%",
+    description: "Were Placed Through Us",
+    imageUrl: "/courses/78.webp",
+  },
+  {
+    id: 3,
+    value: "54%",
+    description: "Average Salary Growth",
+    imageUrl: "/courses/54.webp",
+  },
+  {
+    id: 4,
+    value: "25%",
+    description: "Expert Instructors",
+    imageUrl: "/courses/25.webp",
   },
 ];

@@ -20,7 +20,7 @@ const CourseCarousel: React.FC<CourseCarouselProps> = ({ currentCourseId }) => {
   const filteredCourses = COURSES.filter(course => course.id !== currentCourseId);
 
   return (
-    <section className="bg-[#AABDE1] py-8 overflow-hidden">
+    <section className="bg-[#FFC224] py-8 overflow-hidden">
       <Carousel>
         <CarouselContent className="flex space-x-6 px-8">
           {filteredCourses.map((course) => (

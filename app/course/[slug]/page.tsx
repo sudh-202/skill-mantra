@@ -20,6 +20,8 @@ import FormSection from '@/components/Courses/FormSection';
 import CourseCarousel from '@/components/Courses/CourseCarousel';
 import { assistanceData } from '@/constants/';
 import courseOfferingsMap from '@/constants/'; // Import courseOfferingsMap
+import TestimonialCarousel from '@/components/Home/Testimonials';
+import StatsSection from '@/components/Courses/StatsSection';
 
 interface CoursePageProps {
   params: { slug: string };
@@ -57,7 +59,9 @@ const CoursePage = ({ params }: CoursePageProps) => {
   return (
     <main className='overflow-hidden'>
       <CourseHero />
+      <TestimonialCarousel/>
       <Companies />
+      <StatsSection/>
       <TargetSegment />
       <Partners />
       <TabsSection courseSlug={courseSlug} />
