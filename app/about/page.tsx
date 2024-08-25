@@ -14,7 +14,7 @@ const About = () => {
   const activetabData2 = tabData2.find((tab) => tab.id === activeTab);
   return (
     <main>
-      <div className='flex md:flex-row-reverse flex-col items-center justify-center gap-10 bg-[url("/background.webp")] px-[5vw] py-[2vw] border-gray-10 border-b-2'>
+      <div className='flex md:flex-row-reverse flex-col items-center justify-center z-20 gap-10 bg-[url("/background.webp")] px-[5vw] py-[2vw] border-gray-10 border-b-2 relative'>
         <Image
           src="/about/grad.webp"
           alt="title"
@@ -22,6 +22,7 @@ const About = () => {
           height={100}
           className="w-[150vw]"
         />
+       
         <div className="">
           <h1 className="text-[3.9vw] leading-[4vw] pb-[1.4vw]">
             Founded in 2022, Skill Mantra is a dynamic ed-tech platform
@@ -60,7 +61,14 @@ const About = () => {
           ))}
         </div>
 
-        <div className="mt-10 md:mt-16">
+        <div className="mt-10 md:mt-16 relative ">
+        <Image
+        src="/circle.webp"
+        alt="circle"
+        width={700}
+        height={100}
+        className="absolute -translate-y-[70%] -right-[45%] hidden md:block z-10"
+      />
           <h3 className="text-xl md:text-2xl font-semibold text-center text-blue-90">
             {activetabData2?.title}
           </h3>
@@ -69,7 +77,14 @@ const About = () => {
           </p>
         </div>
       </section>
-      <div className="mt-[10vw] md:mt-0 border-gray-10 border-b-2 ">
+      <div className="mt-[10vw] md:mt-0 border-gray-10 border-b-2 relative">
+      <Image
+        src="/circle2.webp"
+        alt="circle"
+        width={700}
+        height={100}
+        className="absolute -translate-y-[25%] -left-[30%] hidden md:block z-10"
+      />
         <h2 className="md:text-[3vw] text-[10vw]  font-semibold text-center text-blue-90">
           Skill-Mantra Advantage
         </h2>

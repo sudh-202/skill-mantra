@@ -1,6 +1,7 @@
 import Hero from "@/components/Home/Hero";
 import VideoSection from "@/components/Home/VideoSection";
 import { cardsData } from '@/constants';
+import Image from "next/image";
 interface CardProps {
     title: string;
     description: string;
@@ -12,11 +13,20 @@ const Counseliing = () => {
         <>
             <Hero />
             <VideoSection />
-            <section className="py-12 px-[1vw] bg-white border-gray-10 border-b-2">
+
+            <section className="py-12 px-[1vw] bg-white border-gray-10 border-b-2 relative ">
+               
                 <h2 className="md:text-[4vw]  text-[7vw] font-bold text-center text-gray-800 mb-8">
                     What is covered in the counselling session:
                 </h2>
-                <div className="flex flex-wrap justify-center gap-8">
+                <div className="flex flex-wrap justify-center gap-8 relative">
+                <Image
+                    src="/circle.webp"
+                    alt="circle"
+                    width={700}
+                    height={100}
+                    className="absolute -translate-y-[60%] -left-[35%] hidden md:block z-10"
+                />
                     {cardsData.map((card, index) => (
                         <div
                             key={index}
