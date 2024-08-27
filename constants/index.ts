@@ -751,9 +751,9 @@ export const STATIC_OFFER_DETAILS = {
   downloadText: "Download Prospectus",
   downloadLink: "#",
   countdown: {
-    days: 0,
-    hours: 0,
-    minutes: 0,
+    days: 20,
+    hours: 10,
+    minutes: 50,
   },
 };
 
