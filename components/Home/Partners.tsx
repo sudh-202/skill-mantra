@@ -5,8 +5,19 @@ import ContactForm from "@/components/ContactForm";
 import { patnerdata, partnersimg } from "@/constants";
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
+import { clsx } from 'clsx';
 
 const Partners = () => {
+
+    const heroRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: heroRef,
+      offset: ['start end', 'end start']
+    });
+    const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+    useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))    
     return (
         <section className='bg-blue-90  py-[5vw]'>
              
@@ -33,7 +44,7 @@ const Partners = () => {
             </div>
             <main className='flex md:flex-row flex-col justify-center items-center gap-32 px-[10vw] md:px-[] '>
            
-                <div className='flex flex-col  translate-y-[6rem] '>
+                <div className='flex flex-col  translate-y-[6rem] z-30'>
                     <div className="flex pb-[2vw] ">
                         <div className="flex flex-col ">
                             {patnerdata.subsections.map((subsection, index) => (
@@ -57,12 +68,22 @@ const Partners = () => {
                                 <Link href="/login">Know More</Link>
                             </Button>
 
-                            <Image
+                            <motion.img
                                 src="/icons/arrow.webp"
                                 alt="arrow"
                                 width={40}
                                 height={100}
                                 className="relative top-[-200px] z-10 hidden lg:block translate-x-[32rem]"
+                                animate={{
+                                    translateY: [-10, 10],
+                                    translateX: [440]
+                                  }}
+                                  transition={{
+                                    repeat: Infinity,
+                                    repeatType: "mirror",
+                                    duration: 2,
+                                    ease: "easeInOut",
+                                  }}
                             />
 
                         </div>
@@ -72,17 +93,26 @@ const Partners = () => {
                 </div>
 
 
-                <div className='relative'>
+                <div className='relative z-30'>
                 
                     <ContactForm />
-
                 </div>
-                <Image
+                <motion.img
                 src="/circle2.webp"
                 alt="circle"
                 width={750}
                 height={100}
-                className="absolute -left-[38%] top[10%] hidden md:block  "
+                className="absolute -left-[38%] top[10%] z-[10] "
+                animate={{
+                    translateY: [-50, 50],
+                    
+                  }}
+                  transition={{
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                    duration: 2,
+                    ease: "easeInOut",
+                  }}
             />
             </main>
             

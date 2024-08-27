@@ -1,18 +1,39 @@
+"use client"
 import React from 'react';
 import { TRUSTED_BRANDS } from '@/constants';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import Image from 'next/image';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
 
 const TrustedBrands: React.FC = () => {
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+      target: heroRef,
+      offset: ['start end', 'end start']
+  });
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
+  useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue));
   return (
     <div className="bg-white py-20 px-4  border-b-[1px] border-grey   relative ">
-      <Image
-        src="/circle.webp"
-        alt="circle"
-        width={700}
-        height={100}
-        className="absolute -translate-y-[30%] -right-[25%] hidden md:block "
-      />
+       <motion.img
+          src="/circle2.webp"
+          alt="circle"
+          width={750}
+          height={100}
+          className="absolute md:-left-[30%] -left-[80%] -top-[280px] md:-top-[190%]  "
+          loading='lazy'
+          animate={{
+            translateY: [-50, 50],
+            translateX:[1750]
+          }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration: 2,
+            ease: "easeInOut",
+          }}
+        />
       {/* <h2 className="md:text-[5vw] text-[8vw] font-abril ml-4 font-semibold text-center mb-5 md:mb-12">Ratings section from various portals</h2> */}
       <div className="flex flex-col md:flex-row  justify-center items-center md:gap-[10vw] gap-[7vw] px-[6vw] relative overflow-hidden">
 

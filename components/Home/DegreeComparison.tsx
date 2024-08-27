@@ -1,21 +1,41 @@
+"use client"
 import React from 'react';
 import { DEGREE_DATA } from '@/constants';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 import Image from 'next/image';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
 
 const DegreeComparison: React.FC = () => {
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ['start end', 'end start']
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+  useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
   return (
     <div className="p-4 bg-white py-24 flex items-center justify-center flex-col relative">
-      <Image
-        src="/circle2.webp"
+      <motion.img
+        src="/circle.webp"
         alt="circle"
         width={750}
         height={100}
-        className="absolute -right-[30%] -translate-y-[25%] hidden md:block  "
+        className="absolute -right-[30%]  z-10 "
+        animate={{
+          translateY: [-20, 20],
+
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 2,
+          ease: "easeInOut",
+        }}
       />
       <h1 className="text-5xl font-bold text-center mb-4">{DEGREE_DATA.title}</h1>
       <p className="text-center mb-8">{DEGREE_DATA.subtitle}</p>
-      <div className=" w-full max-w-5xl">
+      <div className=" w-full max-w-5xl z-30">
 
         <div className="overflow-x-auto ">
           <table className="min-w-full  ">

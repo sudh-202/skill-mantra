@@ -12,9 +12,18 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import { FaClock, FaGraduationCap, FaUniversity, FaDollarSign, FaCheckCircle } from 'react-icons/fa';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
 
 const CoursesSection: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+    const heroRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: heroRef,
+      offset: ['start end', 'end start']
+    });
+    const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+    useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
 
     return (
         <div className="w-full py-16  text-blue-900 flex flex-col items-center md:px-12 px-10 bg-blue-90 border-b-2 border-white">
@@ -82,13 +91,23 @@ const CoursesSection: React.FC = () => {
                     <CarouselPrevious className="block absolute  left-0 top-1/2 transform -translate-y-1/2 md:-translate-x-12 -translate-x-8 bg-transparent text-blue-90  border-transparent " />
                     <CarouselNext className="block absolute right-0 top-1/2 transform -translate-y-1/2 md:translate-x-12 translate-x-10 bg-transparent text-blue-90  border-transparent" />
                 </Carousel>
-                <Image
+                <motion.img
                     src="/icons/dotsv2.webp"
                     alt="dots"
                     width={250}
                     height={100}
                     className="absolute bottom-[-120px] left-0 z-10 hidden lg:block"
                     loading='lazy'
+                    animate={{
+                        translateY: [-10, 10],
+                      }}
+                      transition={{
+                        repeat: Infinity,
+                        repeatType: "mirror",
+                        duration: 2,
+                        ease: "easeInOut",
+                      }}
+                    
                 />
             </div>
         </div>

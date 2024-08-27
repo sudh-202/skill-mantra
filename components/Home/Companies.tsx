@@ -1,22 +1,43 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import { companiesimg } from '@/constants';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
 
 const Companies: React.FC = () => {
+    const heroRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: heroRef,
+      offset: ['start end', 'end start']
+    });
+    const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+    useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))  
     return (
-        <div className='w-full bg-white md:py-12 px-4 md:px-12 py-15 md:pb-[6vw] pb-[12vw] relative'>
-             <Image
+        <div className='w-full bg-white md:py-12 px-4 md:px-12 py-15 md:pb-[6vw] pb-[12vw] relative z-10'>
+             <motion.img
                 src="/circle.webp"
                 alt="circle"
                 width={750}
                 height={100}
-                className="absolute -right-[30%]  hidden md:block  "
+                className="absolute md:-right-[30%]   -right-[70%] "
+                animate={{
+                    translateY: [-20, 20],
+                    
+                  }}
+                  transition={{
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                    duration: 2,
+                    ease: "easeInOut",
+                  }}
             />
+           
             <h2 className="text-[7vw] md:text-[3.4vw]   text-blue-90 text-center my-12 md:pl-12 ">Trusted by 200+ Companies Worldwide</h2>
             <div className="flex flex-col md:flex-row items-center container mx-auto ">
 
                 {/* Left side with logos */}
-                <div className="w-full md:w-1/2 flex flex-col items-center text-center md:text-left">
+                <div className="w-full md:w-1/2 flex flex-col items-center justify-between text-center md:text-left">
 
                     {/* <p className="text-gray-700 mb-8">Dedicated Career Services team to help find your dream company.</p> */}
 
@@ -48,7 +69,7 @@ const Companies: React.FC = () => {
                 </div>
 
                 {/* Right side with image */}
-                <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center z-20">
                     <Image
                         src="/companies-logos/company.webp"
                         alt="Placement Image"
