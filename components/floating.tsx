@@ -17,7 +17,7 @@ const FloatingButton = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 flex flex-col gap-2">
+    <div className="fixed bottom-4 right-4 flex flex-col gap-2 z-50">
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
