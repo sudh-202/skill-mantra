@@ -5,7 +5,7 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FiPhone } from "react-icons/fi";
 
 const FloatingButton = () => {
-  const whatsappNumber = "+91 9311694072"; 
+  const whatsappNumber = "9311694072"; 
   const phoneNumber = "+91 9311694072"; 
 
   const openWhatsApp = () => {
