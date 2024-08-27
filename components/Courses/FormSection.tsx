@@ -15,10 +15,10 @@ const FormSection = () => {
                 </span>
                 <div className="flex flex-col md:flex-row gap-5 mt-[5vw] md:w-full w-1/2 translate-x-[50%] md:translate-x-0">
                     <Button asChild className="bg-white py-4 md:py-8 px-6 md:px-8 text-[3vw] md:text-[1.5vw] rounded-xl text-blue-90 flex justify-center items-center ">
-                        <Link href="/login"> DOWNLOAD BROCHURE</Link>
+                        <Link href="/"> DOWNLOAD BROCHURE</Link>
                     </Button>
                     <Button asChild className="bg-[#00E0D3] py-4 md:py-8 px-6 md:px-8 text-[3vw] md:text-[1.5vw] rounded-xl text-blue-90 flex justify-center items-center uppercase">
-                        <Link href="/login">Apply Now</Link>
+                        <Link href="https://courses.skillmantra.in/login">Apply Now</Link>
                     </Button>
                 </div>
             </div>

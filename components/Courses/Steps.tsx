@@ -9,7 +9,7 @@ const Steps: React.FC = () => {
             <h2 className=" md:text-[2vw] text-[4vw] pb-[2vw] text-blue-90 text-center">
                 There are 3 simple steps in the Program Cycle which are detailed below:
             </h2>
-            <div className="flex  flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 -space-x-4 md:mt-8 gap-10">
+            {/* <div className="flex  flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 -space-x-4 md:mt-8 gap-10">
                 {stepsData.map((stepData, index) => (
                     <div key={index} className="flex flex-col  items-center text-center">
                         <div
@@ -25,7 +25,7 @@ const Steps: React.FC = () => {
                         <p className="mt-4 font-medium md:text-[1.2vw] text-[3vw] text-blue-90">{stepData.title}</p>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </main>
     );
 };

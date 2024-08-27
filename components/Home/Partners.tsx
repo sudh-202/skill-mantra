@@ -65,7 +65,7 @@ const Partners = () => {
                         ))}
                         <div>
                             <Button asChild className="bg-[#FFC224] py-8 px-8 text-2xl rounded-xl text-blue-90 flex justify-center items-center lg:w-[50%] mt-5">
-                                <Link href="/login">Know More</Link>
+                                <Link href="/about">Know More</Link>
                             </Button>
 
                             <motion.img
