@@ -21,7 +21,7 @@ const AssistanceSection: React.FC<AssistanceSectionProps> = ({ services }) => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
   useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
   return (
-    <div className="p-2 rounded-lg mt-8  relative">
+    <div className="p-4  pt-16 relative bg-blue-90">
       <motion.img
         src="/circle2.webp"
         alt="circle"
@@ -42,7 +42,7 @@ const AssistanceSection: React.FC<AssistanceSectionProps> = ({ services }) => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="text-white rounded-2xl bg-blue-90 md:h-[50vh] h-[35vh] flex-1 flex flex-col items-center justify-center px-[5vw] overflow-hidden mx-[5vw] z-30"
+            className="text-blue-90 rounded-2xl bg-white md:h-[50vh] h-[35vh] flex-1 flex flex-col items-center justify-center px-[5vw] overflow-hidden mx-[5vw] z-30"
           >
             <h3 className="md:text-[2.6vw] text-[5vw] text-center font-bold">
               {service.title}
