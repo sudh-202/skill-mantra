@@ -12,7 +12,7 @@ const WhyCourse = () => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
   useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
   return (
-    <main className="w-full md:h-[70vh] flex justify-center items-center md:px-[15vh] px-[5vw] md:py-0 py-[5vw]  bg-[#AABDE1] gap-24  overflow-hidden flex-col-reverse md:flex-row">
+    <main className="w-full md:h-[70vh]  flex justify-center items-center md:px-[15vh] px-[5vw] md:py-0 py-[5vw]  bg-[#AABDE1] gap-24  overflow-hidden flex-col-reverse md:flex-row-reverse">
       <motion.img
         src="/circle.webp"
         alt="circle"
@@ -40,7 +40,7 @@ const WhyCourse = () => {
         support to help you succeed in your chosen profession.
       </p>
       <div className="flex flex-col justify-center items-center">
-        <Image src="../courses/who.webp" alt="who" width={100} height={100} className="md:w-[1200px] w-[100vw]" />
+        <Image src="../courses/who.webp" alt="who" width={100} height={100} className="md:w-[100vw] w-[100vw]" />
       </div>
     </main>
   );
