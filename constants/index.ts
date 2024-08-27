@@ -747,7 +747,7 @@ export const visionText =
   "Just as our name suggests, Skill Mantra’s vision is to up-skill and re-skill students and working professionals who are seeking career growth and job security. We believe that continuous learning and skill development are the keys to unlocking one's full potential and achieving long-term success.";
 
 export const missionText =
-  "At Skill Mantra, our mission is to provide top-notch, industry-relevant education that bridges the gap between academic knowledge and real-world application. We are committed to:";
+  "At Skill Mantra, our mission is to provide top-notch, industry-relevant education that bridges the gap between academic knowledge and real-world application. We are committed to empowering learners with the practical skills and insights needed to excel in their careers, fostering innovation through hands-on experiences, and ensuring that our education is accessible and relevant to individuals from all walks of life.";
 
 // Static offer details
 export const STATIC_OFFER_DETAILS = {
