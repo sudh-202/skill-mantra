@@ -1,7 +1,11 @@
+"use client"
 import Hero from "@/components/Home/Hero";
 import VideoSection from "@/components/Home/VideoSection";
 import { cardsData } from '@/constants';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
 import Image from "next/image";
+
 interface CardProps {
     title: string;
     description: string;
@@ -9,6 +13,14 @@ interface CardProps {
 }
 
 const Counseliing = () => {
+    const heroRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: heroRef,
+      offset: ['start end', 'end start']
+    });
+    const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
+    useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
     return (
         <>
             <Hero />
@@ -20,12 +32,21 @@ const Counseliing = () => {
                     What is covered in the counselling session:
                 </h2>
                 <div className="flex flex-wrap justify-center gap-8 relative">
-                <Image
+                <motion.img
                     src="/circle.webp"
                     alt="circle"
                     width={700}
                     height={100}
-                    className="absolute -translate-y-[60%] -left-[35%] hidden md:block z-10"
+                    className="absolute -translate-y-[60%] md:-left-[35%] -left-[70%]"
+                    animate={{
+                        translateY: [-10, 10],
+                      }}
+                      transition={{
+                        repeat: Infinity,
+                        repeatType: "mirror",
+                        duration: 2,
+                        ease: "easeInOut",
+                      }}
                 />
                     {cardsData.map((card, index) => (
                         <div

@@ -3,9 +3,19 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { tabData2 } from "@/constants";
 import FeaturesSection from "@/components/Advantage";
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
 
 const About = () => {
   const [activeTab, setActiveTab] = useState(tabData2[0].id);
+  const heroRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: heroRef,
+      offset: ['start end', 'end start']
+    });
+    const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
+    useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
 
   const handleTabClick = (id: string) => {
     setActiveTab(id);
@@ -37,12 +47,12 @@ const About = () => {
           </p>
         </div>
       </div>
-      <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] overflow-hidden border-gray-10 border-b-2 ">
+      <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] overflow-hidden border-gray-10 border-b-2 z-30">
         <div className="flex flex-row flex-wrap gap-4 md:gap-8">
           {tabData2.map((tab) => (
             <div
               key={tab.id}
-              className={`cursor-pointer flex flex-col-reverse items-center justify-center text-center p-5 md:p-8 rounded-lg md:h-[40vh] h-[30vh] border w-full md:w-1/6 ${
+              className={`cursor-pointer flex flex-col-reverse items-center z-30 justify-center text-center p-5 md:p-8 rounded-lg md:h-[40vh] h-[30vh] border w-full md:w-1/6 ${
                 activeTab === tab.id
                   ? "bg-blue-90 "
                   : "bg-[#defffd] border-gray-200"
@@ -62,12 +72,21 @@ const About = () => {
         </div>
 
         <div className="mt-10 md:mt-16 relative ">
-        <Image
+        <motion.img
         src="/circle.webp"
         alt="circle"
         width={700}
         height={100}
-        className="absolute -translate-y-[70%] -right-[45%] hidden md:block z-10"
+        className="absolute md:-top-[250%] -md:right-[45%]  left-[80%] z-10"
+        animate={{
+          translateY: [-10, 10],
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 2,
+          ease: "easeInOut",
+        }}
       />
           <h3 className="text-xl md:text-2xl font-semibold text-center text-blue-90">
             {activetabData2?.title}
@@ -78,12 +97,21 @@ const About = () => {
         </div>
       </section>
       <div className="mt-[10vw] md:mt-0 border-gray-10 border-b-2 relative">
-      <Image
+      <motion.img
         src="/circle2.webp"
         alt="circle"
         width={700}
         height={100}
-        className="absolute -translate-y-[25%] -left-[30%] hidden md:block z-10"
+        className="absolute -translate-y-[25%]  md:-left-[30%] -left-[70%] z-10"
+        animate={{
+          translateY: [-10, 10],
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 2,
+          ease: "easeInOut",
+        }}
       />
         <h2 className="md:text-[3vw] text-[10vw]  font-semibold text-center text-blue-90">
           Skill-Mantra Advantage
