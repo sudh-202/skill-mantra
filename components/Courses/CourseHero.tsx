@@ -69,7 +69,7 @@ const CourseHero = () => {
                             <h3 className="md:text-[1.5vw] text-[5vw]">{offerText}</h3>
                             <p className="mt-2 md:text-[2vw] text-[6vw] font-semibold">{scholarshipText}</p>
                             <a
-                                href={downloadLink}
+                                href="https://drive.google.com/file/d/1a7qw4mjUCULhsSf9NumUg-8gQZnMGYeL/view"
                                 className="mt-4 bg-yellow-500 text-black py-2 px-4 rounded-lg font-bold md:text-[2.4vw] text-[6.2vw] flex gap-3 items-center"
                             >
                                 <MdDownloadForOffline />
