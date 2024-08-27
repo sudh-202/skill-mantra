@@ -29,7 +29,7 @@ const WhyCourse = () => {
           ease: "easeInOut",
         }}
       />
-      <p className="font-semibold md:p-0 p-[5vw] md:text-left text-center">
+      <p className="font-semibold md:p-0 p-[5vw] md:text-left text-center ">
         At Skill Mantra, we are dedicated to empowering individuals with the
         practical skills and knowledge needed to excel in today’s competitive
         job market. Specialising in short-term, job-oriented courses, we bridge
@@ -39,7 +39,7 @@ const WhyCourse = () => {
         tax, and financial modelling, we provide hands-on training and career
         support to help you succeed in your chosen profession.
       </p>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center z-30">
         <Image src="../courses/who.webp" alt="who" width={100} height={100} className="md:w-[100vw] w-[100vw]" />
       </div>
     </main>
