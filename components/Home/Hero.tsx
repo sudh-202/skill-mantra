@@ -92,7 +92,7 @@ const Hero = () => {
 
             </div>
 
-            <div className="relative z-20  flex-col -mt-[20vw] md:mt-[0vw] md:pt-0  ">
+            <div className="relative z-10  flex-col -mt-[20vw] md:mt-[0vw] md:pt-0  ">
                 <motion.img
                     src="/circle.webp"
                     alt="circle"
@@ -109,7 +109,10 @@ const Hero = () => {
                         ease: "easeInOut",
                       }}
                 />
+                <div className='z-30'>
+
                 <ContactForm />
+                </div>
 
             </div>
         </section>

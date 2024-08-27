@@ -1,10 +1,22 @@
+"use client"
 import Image from 'next/image';
 import FormSection from '@/components/Courses/FormSection';
 import { MdDownloadForOffline } from 'react-icons/md';
 import { useParams } from 'next/navigation';
 import { Coursesdata, STATIC_OFFER_DETAILS, COURSE_TITLES, COURSE_IMAGES } from '@/constants';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
+
 
 const CourseHero = () => {
+    const heroRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: heroRef,
+      offset: ['start end', 'end start']
+    });
+    const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
+    useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
     const { slug } = useParams(); // Get slug from URL parameters
 
     // Find the course based on slug
@@ -28,17 +40,26 @@ const CourseHero = () => {
     const image = COURSE_IMAGES[slug as keyof typeof COURSE_IMAGES] || '/courses/default.webp'; // Default image if dynamic image is not found
 
     return (
-        <main className='relative'>
+        <main className='relative '>
             <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[5vw]">
                 <div className="flex flex-col md:flex-row items-center justify-center pt-8 gap-[10vw] relative">
 
-                    <Image
-                        src="/circle.webp"
-                        alt="circle"
-                        width={700}
-                        height={100}
-                        className="absolute right-[-450px] top-[-430px]  hidden md:block z-10"
-                    />
+                <motion.img
+                    src="/circle.webp"
+                    alt="circle"
+                    width={650}
+                    height={100}
+                    className="absolute md:right-[-350px] md:top-[-330px] -top-[50%] -right-[50%] "
+                    animate={{
+                        translateY: [-10, 10],
+                      }}
+                      transition={{
+                        repeat: Infinity,
+                        repeatType: "mirror",
+                        duration: 2,
+                        ease: "easeInOut",
+                      }}
+                />
 
                     <div className="relative rounded-full overflow-hidden w-[45vw] h-[45vw] md:w-[35vw] md:h-[35vw]">
                         <Image src={image} alt="Offer Image" layout="fill" objectFit="cover" />
@@ -73,20 +94,33 @@ const CourseHero = () => {
                 </div>
                 <h2 className="md:text-[5vw] text-[8vw] font-bold text-center text-blue-90 md:mt-[0vw] mt-[4vw]">{title}</h2>
             </section>
-            <Image
+            <motion.img
                 src="/circle2.webp"
                 alt="circle"
                 width={750}
                 height={100}
-                className="absolute -left-[500px]   hidden md:block"
+                className="absolute md:-left-[500px] -left-[70%]  "
+                animate={{
+                    translateY: [-10, 10],
+                  }}
+                  transition={{
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                    duration: 2,
+                    ease: "easeInOut",
+                  }}
             />
+            <div className='z-40 mx-auto container'>
+
             <FormSection />
+            </div>
             <Image
                 src="/courses/stats-panel.webp"
                 alt="circle"
                 width={100}
                 height={100}
                 className="mx-auto my-[5vw] w-[90vw]"
+                
             />
         </main>
     );

@@ -61,8 +61,8 @@ const CoursesSection: React.FC = () => {
                                                 </p>
                                                 {course.eligibility}
                                                 <p className='font-bold flex items-center  mt-4'>
-                                                    <FaDollarSign className="mr-2" />
-                                                    Mode
+                                                    {/* <FaDollarSign className="mr-2" /> */}
+                                                    ₹ Mode
                                                 </p>
                                                 {course.mode}
                                             </div>

@@ -1,19 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { tabData } from '@/constants';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react"
 
 type TabsSectionProps = {
-  courseSlug: keyof typeof tabData; // Ensure courseSlug matches the keys in tabData
+  courseSlug: keyof typeof tabData; 
 };
 
 const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
-  // Initialize activeTab with a default value, which will be updated once data is available
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ['start end', 'end start']
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
+  useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
+
   const [activeTab, setActiveTab] = useState<string | undefined>(undefined);
 
   useEffect(() => {
     // Ensure courseSlug is valid and has tabs
     if (courseSlug in tabData && tabData[courseSlug].length > 0) {
-      setActiveTab(tabData[courseSlug][0].id); // Set the initial active tab
+      setActiveTab(tabData[courseSlug][0].id); 
     }
   }, [courseSlug]);
 
@@ -29,12 +39,21 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
 
   return (
     <section className="py-[10vw] md:py-[7vw] px-[12vw] md:px-[8vw] relative">
-      <Image
+      <motion.img
         src="/circle2.webp"
         alt="circle"
         width={700}
         height={100}
-        className="absolute translate-y-[20%] -right-[25%] hidden md:block "
+        className="absolute translate-y-[20%] md:-right-[25%] -right-[70%]  "
+        animate={{
+          translateY: [-10, 10],
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 2,
+          ease: "easeInOut",
+        }}
       />
       <div className="flex flex-row flex-wrap gap-4 md:gap-8">
         {courseSlug in tabData && tabData[courseSlug].map((tab) => (
