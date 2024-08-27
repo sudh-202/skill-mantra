@@ -31,7 +31,7 @@ const Hero = () => {
                     ))}
                     <div>
                         <Button asChild className="bg-[#FFC224] py-8 px-8 text-2xl rounded-xl text-blue-90 flex justify-center items-center lg:w-[60%]">
-                            <Link href="/login">Download Prospectus</Link>
+                            <Link href="https://drive.google.com/file/d/1a7qw4mjUCULhsSf9NumUg-8gQZnMGYeL/view">Download Prospectus</Link>
                         </Button>
                     </div>
                 </div>
