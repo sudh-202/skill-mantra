@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <ul className="space-y-1 flex items-center justify-center md:flex-row flex-col md:px-0 px-16 text-center">
+              <ul className="space-y-1 flex items-center justify-center  flex-col md:px-0 px-16 text-center">
                 {section.links.map((link) => (
                   <li key={link.text}>
                     <a href={link.href} className="text-gray-700 hover:text-gray-900">
