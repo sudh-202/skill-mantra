@@ -37,7 +37,7 @@ const Counseliing = () => {
                     alt="circle"
                     width={700}
                     height={100}
-                    className="absolute -translate-y-[60%] md:-left-[35%] -left-[70%]"
+                    className="absolute -translate-y-[60%] md:-left-[35%] -left-[70%] z-10"
                     animate={{
                         translateY: [-10, 10],
                       }}
@@ -51,7 +51,7 @@ const Counseliing = () => {
                     {cardsData.map((card, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center bg-blue-90 rounded-lg shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4 p-4"
+                            className="flex flex-col items-center bg-blue-90 rounded-lg shadow-lg overflow-hidden w-full sm:w-1/2 lg:w-1/4 p-4 z-30"
                         >
                             <div className="w-full md:p-[2vw]  flex items-center justify-center text-white md:text-[6vw] text-[20vw]">
                                 <card.icon />
