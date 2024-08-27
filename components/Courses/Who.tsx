@@ -18,7 +18,7 @@ const WhyCourse = () => {
         alt="circle"
         width={750}
         height={100}
-        className="absolute md:-left-[500px] md:translate-y-[10vw] "
+        className="absolute md:-left-[500px] -left-[70%] md:translate-y-[10vw] "
         animate={{
           translateY: [-10, 10],
         }}
