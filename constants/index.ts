@@ -1864,7 +1864,7 @@ export const footerData: FooterSection[] = [
     links: [
       { text: "Home", href: "/home" },
       { text: "About", href: "/about" },
-      { text: "Courses", href: "/courses" },
+      // { text: "Courses", href: "/courses" },
       { text: "Counselling", href: "/counselling" },
     ],
   },

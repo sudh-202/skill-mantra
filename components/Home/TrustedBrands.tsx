@@ -21,10 +21,10 @@ const TrustedBrands: React.FC = () => {
           alt="circle"
           width={750}
           height={100}
-          className="absolute md:-left-[30%] -left-[80%] -top-[280px] md:-top-[190%]  "
+          className="absolute md:-left-[30%] top-0 -left-0  md:-top-[190%]"
           loading='lazy'
           animate={{
-            translateY: [-50, 50],
+            translateY: [-10, 10],
             translateX:[1750]
           }}
           transition={{

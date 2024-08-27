@@ -54,11 +54,11 @@ const Footer: React.FC = () => {
 
         {/* Links Section */}
         {footerData.map((section) => (
-          <div key={section.title} className="relative flex flex-col items-center sm:items-start space-y-2">
-            <h2 className="md:text-[1.8vw] text-[4vw] font-semibold text-center sm:text-left text-black">{section.title}</h2>
+          <div key={section.title} className="relative flex flex-col items-center justify-center space-y-2 jus">
+            <h2 className="md:text-[1.8vw] text-[6vw] font-semibold text-center  text-black">{section.title}</h2>
             {section.title === 'Courses' ? (
               <DropdownMenu>
-                <DropdownMenuTrigger className="text-gray-700 hover:text-gray-900 text-center sm:text-left">
+                <DropdownMenuTrigger className="text-gray-700 hover:text-gray-900 text-center ">
                   {section.title}
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="absolute left-0 z-50 bg-white">
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <ul className="space-y-1">
+              <ul className="space-y-1 flex items-center justify-center md:flex-row flex-col md:px-0 px-16 text-center">
                 {section.links.map((link) => (
                   <li key={link.text}>
                     <a href={link.href} className="text-gray-700 hover:text-gray-900">
