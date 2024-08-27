@@ -67,7 +67,7 @@ const TargetSegment: React.FC = () => {
               <CardTitle className="md:text-[2vw] text-black">{feature.title}</CardTitle>
             </CardHeader>
             <CardFooter className="flex justify-center mt-auto p-4">
-              <Link href={feature.link} passHref className="bg-[#AABDE1] text-blue-90 px-4 py-2 rounded-md hover:bg-gray-10 transition-colors duration-300 md:text-[1.5vw]">
+              <Link href="/counselling" passHref className="bg-[#AABDE1] text-blue-90 px-4 py-2 rounded-md hover:bg-gray-10 transition-colors duration-300 md:text-[1.5vw]">
                 Read More
               </Link>
             </CardFooter>
