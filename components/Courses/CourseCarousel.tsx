@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -39,11 +38,11 @@ const CourseCarousel: React.FC<CourseCarouselProps> = ({ currentCourseId }) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="text-black ">
-     
+        <CarouselPrevious className="absolute top-1/2 md:left-10 left-5 transform -translate-y-1/2 text-black bg-white p-2 rounded-full z-10">
+          <span className="text-xl">←</span>
         </CarouselPrevious>
-        <CarouselNext className="text-black">
-          
+        <CarouselNext className="absolute top-1/2 md:right-10 right-5 transform -translate-y-1/2 text-black bg-white p-2 rounded-full z-10">
+          <span className="text-xl">→</span>
         </CarouselNext>
       </Carousel>
     </section>
