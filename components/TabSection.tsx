@@ -44,7 +44,7 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
         alt="circle"
         width={700}
         height={100}
-        className="absolute translate-y-[20%] md:-right-[25%] -right-[70%]  "
+        className="absolute top-[50%] md:-right-[25%] -right-[70%]  "
         animate={{
           translateY: [-10, 10],
         }}
