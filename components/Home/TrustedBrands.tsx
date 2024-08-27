@@ -15,7 +15,7 @@ const TrustedBrands: React.FC = () => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
   useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue));
   return (
-    <div className="bg-white py-20 px-4  border-b-[1px] border-grey   relative ">
+    <div className="bg-white py-20 md:px-4  border-b-[1px] border-grey   relative ">
        <motion.img
           src="/circle2.webp"
           alt="circle"

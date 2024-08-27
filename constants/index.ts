@@ -119,6 +119,7 @@ export const courses = [
       "Integrated Curriculum",
       "Guided Professional Development",
     ],
+    slug: "cca",
   },
   {
     title: "HR Payroll Program",
@@ -131,6 +132,7 @@ export const courses = [
       "Hands-On Practice",
       "Career-Driven Insights",
     ],
+    slug: "hr-payroll-program",
   },
   {
     title: "HR Generalist",
@@ -143,6 +145,7 @@ export const courses = [
       "Applied Learning Approach",
       "Strategic Career Guidance",
     ],
+    slug: "hr-generalist",
   },
   {
     title: "TDS Course",
@@ -155,6 +158,7 @@ export const courses = [
       "Practical Application Labs",
       "Career Navigation & Industry Insights",
     ],
+    slug: "tds-course",
   },
   {
     title: "GST Course",
@@ -167,6 +171,7 @@ export const courses = [
       "Hands-On Practice",
       "Career-Driven Insights",
     ],
+    slug: "gst-course",
   },
   {
     title: "Financial Modelling",
@@ -179,6 +184,7 @@ export const courses = [
       "Applied Learning Approach",
       "Strategic Career Guidance",
     ],
+    slug: "financial-modelling",
   },
   {
     title: "Tally (Basic to Advance)",
@@ -191,6 +197,7 @@ export const courses = [
       "Practical Application for Professional Growth",
       "Gateway to Career Advancement",
     ],
+    slug: "tally-basic-to-advance",
   },
   {
     title: "Accounting for Accountants",
@@ -203,6 +210,7 @@ export const courses = [
       "Practical Application for Professional Growth",
       "Gateway to Career Advancement",
     ],
+    slug: "accounting-for-accountants",
   },
   {
     title: "Office Automation",
@@ -215,8 +223,10 @@ export const courses = [
       "Practical Application for Professional Growth",
       "Gateway to Career Advancement",
     ],
+    slug: "office-automation",
   },
 ];
+
 
 // Partner information
 export const patnerdata = {

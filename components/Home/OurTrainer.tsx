@@ -33,9 +33,9 @@ const TrainerCarousel: FC = () => {
                       <p>{trainer.experience}</p>
                       <p>{trainer.qualification}</p>
                       <p>{trainer.role}</p>
-                      <button className="mt-2 bg-[#FFC224] text-black p-2 rounded text-sm">
+                      <p className="mt-2 bg-transparent text-white p-2 rounded text-2xl ">
                         {trainer.course}
-                      </button>
+                      </p>
                     </CardContent>
                   </Card>
                 </div>

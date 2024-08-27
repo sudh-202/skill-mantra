@@ -18,12 +18,12 @@ const CoursesSection: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const heroRef = useRef(null);
     const { scrollYProgress } = useScroll({
-      target: heroRef,
-      offset: ["start end", "end start"],
+        target: heroRef,
+        offset: ["start end", "end start"],
     });
     const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
     useMotionValueEvent(scrollYProgress, "change", (latestValue) =>
-      console.log(latestValue)
+        console.log(latestValue)
     );
 
     return (
@@ -75,10 +75,10 @@ const CoursesSection: React.FC = () => {
                                     </div>
                                     <div className="flex justify-center gap-5 mt-auto">
                                         <Button asChild className="bg-blue-90 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-                                            <Link href="/courses">Learn More</Link>
+                                            <Link href={`/course/${course.slug}`}>Learn More</Link>
                                         </Button>
                                         <Button asChild className="bg-[#00E0D3] hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-                                            <Link href="/login">Enroll Now</Link>
+                                            <Link href="https://courses.skillmantra.in/login">Enroll Now</Link>
                                         </Button>
                                     </div>
                                 </div>
