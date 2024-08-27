@@ -12,7 +12,7 @@ const WhyCourse = () => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
   useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
   return (
-    <main className="w-full md:h-[70vh]  flex justify-center items-center md:px-[15vh] px-[5vw] md:py-0 py-[5vw]  bg-[#AABDE1] gap-24  overflow-hidden flex-col-reverse md:flex-row-reverse">
+    <main className="w-full md:h-[70vh] z-40 flex justify-center items-center md:px-[15vh] px-[5vw] md:py-0 py-[5vw]  bg-[#AABDE1] gap-24  overflow-hidden flex-col-reverse md:flex-row-reverse">
       <motion.img
         src="/circle.webp"
         alt="circle"
