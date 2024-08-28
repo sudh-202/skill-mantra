@@ -53,11 +53,11 @@ const CourseHero = () => {
 
   return (
     <main className="relative ">
-      <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[5vw]">
+      <section className="flex flex-col items-center justify-center bg-[#AABDE1] pb-[4vw]">
         <h2 className="md:text-[5vw] text-[8vw] font-bold text-center text-blue-90 md:mt-[0vw] pt-[4vw] z-20">
           {title}
         </h2>
-        <div className="flex flex-col md:flex-row items-center justify-center pt-10 gap-[2vw] relative px-[8vw]">
+        <div className="flex flex-col md:flex-row items-center justify-center  gap-[2vw] relative px-[8vw]">
           <motion.img
             src="/circle.webp"
             alt="circle"
@@ -80,13 +80,13 @@ const CourseHero = () => {
                         
                     </div> */}
           <div className="mt-10 text-center w-1/2">
-            <p className="md:text-[2vw] text-[5vw] text-blue-90 text-left">
+            <p className="md:text-[1.7vw] text-[5vw] text-blue-90 text-left">
               {description}
             </p>
             <div className="flex flex-col md:flex-row justify-start  mt-6 ">
               <div className="bg-white text-blue-90 py-4 px-12 rounded-2xl flex gap-32 text-left ">
-                <span className="block text-2xl font-bold">Duration<br/> <span className="font-thin"> {duration}</span></span>
-                <span className="block text-2xl font-bold"> Starts in<br/> <span className="font-thin">{startDate}</span></span>
+                <span className="block text-2xl font-bold">Duration<br/> <span className="font-normal"> {duration}</span></span>
+                <span className="block text-2xl font-bold"> Starts in<br/> <span className="font-normal">{startDate}</span></span>
               </div>
             </div>
           </div>
