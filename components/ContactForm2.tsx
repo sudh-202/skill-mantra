@@ -1,8 +1,10 @@
 "use client";
 
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import * as z from "zod";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { toast } from 'react-toastify';
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
     Form,
@@ -21,28 +23,40 @@ import {
     SelectContent,
     SelectItem,
 } from "@/components/ui/select";
-import { toast } from 'react-toastify';
-import Counseliing from '../app/counselling/page';
+import { STATIC_OFFER_DETAILS } from "@/constants";  // Importing constants
 
 const formSchema = z.object({
-    name: z.string().min(1, "Name is required"),
+    firstName: z.string().min(1, "First Name is required"),
+    lastName: z.string().min(1, "Last Name is required"),
     phone: z.string().min(10, "Phone number must be at least 10 digits"),
-    city: z.string().min(1, "City is required"),
-    emailAddress: z.string().email("Invalid email address"),
-    accountType: z.enum(["student", "Working Professional", "CA/CS Pursuing", "Govt Job Preparation"]),
-    companyName: z.string().optional(),
+    email: z.string().email("Invalid email address"),
+    city: z.string().min(1, "City/State is required"),
+    country: z.string().min(1, "Country is required"),
+    message: z.string().optional(),
 });
 
-const ContactForm = () => {
+const ScholarshipPopup = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
+    // Show the popup after 5 seconds
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowPopup(true);
+        }, 5000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            name: "",
+            firstName: "",
+            lastName: "",
             phone: "",
+            email: "",
             city: "",
-            emailAddress: "",
-            accountType: "student", // Ensure default value matches your enum
-            companyName: "",
+            country: "",
+            message: "",
         },
     });
 
@@ -57,6 +71,7 @@ const ContactForm = () => {
             const result = await response.json();
             if (response.ok) {
                 toast.success(result.message); // Show success message
+                setShowPopup(false); // Close the popup after successful submission
             } else {
                 toast.error(result.message); // Show error message
             }
@@ -65,123 +80,119 @@ const ContactForm = () => {
         }
     };
 
-    return (
-        <>
-            {/* <Image
-                src="/circle.webp"
-                alt="circle"
-                width={1000}
-                height={100}
-                className="absolute right-[-350px] top-[-330px]  hidden lg:block z-[-10]"
-            /> */}
-            <div className="flex flex-col items-center justify-center md:px-[2vw] md:py-[4vw] p-[6vw]  bg-white rounded-2xl z-90">
-                <h1 className="md:text-3xl text-2xl font-semibold mb-6 text-blue-90 text-center">Enroll for Free Counseliing</h1>
-                <Form {...form}>
+    if (!showPopup) return null;
 
-                    <form onSubmit={form.handleSubmit(handleSubmit)} className="w-full flex flex-col gap-4 ">
-                        <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                                <FormItem className=''>
-                                    {/* <FormLabel>Name</FormLabel> */}
-                                    <FormControl>
-                                        <Input placeholder="Name" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="phone"
-                            render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>Phone Number</FormLabel> */}
-                                    <FormControl>
-                                        <Input placeholder="Phone Number" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="emailAddress"
-                            render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>Email Address</FormLabel> */}
-                                    <FormControl>
-                                        <Input
-                                            placeholder="Email Address"
-                                            type="email"
-                                            {...field}
-                                        />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="accountType"
-                            render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>I am a</FormLabel> */}
-                                    <Select value={field.value} onValueChange={field.onChange}>
-                                        <FormControl>
-                                            <SelectTrigger>
-                                                <SelectValue placeholder="Student" />
-                                            </SelectTrigger>
-                                        </FormControl>
-                                        <SelectContent className="bg-white">
-                                            <SelectItem value="student">Student</SelectItem>
-                                            <SelectItem value="Working Professional">Working Professional</SelectItem>
-                                            <SelectItem value="CA/CS Pursuing">CA/CS Pursuing</SelectItem>
-                                            <SelectItem value="Govt Job Preparation">Govt Job Preparation</SelectItem>
-                                        </SelectContent>
-                                    </Select>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        {form.watch("accountType") === "Working Professional" && (
+    return (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50">
+            <div className="bg-[#9AAEDC] p-8 rounded-lg w-[90%] max-w-lg shadow-lg relative">
+                <button
+                    onClick={() => setShowPopup(false)}
+                    className="absolute top-4 right-4 text-black text-3xl"
+                >
+                    &times;
+                </button>
+                <h1 className="text-3xl font-bold mb-2 text-black">{STATIC_OFFER_DETAILS.scholarshipText}</h1>
+                <p className="text-sm mb-6 text-black">For Future Enquiry!!</p>
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <FormField
                                 control={form.control}
-                                name="companyName"
+                                name="firstName"
                                 render={({ field }) => (
                                     <FormItem>
-                                        {/* <FormLabel>Company Name</FormLabel> */}
                                         <FormControl>
-                                            <Input placeholder="Company Name" {...field} />
+                                            <Input placeholder="First Name" {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
                                 )}
                             />
-                        )}
+                            <FormField
+                                control={form.control}
+                                name="lastName"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                            <Input placeholder="Last Name" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <FormField
+                                control={form.control}
+                                name="phone"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                            <Input placeholder="Phone" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                            <FormField
+                                control={form.control}
+                                name="email"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                            <Input placeholder="Email" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <FormField
+                                control={form.control}
+                                name="city"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                            <Input placeholder="City/State" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                            <FormField
+                                control={form.control}
+                                name="country"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormControl>
+                                            <Input placeholder="Country" {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                        </div>
                         <FormField
                             control={form.control}
-                            name="city"
+                            name="message"
                             render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>City/State</FormLabel> */}
+                                <FormItem className="flex items-start ">
                                     <FormControl>
-                                        <Input placeholder="City/State" {...field} />
+                                        <Input placeholder="Leave a message" {...field} className="h-24 flex top-0"/>
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit" className="w-full bg-blue-90 text-white mt-4">
+                        <Button type="submit" className="w-full bg-blue-90 text-white">
                             Submit
                         </Button>
                     </form>
                 </Form>
-
             </div>
-        </>
+        </div>
     );
 };
 
-export default ContactForm;
+export default ScholarshipPopup;
