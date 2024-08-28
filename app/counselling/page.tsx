@@ -5,6 +5,7 @@ import { cardsData } from '@/constants';
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import TargetSegment from "@/components/Home/TargetSegment2";
 
 // Define a list of colors for the cards
 const cardColors = [
@@ -33,7 +34,7 @@ const Counseliing = () => {
     useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue));
 
     return (
-        <>
+        <main className="mt-20">
             <Hero />
             <VideoSection />
 
@@ -77,8 +78,9 @@ const Counseliing = () => {
                         </div>
                     ))}
                 </div>
+                <TargetSegment />
             </section>
-        </>
+        </main>
     );
 }
 

@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FloatingButton from "@/components/floating";
+import ScholarshipPopup from "@/components/ScholarshipPopup";  // Import the ScholarshipPopup component
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +22,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={inter.className}>
         <Navbar />
         <main className="">
           <FloatingButton />
           {children}
         </main>
         <Footer />
+        <ScholarshipPopup /> 
         <ToastContainer />
       </body>
     </html>
