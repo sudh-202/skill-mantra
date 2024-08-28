@@ -33,6 +33,9 @@ const CourseHero = () => {
   );
   const { slug } = useParams(); // Get slug from URL parameters
 
+  // Debugging: Log the current slug value to ensure it's correct
+  console.log("Current slug:", slug);
+
   // Get course details based on slug
   const title =
     COURSE_TITLES[slug as keyof typeof COURSE_TITLES] || "Course Title";
@@ -75,23 +78,27 @@ const CourseHero = () => {
             }}
           />
 
-          {/* <div className="relative rounded-full overflow-hidden w-[45vw] h-[45vw] md:w-[35vw] md:h-[35vw]">
-                        <Image src={image} alt="Offer Image" layout="fill" objectFit="cover" />
-                        
-                    </div> */}
           <div className="mt-10 text-center w-1/2">
             <p className="md:text-[1.7vw] text-[5vw] text-blue-90 text-left">
               {description}
             </p>
-            <div className="flex flex-col md:flex-row justify-start  mt-6 ">
-              <div className="bg-white text-blue-90 py-4 px-12 rounded-2xl flex gap-32 text-left ">
-                <span className="block text-2xl font-bold">Duration<br/> <span className="font-normal"> {duration}</span></span>
-                <span className="block text-2xl font-bold"> Starts in<br/> <span className="font-normal">{startDate}</span></span>
+            <div className="flex flex-col md:flex-row justify-start mt-6">
+              <div className="bg-white text-blue-90 py-4 px-12 rounded-2xl flex gap-32 text-left">
+                <span className="block text-2xl font-bold">
+                  Duration
+                  <br />
+                  <span className="font-normal">{duration}</span>
+                </span>
+                <span className="block text-2xl font-bold">
+                  Starts in
+                  <br />
+                  <span className="font-normal">{startDate}</span>
+                </span>
               </div>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center z-20">
-            <div className="bg-blue-90 text-white px-10 py-16 rounded-2xl flex flex-col items-center justify-center ">
+            <div className="bg-blue-90 text-white px-10 py-16 rounded-2xl flex flex-col items-center justify-center">
               <h3 className="md:text-[2vw] text-[5vw]">{offerText}</h3>
               <p className="mt-2 md:text-[2vw] text-[6vw] font-semibold">
                 {scholarshipText}
