@@ -15,7 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { STATIC_OFFER_DETAILS } from "@/constants";  // Importing constants
-import { Loader } from "@/components/ui/loader"; // Importing a Loader component
+import  Loader  from "@/components/ui/Loader"; // Importing a Loader component
 
 const formSchema = z.object({
     firstName: z.string().min(1, "First Name is required"),
