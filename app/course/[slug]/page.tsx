@@ -22,6 +22,7 @@ import { assistanceData } from '@/constants/';
 import courseOfferingsMap from '@/constants/'; // Import courseOfferingsMap
 import TestimonialCarousel from '@/components/Home/Testimonials';
 import StatsSection from '@/components/Courses/StatsSection';
+import { FAQS } from '@/components/Home/Faqs';
 
 interface CoursePageProps {
   params: { slug: string };
@@ -76,6 +77,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <Who />
       <FormSection />
       <CourseCarousel currentCourseId={currentCourse.id} />
+      <FAQS />
     </main>
   );
 };

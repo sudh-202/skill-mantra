@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/ContactForm2";
 import { patnerdata, partnersimg } from "@/constants";
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
@@ -49,7 +49,7 @@ const Partners = () => {
                         <div className="flex flex-col ">
                             {patnerdata.subsections.map((subsection, index) => (
                                 <div key={index} className="flex justify-start  ">
-                                    <span className="italic text-xl md:text-3xl lg:text-4xl text-white font-semibold flex text-left mb-4">{subsection.title}</span>
+                                    <span className="italic text-xl md:text-2xl lg:text-3xl text-white font-semibold flex text-left mb-3">{subsection.title}</span>
                                     <p className=" md:ml-4 font-semibold text-white">{subsection.para}</p>
                                 </div>
                             ))}
@@ -60,11 +60,11 @@ const Partners = () => {
                         {patnerdata.sections.map((section, index) => (
                             <div key={index} className="flex items-center">
                                 <Image src="/icons/tick.webp" alt="icon" width={84} height={84} className="w-[64px] h-[64px]" />
-                                <span className="text-lg md:text-xl lg:text-2xl text-white font-semibold">{section.title}</span>
+                                <span className="text-lg md:text-lg lg:text-xl text-white font-semibold">{section.title}</span>
                             </div>
                         ))}
                         <div>
-                            <Button asChild className="bg-[#FFC224] py-8 px-8 text-2xl rounded-xl text-blue-90 flex justify-center items-center lg:w-[50%] mt-5">
+                            <Button asChild className="bg-[#FFC224] py-6 px-6 text-2xl rounded-xl text-blue-90 flex justify-center items-center lg:w-[50%] mt-5">
                                 <Link href="/about">Know More</Link>
                             </Button>
 

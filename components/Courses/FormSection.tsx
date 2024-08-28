@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import ContactForm from "@/components/ContactForm"; // Adjust the path if necessary
+import ContactForm from "@/components/ContactForm2"; // Adjust the path if necessary
 import { data } from "@/constants";
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";

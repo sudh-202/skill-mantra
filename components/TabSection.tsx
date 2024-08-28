@@ -3,9 +3,11 @@ import Image from 'next/image';
 import { tabData } from '@/constants';
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import { useRef } from "react"
+import Link from 'next/link';
+import { Button } from './ui/button';
 
 type TabsSectionProps = {
-  courseSlug: keyof typeof tabData; 
+  courseSlug: keyof typeof tabData;
 };
 
 const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
@@ -23,7 +25,7 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
   useEffect(() => {
     // Ensure courseSlug is valid and has tabs
     if (courseSlug in tabData && tabData[courseSlug].length > 0) {
-      setActiveTab(tabData[courseSlug][0].id); 
+      setActiveTab(tabData[courseSlug][0].id);
     }
   }, [courseSlug]);
 
@@ -59,14 +61,12 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
         {courseSlug in tabData && tabData[courseSlug].map((tab) => (
           <div
             key={tab.id}
-            className={`cursor-pointer flex flex-col-reverse items-center justify-center text-center p-5 md:p-8 rounded-lg md:h-[40vh] h-[30vh] border w-full md:w-1/6 ${
-              activeTab === tab.id ? 'bg-blue-90 ' : 'bg-[#defffd] border-gray-200'
-            } md:flex-grow min-h-full`}
+            className={`cursor-pointer flex flex-col-reverse items-center justify-center text-center p-5 md:p-8 rounded-lg md:h-[40vh] h-[30vh] border w-full md:w-1/6 ${activeTab === tab.id ? 'bg-blue-90 ' : 'bg-[#defffd] border-gray-200'
+              } md:flex-grow min-h-full`}
             onClick={() => handleTabClick(tab.id)}
           >
-            <span className={`text-sm md:text-xl font-medium mt-4 ${
-              activeTab === tab.id ? 'text-white' : 'text-gray-800'
-            }`}>
+            <span className={`text-sm md:text-xl font-medium mt-4 ${activeTab === tab.id ? 'text-white' : 'text-gray-800'
+              }`}>
               {tab.title}
             </span>
             <Image src={tab.icon} alt={tab.title} width={150} height={150} />
@@ -80,6 +80,13 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
           {activeTabData?.content}
         </p>
       </div>
+      <div>
+
+        <Button asChild className="bg-[#00E0D3] py-4 md:py-8 px-6 md:px-8 text-[3vw] md:text-[1.5vw] rounded-xl text-blue-90 flex justify-center items-center uppercase mt-[35px] w-1/4 mx-auto">
+          <Link href="https://courses.skillmantra.in/login">Enroll Now</Link>
+        </Button>
+      </div>
+
     </section>
   );
 };

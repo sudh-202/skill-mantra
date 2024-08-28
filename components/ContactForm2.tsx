@@ -22,6 +22,7 @@ import {
     SelectItem,
 } from "@/components/ui/select";
 import { toast } from 'react-toastify';
+import Counseliing from '../app/counselling/page';
 
 const formSchema = z.object({
     name: z.string().min(1, "Name is required"),
@@ -73,8 +74,8 @@ const ContactForm = () => {
                 height={100}
                 className="absolute right-[-350px] top-[-330px]  hidden lg:block z-[-10]"
             /> */}
-            <div className="flex flex-col items-center justify-center md:p-[2vw] p-[6vw]  bg-white rounded-2xl z-90">
-                <h1 className="md:text-3xl text-2xl font-semibold mb-6 text-blue-90 text-center">Enroll for Free Demo Class</h1>
+            <div className="flex flex-col items-center justify-center md:px-[2vw] md:py-[4vw] p-[6vw]  bg-white rounded-2xl z-90">
+                <h1 className="md:text-3xl text-2xl font-semibold mb-6 text-blue-90 text-center">Enroll for Free Counseliing</h1>
                 <Form {...form}>
 
                     <form onSubmit={form.handleSubmit(handleSubmit)} className="w-full flex flex-col gap-4 ">

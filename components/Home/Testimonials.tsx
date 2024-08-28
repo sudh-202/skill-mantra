@@ -15,11 +15,11 @@ const TestimonialCarousel: FC = () => {
     <section className="w-full py-20 bg-blue-90 px-10 md:px-0 overflow-hidden">
       <div className="">
         <h2 className="text-4xl md:text-5xl font-medium  text-white text-center mb-12">Testimonials</h2>
-        <div className="relative w-full max-w-7xl mx-auto">
+        <div className="relative w-full max-w-5xl mx-auto">
           <Carousel opts={{ align: "start" }} className="w-full">
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-4 h-full">
                     <Card className="h-full flex flex-col justify-between items-end bg-white">
                       <CardContent className="flex flex-col items-center justify-center text-center p-6 h-full">
@@ -53,8 +53,8 @@ const TestimonialCarousel: FC = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-0 transform -translate-y-1/2 top-1/2 -ml-8 text-white" />
-            <CarouselNext className="absolute right-0 transform -translate-y-1/2 top-1/2 -mr-8 text-white" />
+            <CarouselPrevious className="absolute left-0 transform -translate-y-1/2 top-1/2 -ml-8 text-white visible" />
+            <CarouselNext className="absolute right-0 transform -translate-y-1/2 top-1/2 -mr-8 text-white visible" />
           </Carousel>
         </div>
       </div>
