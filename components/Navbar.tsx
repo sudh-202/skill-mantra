@@ -64,7 +64,7 @@ const Navbar = () => {
         </Button>
       </div>
 
-      <div className="lg:hidden relative bg-white">
+      <div className="lg:hidden relative bg-white z-50">
         <Image
           src="/menu.svg"
           alt="menu"
