@@ -17,7 +17,7 @@ import Scope from "@/components/Home/scope";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden mt-[100px]">
       <Hero />
       <VideoSection />
       <TargetSegment/>

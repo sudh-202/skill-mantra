@@ -57,7 +57,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
   const { WhyCourseHeading, WhyCourse } = courseDetails;
 
   return (
-    <main className='overflow-hidden'>
+    <main className='overflow-hidden pt-[100px]'>
       <CourseHero />
       <TestimonialCarousel/>
       <Companies />

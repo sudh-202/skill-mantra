@@ -26,7 +26,7 @@ const Counseliing = () => {
             <Hero />
             <VideoSection />
 
-            <section className="py-12 px-[1vw] bg-white border-gray-10 border-b-2 relative ">
+            <section className="py-12 px-[1vw] bg-white border-gray-10 border-b-2 relative pt-[100px]">
                
                 <h2 className="md:text-[4vw]  text-[7vw] font-bold text-center text-gray-800 mb-8">
                     What is covered in the counselling session:

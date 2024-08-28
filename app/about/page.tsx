@@ -25,7 +25,7 @@ const About = () => {
   const activetabData2 = tabData2.find((tab) => tab.id === activeTab);
   return (
     <main>
-      <div className='flex md:flex-row-reverse flex-col items-center justify-center z-20 gap-10 bg-[url("/background.webp")] px-[5vw] py-[2vw] border-gray-10 border-b-2 relative'>
+      <div className='flex md:flex-row-reverse pt-[110px] flex-col items-center justify-center z-20 gap-10 bg-[url("/background.webp")] px-[5vw] py-[2vw] border-gray-10 border-b-2 relative'>
         <Image
           src="/about/grad.webp"
           alt="title"

@@ -18,7 +18,7 @@ const Hero = () => {
     const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
     useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
     return (
-        <section className=" flex justify-center md:flex-row flex-col items-center px-[5vw] md:py-[5vw] py-[10vw] gap-32 bg-blue-90 overflow-hidden">
+        <section className=" flex justify-center pt-[100px] md:flex-row flex-col items-center px-[5vw] md:py-[5vw] py-[10vw] gap-32 bg-blue-90 overflow-hidden">
 
             <div className="">
 
