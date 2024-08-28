@@ -762,6 +762,52 @@ export const STATIC_OFFER_DETAILS = {
   },
 };
 
+export const COURSE_DESCRIPTIONS = {
+  cca: `Skill Mantra's CCA course equips you with advanced skills in corporate finance, taxation, and auditing. 
+        This industry-focused program prepares you for real-world challenges, enhancing your decision-making capabilities. 
+        Unlock lucrative career opportunities with the Certified Corporate Accountant certification.`,
+  hrPayroll: `Master essential payroll skills and gain practical expertise in compliance management. 
+              Elevate your career by standing out in the job market with the knowledge and experience needed for success in payroll and compliance.`,
+  gstCourse: `Master essential payroll skills and gain practical expertise in compliance management. 
+             Elevate your career by standing out in the job market with the knowledge and experience needed for success in payroll and compliance.`,
+  hrGeneralist: `Skill Mantra's HR Generalist course offers practical training in essential HR functions, preparing you for a successful career in human resources. 
+                Gain comprehensive skills in recruitment, payroll, compliance, and more.`,
+  tdsCourse: `Skill Mantra's TDS course provides essential training on TDS regulations and filing procedures, 
+             ensuring you gain the skills needed for effective tax compliance. Perfect for finance professionals and students.`,
+  accountingForAccountants: `Embark on a transformative journey with our comprehensive online course in Office Automation 
+                             where efficiency meets expertise, transforming workflows, and empowering professionals to reach the pinnacle of their capabilities.`,
+  financialModelling: `Skill Mantra’s Financial Modeling course teaches you how to create accurate financial models to drive smart business decisions. 
+                      Gain hands-on experience in data analysis, forecasting, and investment evaluation. Ideal for finance enthusiasts and professionals seeking to boost their skills.`,
+  tally: `Transform your career with Skill Mantra's Tally course, covering everything from basics to advanced features. 
+         Learn essential accounting skills and master financial management. Get practical, hands-on training to excel in the real world.`,
+  officeAutomation: `Skill Mantra's Office Automation course equips you with essential computer skills like MS Office, Excel, and data management to boost productivity. 
+                    Learn practical tools that enhance your efficiency in any professional environment.`,
+};
+
+export const COURSE_DURATIONS = {
+  cca: '9 Months',
+  hrPayroll: '3 Months',
+  gstCourse: '3 Months',
+  hrGeneralist: '9 Months',
+  tdsCourse: '3 Months',
+  accountingForAccountants: '6 Months',
+  financialModelling: '6 Months',
+  tally: '6 Months',
+  officeAutomation: '3 Months',
+};
+
+export const COURSE_START_DATES = {
+  cca: 'in 15 days ',
+  hrPayroll: '13 September 2024',
+  gstCourse: '13 September 2024',
+  hrGeneralist: '13 September 2024',
+  tdsCourse: '13 September 2024',
+  accountingForAccountants: '13 September 2024',
+  financialModelling: '13 September 2024',
+  tally: '13 September 2024',
+  officeAutomation: '15 September 2024',
+};
+
 // Dynamic titles
 export const COURSE_TITLES = {
   "hr-payroll-program": "HR Payroll Program",
