@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import * as z from "zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from 'react-toastify';
@@ -11,19 +10,12 @@ import {
     FormControl,
     FormField,
     FormItem,
-    FormLabel,
     FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-    Select,
-    SelectValue,
-    SelectTrigger,
-    SelectContent,
-    SelectItem,
-} from "@/components/ui/select";
 import { STATIC_OFFER_DETAILS } from "@/constants";  // Importing constants
+import { Loader } from "@/components/ui/loader"; // Importing a Loader component
 
 const formSchema = z.object({
     firstName: z.string().min(1, "First Name is required"),
@@ -37,6 +29,7 @@ const formSchema = z.object({
 
 const ScholarshipPopup = () => {
     const [showPopup, setShowPopup] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false); // State for form submission
 
     // Show the popup after 5 seconds
     useEffect(() => {
@@ -61,6 +54,8 @@ const ScholarshipPopup = () => {
     });
 
     const handleSubmit: SubmitHandler<z.infer<typeof formSchema>> = async (values) => {
+        setIsSubmitting(true); // Start loading
+
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -71,11 +66,14 @@ const ScholarshipPopup = () => {
             const result = await response.json();
             if (response.ok) {
                 toast.success(result.message); // Show success message
+                setShowPopup(false); // Close the popup after successful submission
             } else {
                 toast.error(result.message); // Show error message
             }
         } catch (error) {
             toast.error('Unexpected error occurred'); // Handle unexpected errors
+        } finally {
+            setIsSubmitting(false); // Stop loading
         }
     };
 
@@ -184,9 +182,12 @@ const ScholarshipPopup = () => {
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit" className="w-full bg-blue-90 text-white">
-                            Submit
-                        </Button>
+                        <div className="flex items-center justify-between">
+                            <Button type="submit" className="w-full bg-blue-90 text-white flex items-center justify-center">
+                                Submit
+                                {isSubmitting && <Loader className="ml-2" />}
+                            </Button>
+                        </div>
                     </form>
                 </Form>
             </div>
