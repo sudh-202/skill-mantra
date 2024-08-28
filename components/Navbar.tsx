@@ -64,7 +64,7 @@ const Navbar = () => {
         </Button>
       </div>
 
-      <div className="lg:hidden relative">
+      <div className="lg:hidden relative bg-white">
         <Image
           src="/menu.svg"
           alt="menu"
@@ -74,7 +74,7 @@ const Navbar = () => {
           onClick={toggleMobileMenu}
         />
         {isMobileMenuOpen && (
-          <div className="fixed top-[100px] left-0 right-0 bottom-0 bg-white p-4 flex flex-col items-center w-full h-[45vh]">
+          <div className="fixed top-[100px] left-0 right-0 bottom-0 bg-white p-4 flex flex-col items-center w-full h-[65vh]">
             <button
               className="absolute top-2 right-2 p-2"
               onClick={toggleMobileMenu}
