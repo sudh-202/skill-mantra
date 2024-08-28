@@ -808,6 +808,13 @@ export const COURSE_START_DATES = {
   officeAutomation: '15 September 2024',
 };
 
+export const accountTypes = [
+  { label: "Student", value: "student" },
+  { label: "Working Professional", value: "Working Professional" },
+  { label: "CA/CS Pursuing", value: "CA/CS Pursuing" },
+  { label: "Govt Job Preparation", value: "Govt Job Preparation" },
+];
+
 // Dynamic titles
 export const COURSE_TITLES = {
   "hr-payroll-program": "HR Payroll Program",
