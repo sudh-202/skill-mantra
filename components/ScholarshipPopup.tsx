@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import * as z from "zod";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { toast } from 'react-toastify';
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
     Form,
@@ -59,9 +60,23 @@ const ScholarshipPopup = () => {
         },
     });
 
-    const handleSubmit: SubmitHandler<z.infer<typeof formSchema>> = (values) => {
-        console.log("Form Submitted: ", values);
-        
+    const handleSubmit: SubmitHandler<z.infer<typeof formSchema>> = async (values) => {
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(values),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                toast.success(result.message); // Show success message
+            } else {
+                toast.error(result.message); // Show error message
+            }
+        } catch (error) {
+            toast.error('Unexpected error occurred'); // Handle unexpected errors
+        }
     };
 
     if (!showPopup) return null;
