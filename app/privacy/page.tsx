@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 const PrivacyPolicy: NextPage = () => {
   return (
-    <div className='max-w-4xl mx-auto p-6'>
-      <h1 className='text-3xl font-bold mb-4'>Privacy Policy</h1>
+    <div className='max-w-4xl mx-auto p-6 space-y-6 mt-[10vw]'>
+      <h1 className='text-5xl  text-center font-bold mb-10'>Privacy Policy</h1>
 
       <section className='mb-6'>
         <h2 className='text-2xl font-semibold mb-2'>Who We Are</h2>
         <p>
-          Our website address is: <a href="https://skillmantra.in" target="_blank" rel="noopener noreferrer" className='text-blue-500 hover:underline'>https://skillmantra.in</a>.
+          Our website address is: <a href="/" target="_blank" rel="noopener noreferrer" className='text-blue-500 hover:underline'>Skill Mantra</a>.
         </p>
       </section>
 

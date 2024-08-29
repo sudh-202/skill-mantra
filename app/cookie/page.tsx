@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const CookiesPolicy: NextPage = () => {
   return (
-    <div className='max-w-4xl mx-auto p-6 space-y-6'>
-      <h1 className='text-3xl font-bold mb-4'>Cookies Policy</h1>
+    <div className='max-w-4xl mx-auto p-6 space-y-6 mt-[10vw]'>
+      <h1 className='text-5xl  text-center font-bold mb-10'>Cookies Policy</h1>
 
       <section>
         <h2 className='text-2xl font-semibold mb-2'>What Are Cookies?</h2>
