@@ -1963,9 +1963,9 @@ export const footerData: FooterSection[] = [
   {
     title: "Documentation",
     links: [
-      { text: "Terms & Conditions", href: "/terms-and-conditions" }, 
-      { text: "Cookies", href: "/pages/cookies-policy" },
-      { text: "Privacy Policy", href: "/privacy-policy" }, 
+      { text: "Terms & Conditions", href: "/terms" }, 
+      { text: "Cookies", href: "/cookie" },
+      { text: "Privacy Policy", href: "/privacy" }, 
     ],
   },
   {
