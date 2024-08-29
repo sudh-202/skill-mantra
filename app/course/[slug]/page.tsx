@@ -78,6 +78,7 @@ const CoursePage = ({ params }: CoursePageProps) => {
       <FormSection />
       <CourseCarousel currentCourseId={currentCourse.id} />
       <FAQS />
+      
     </main>
   );
 };

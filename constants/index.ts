@@ -785,7 +785,7 @@ export const COURSE_DESCRIPTIONS = {
 };
 
 export const COURSE_DURATIONS = {
-  "cca": "9 Months",
+  cca: "9 Months",
   "hr-payroll-program": "3 Months",
   "gst-course": "3 Months",
   "hr-generalist": "9 Months",
@@ -797,7 +797,7 @@ export const COURSE_DURATIONS = {
 };
 
 export const COURSE_START_DATES = {
-  "cca": "in 15 days",
+  cca: "in 15 days",
   "hr-payroll-program": "in 15 days",
   "gst-course": "in 15 days",
   "hr-generalist": "in 15 days",
@@ -846,15 +846,17 @@ export const COURSE_DOWNLOAD_LINKS = {
     "https://drive.google.com/file/d/1Oggf6GQZexEn51tbYytBBEFPym39sCuq/view",
   "gst-course":
     "https://drive.google.com/file/d/1txVchZmDpcJWBORiyeI3ObrzclkmYVI1/view",
-  "hr-generalist":
-    "/HR Generalists.pdf ",
+  "hr-generalist": "/HR Generalists.pdf ",
   "tds-course":
     "https://drive.google.com/file/d/1syEkFxzvKR7OPpBS6n65BAOWCX42eAsi/view",
   "accounting-for-accountants":
     "https://drive.google.com/drive/folders/1VhqV1lCHGxXYtfBRfR3TBLpQcIuqXJQt",
-  "financial-modelling": "https://drive.google.com/file/d/1Nf4dQ01DWESMQZm5yjw7kzR8lTNi_Zao/view",
-  "tally-basic-to-advance": "https://drive.google.com/file/d/1psLfRL6BwSoU_gbHG0Wri2gZ4veclm3D/view",
-  "office-automation": "https://drive.google.com/file/d/1nPLHZHtH3lGU2Roa0-V__N_Hq2vqCFUb/view",
+  "financial-modelling":
+    "https://drive.google.com/file/d/1Nf4dQ01DWESMQZm5yjw7kzR8lTNi_Zao/view",
+  "tally-basic-to-advance":
+    "https://drive.google.com/file/d/1psLfRL6BwSoU_gbHG0Wri2gZ4veclm3D/view",
+  "office-automation":
+    "https://drive.google.com/file/d/1nPLHZHtH3lGU2Roa0-V__N_Hq2vqCFUb/view",
 };
 
 // tabData.ts (or wherever you keep your tab data)
@@ -1948,10 +1950,11 @@ export interface FooterSection {
 }
 
 export const footerData: FooterSection[] = [
+  
   {
     title: "Company",
     links: [
-      { text: "Home", href: "/home" },
+      { text: "Home", href: "/" },
       { text: "About", href: "/about" },
       // { text: "Courses", href: "/courses" },
       { text: "Counselling", href: "/counselling" },
@@ -1960,10 +1963,9 @@ export const footerData: FooterSection[] = [
   {
     title: "Documentation",
     links: [
-      { text: "Terms & Conditions", href: "/" },
-      { text: "Cookies", href: "/" },
-      { text: "FAQ", href: "/faq" },
-      { text: "Privacy Policy", href: "/privacy-policy" },
+      { text: "Terms & Conditions", href: "/terms-and-conditions" }, 
+      { text: "Cookies", href: "/pages/cookies-policy" },
+      { text: "Privacy Policy", href: "/privacy-policy" }, 
     ],
   },
   {

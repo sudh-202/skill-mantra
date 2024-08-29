@@ -34,16 +34,16 @@ const Footer: React.FC = () => {
           </form>
           {/* Social Media Icons */}
           <div className="flex space-x-4 mt-4">
-            <a href="#" className="text-blue-600 hover:text-blue-800">
+            <a href="https://www.facebook.com/skillmantra0123" className="text-blue-600 hover:text-blue-800">
               <FaFacebookF size={24} />
             </a>
-            <a href="#" className="text-green-500 hover:text-green-700">
+            {/* <a href="#" className="text-green-500 hover:text-green-700">
               <FaWhatsapp size={24} />
-            </a>
-            <a href="#" className="text-pink-500 hover:text-pink-700">
+            </a> */}
+            <a href="https://www.instagram.com/skillmantra_?igsh=Mml6Nm9wYngzdzJm" className="text-pink-500 hover:text-pink-700">
               <FaInstagram size={24} />
             </a>
-            <a href="#" className="text-blue-700 hover:text-blue-900">
+            <a href="https://www.linkedin.com/company/84960671/admin/dashboard/" className="text-blue-700 hover:text-blue-900">
               <FaLinkedinIn size={24} />
             </a>
             <a href="#" className="text-blue-400 hover:text-blue-600">
