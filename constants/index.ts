@@ -756,9 +756,9 @@ export const STATIC_OFFER_DETAILS = {
   downloadText: "Download Prospectus",
   downloadLink: "#",
   countdown: {
-    days: 20,
-    hours: 10,
-    minutes: 50,
+    days: 15,
+    hours: 1,
+    minutes: 10,
   },
 };
 
@@ -774,7 +774,7 @@ export const COURSE_DESCRIPTIONS = {
                 Gain comprehensive skills in recruitment, payroll, compliance, and more.`,
   "tds-course": `Skill Mantra's TDS course provides essential training on TDS regulations and filing procedures, 
              ensuring you gain the skills needed for effective tax compliance. Perfect for finance professionals and students.`,
- "accounting-for-accountants": `Embark on a transformative journey with our comprehensive online course in Office Automation 
+  "accounting-for-accountants": `Embark on a transformative journey with our comprehensive online course in Office Automation 
                              where efficiency meets expertise, transforming workflows, and empowering professionals to reach the pinnacle of their capabilities.`,
   "financial-modelling": `Skill Mantra’s Financial Modeling course teaches you how to create accurate financial models to drive smart business decisions. 
                       Gain hands-on experience in data analysis, forecasting, and investment evaluation. Ideal for finance enthusiasts and professionals seeking to boost their skills.`,
@@ -785,27 +785,27 @@ export const COURSE_DESCRIPTIONS = {
 };
 
 export const COURSE_DURATIONS = {
-  cca: '9 Months',
-  hrPayroll: '3 Months',
-  gstCourse: '3 Months',
-  hrGeneralist: '9 Months',
-  tdsCourse: '3 Months',
-  accountingForAccountants: '6 Months',
-  financialModelling: '6 Months',
-  tally: '6 Months',
-  officeAutomation: '3 Months',
+  "cca": "9 Months",
+  "hr-payroll-program": "3 Months",
+  "gst-course": "3 Months",
+  "hr-generalist": "9 Months",
+  "tds-course": "3 Months",
+  "accounting-for-accountants": "6 Months",
+  "financial-modelling": "6 Months",
+  "tally-basic-to-advance": "6 Months",
+  "office-automation": "3 Months",
 };
 
 export const COURSE_START_DATES = {
-  cca: 'in 15 days ',
-  hrPayroll: '13 September 2024',
-  gstCourse: '13 September 2024',
-  hrGeneralist: '13 September 2024',
-  tdsCourse: '13 September 2024',
-  accountingForAccountants: '13 September 2024',
-  financialModelling: '13 September 2024',
-  tally: '13 September 2024',
-  officeAutomation: '15 September 2024',
+  "cca": "in 15 days",
+  "hr-payroll-program": "in 15 days",
+  "gst-course": "in 15 days",
+  "hr-generalist": "in 15 days",
+  "tds-course": "in 15 days",
+  "accounting-for-accountants": "in 15 days",
+  "financial-modelling": "in 15 days",
+  "tally-basic-to-advance": "in 15 days",
+  "office-automation": "in 15 days",
 };
 
 export const accountTypes = [
@@ -838,6 +838,23 @@ export const COURSE_IMAGES = {
   "tally-basic-to-advance": "/courses/carousel/8.webp",
   "office-automation": "/courses/carousel/9.webp",
   cca: "/courses/hero.webp",
+};
+
+export const COURSE_DOWNLOAD_LINKS = {
+  cca: "https://drive.google.com/file/d/1qG8r-t159jqjOMweBBJ155jnoRD9Fpip/view",
+  "hr-payroll-program":
+    "https://drive.google.com/file/d/1Oggf6GQZexEn51tbYytBBEFPym39sCuq/view",
+  "gst-course":
+    "https://drive.google.com/file/d/1txVchZmDpcJWBORiyeI3ObrzclkmYVI1/view",
+  "hr-generalist":
+    "/HR Generalists.pdf ",
+  "tds-course":
+    "https://drive.google.com/file/d/1syEkFxzvKR7OPpBS6n65BAOWCX42eAsi/view",
+  "accounting-for-accountants":
+    "https://drive.google.com/drive/folders/1VhqV1lCHGxXYtfBRfR3TBLpQcIuqXJQt",
+  "financial-modelling": "https://drive.google.com/file/d/1Nf4dQ01DWESMQZm5yjw7kzR8lTNi_Zao/view",
+  "tally-basic-to-advance": "https://drive.google.com/file/d/1psLfRL6BwSoU_gbHG0Wri2gZ4veclm3D/view",
+  "office-automation": "https://drive.google.com/file/d/1nPLHZHtH3lGU2Roa0-V__N_Hq2vqCFUb/view",
 };
 
 // tabData.ts (or wherever you keep your tab data)
@@ -1188,8 +1205,6 @@ export const tabData: TabData = {
     },
   ],
 };
-
-
 
 // why this course
 

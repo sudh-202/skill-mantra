@@ -1,16 +1,17 @@
-"use client";
+'use client';
+
 import Image from "next/image";
 import FormSection from "@/components/Courses/FormSection";
 import { MdDownloadForOffline } from "react-icons/md";
 import { useParams } from "next/navigation";
 import {
-  Coursesdata,
-  STATIC_OFFER_DETAILS,
   COURSE_TITLES,
   COURSE_DESCRIPTIONS,
   COURSE_DURATIONS,
   COURSE_START_DATES,
   COURSE_IMAGES,
+  COURSE_DOWNLOAD_LINKS,
+  STATIC_OFFER_DETAILS, // Import the download links mapping
 } from "@/constants";
 import {
   motion,
@@ -51,8 +52,13 @@ const CourseHero = () => {
     "/courses/default.webp"; // Default image if dynamic image is not found
 
   // Get static offer details
-  const { offerText, scholarshipText, downloadText, downloadLink, countdown } =
+  const { offerText, scholarshipText, downloadText, countdown } =
     STATIC_OFFER_DETAILS;
+
+  // Determine the download link based on the slug
+  const downloadLink =
+    COURSE_DOWNLOAD_LINKS[slug as keyof typeof COURSE_DOWNLOAD_LINKS] ||
+    "#";
 
   return (
     <main className="relative">
@@ -82,7 +88,7 @@ const CourseHero = () => {
             <p className="text-[4vw] md:text-[1.7vw] text-blue-90 md:text-left">
               {description}
             </p>
-            <div className="flex flex-col md:flex-row justify-start mt-6 gap-4 w-1/2  mx-auto md:mx-0">
+            <div className="flex flex-col md:flex-row justify-start mt-6 gap-4 w-1/2 mx-auto md:mx-0">
               <div className="bg-white text-blue-90 py-4 px-8 md:px-12 rounded-2xl flex flex-col md:flex-row gap-4 md:text-left text-center">
                 <span className="block text-[4vw] md:text-[2vw] font-bold">
                   Duration
@@ -110,7 +116,7 @@ const CourseHero = () => {
                 <MdDownloadForOffline />
                 {downloadText}
               </a>
-              <div className="flex  flex-row justify-center md:mt-[5vw] mt-[10vw] text-center gap-4 md:gap-6">
+              <div className="flex flex-row justify-center md:mt-[5vw] mt-[10vw] text-center gap-4 md:gap-6">
                 <div className="bg-white text-blue-90 py-4 px-6 md:px-8 rounded-2xl">
                   <span className="block text-[4vw] md:text-[2vw] font-bold">
                     {countdown.days}
@@ -127,7 +133,7 @@ const CourseHero = () => {
                   <span className="block text-[4vw] md:text-[2vw] font-bold">
                     {countdown.minutes}
                   </span>
-                  <span className="block text-[3vw]  md:text-[1.5vw]">Minutes</span>
+                  <span className="block text-[3vw] md:text-[1.5vw]">Minutes</span>
                 </div>
               </div>
             </div>
