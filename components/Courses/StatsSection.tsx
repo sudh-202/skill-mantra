@@ -13,7 +13,7 @@ const StatsSection: React.FC = () => {
                 className="absolute left-[10vw] -top-[5vw] z-10 hidden md:block"
                 loading='lazy'
             />
-            <h2 className="text-[7vw] md:text-[3.4vw]   text-blue-90 text-center my-12 md:pl-12 ">
+            <h2 className="text-[10vw] md:text-[3.4vw]   text-blue-90 text-center my-12 md:pl-12 font-semibold ">
                 A Mantra For Your Dreams
             </h2>
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -24,8 +24,8 @@ const StatsSection: React.FC = () => {
                             alt={stat.description}
                             className="w-full h-48 object-cover mb-4 rounded-lg"
                         />
-                        <p className="text-[2.5vw] font-bold text-black">{stat.value}</p>
-                        <p className="text-[1.5vw] text-black">{stat.description}</p>
+                        <p className="md:text-[2.5vw] text-[10vw] font-bold text-black">{stat.value}</p>
+                        <p className="md:text-[1.5vw] text-[7vw] text-black">{stat.description}</p>
                     </div>
                 ))}
             </div>

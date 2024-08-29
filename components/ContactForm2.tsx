@@ -1,186 +1,159 @@
-"use client";
-
-import Image from 'next/image';
-import * as z from "zod";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import {
-    Select,
-    SelectValue,
-    SelectTrigger,
-    SelectContent,
-    SelectItem,
-} from "@/components/ui/select";
+import React, { useState } from 'react';
+import * as z from 'zod';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'react-toastify';
+import { accountTypes } from '@/constants';
+import Loader from '@/components/ui/Loader';
 
 const formSchema = z.object({
-    name: z.string().min(1, "Name is required"),
-    phone: z.string().min(10, "Phone number must be at least 10 digits"),
-    city: z.string().min(1, "City is required"),
-    emailAddress: z.string().email("Invalid email address"),
-    accountType: z.enum(["student", "Working Professional", "CA/CS Pursuing", "Govt Job Preparation"]),
-    companyName: z.string().optional(),
+  name: z.string().min(1, 'Name is required'),
+  phone: z.string().min(10, 'Phone number must be at least 10 digits'),
+  emailAddress: z.string().email('Invalid email address'),
+  accountType: z.enum([
+    'student',
+    'Working Professional',
+    'CA/CS Pursuing',
+    'Govt Job Preparation',
+  ]),
+  city: z.string().min(1, 'City is required'),
+  reason: z.string().optional(),
 });
 
-const ContactForm = () => {
-    const form = useForm<z.infer<typeof formSchema>>({
-        resolver: zodResolver(formSchema),
-        defaultValues: {
-            name: "",
-            phone: "",
-            city: "",
-            emailAddress: "",
-            accountType: "student", // Ensure default value matches your enum
-            companyName: "",
-        },
-    });
+type FormValues = z.infer<typeof formSchema>;
 
-    const handleSubmit: SubmitHandler<z.infer<typeof formSchema>> = async (values) => {
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(values),
-            });
+const CounselingForm = () => {
+  const [loading, setLoading] = useState(false);
+  const { register, handleSubmit, formState: { errors } } = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: '',
+      phone: '',
+      emailAddress: '',
+      accountType: 'student',
+      city: '',
+      reason: '',
+    },
+  });
 
-            const result = await response.json();
-            if (response.ok) {
-                toast.success(result.message); // Show success message
-            } else {
-                toast.error(result.message); // Show error message
-            }
-        } catch (error) {
-            toast.error('Unexpected error occurred'); // Handle unexpected errors
-        }
-    };
+  const onSubmit: SubmitHandler<FormValues> = async (values) => {
+    setLoading(true); // Show loader
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(values),
+      });
 
-    return (
-        <>
-            {/* <Image
-                src="/circle.webp"
-                alt="circle"
-                width={1000}
-                height={100}
-                className="absolute right-[-350px] top-[-330px]  hidden lg:block z-[-10]"
-            /> */}
-            <div className="flex flex-col items-center justify-center md:p-[2vw] p-[6vw]  bg-white rounded-2xl z-90">
-                <h1 className="md:text-3xl text-2xl font-semibold mb-6 text-blue-90 text-center">Enroll for Free Counseliing</h1>
-                <Form {...form}>
+      const result = await response.json();
+      if (response.ok) {
+        toast.success(result.message);
+      } else {
+        toast.error(result.message);
+      }
+    } catch (error) {
+      toast.error('Unexpected error occurred');
+    } finally {
+      setLoading(false); // Hide loader
+    }
+  };
 
-                    <form onSubmit={form.handleSubmit(handleSubmit)} className="w-full flex flex-col gap-4 ">
-                        <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                                <FormItem className=''>
-                                    {/* <FormLabel>Name</FormLabel> */}
-                                    <FormControl>
-                                        <Input placeholder="Name" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="phone"
-                            render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>Phone Number</FormLabel> */}
-                                    <FormControl>
-                                        <Input placeholder="Phone Number" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="emailAddress"
-                            render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>Email Address</FormLabel> */}
-                                    <FormControl>
-                                        <Input
-                                            placeholder="Email Address"
-                                            type="email"
-                                            {...field}
-                                        />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="accountType"
-                            render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>I am a</FormLabel> */}
-                                    <Select value={field.value} onValueChange={field.onChange}>
-                                        <FormControl>
-                                            <SelectTrigger>
-                                                <SelectValue placeholder="Student" />
-                                            </SelectTrigger>
-                                        </FormControl>
-                                        <SelectContent className="bg-white">
-                                            <SelectItem value="student">Student</SelectItem>
-                                            <SelectItem value="Working Professional">Working Professional</SelectItem>
-                                            <SelectItem value="CA/CS Pursuing">CA/CS Pursuing</SelectItem>
-                                            <SelectItem value="Govt Job Preparation">Govt Job Preparation</SelectItem>
-                                        </SelectContent>
-                                    </Select>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        {form.watch("accountType") === "Working Professional" && (
-                            <FormField
-                                control={form.control}
-                                name="companyName"
-                                render={({ field }) => (
-                                    <FormItem>
-                                        {/* <FormLabel>Company Name</FormLabel> */}
-                                        <FormControl>
-                                            <Input placeholder="Company Name" {...field} />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                )}
-                            />
-                        )}
-                        <FormField
-                            control={form.control}
-                            name="city"
-                            render={({ field }) => (
-                                <FormItem>
-                                    {/* <FormLabel>City/State</FormLabel> */}
-                                    <FormControl>
-                                        <Input placeholder="City/State" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <Button type="submit" className="w-full bg-blue-90 text-white mt-4">
-                            Submit
-                        </Button>
-                    </form>
-                </Form>
+  return (
+    <div className="flex flex-col items-center justify-center p-6 md:p-8 bg-white rounded-2xl shadow-lg">
+      <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 mb-6 text-center">
+        Enroll for Free Counseling
+      </h2>
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col gap-4">
+        {/* Name Field */}
+        <div className="flex flex-col text-black">
+        
+          <input
+            id="name"
+            {...register('name')}
+            placeholder="Name"
+            className={`p-2 border rounded ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
+          />
+          {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+        </div>
 
-            </div>
-        </>
-    );
+        {/* Phone Number Field */}
+        <div className="flex flex-col">
+          {/* <label htmlFor="phone" className="text-gray-700">Phone No.</label> */}
+          <input
+            id="phone"
+            {...register('phone')}
+            placeholder="Phone No."
+            className={`p-2 border rounded ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
+          />
+          {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
+        </div>
+
+        {/* Email Address Field */}
+        <div className="flex flex-col">
+          {/* <label htmlFor="emailAddress" className="text-gray-700">Email ID</label> */}
+          <input
+            id="emailAddress"
+            {...register('emailAddress')}
+            type="email"
+            placeholder="Email ID"
+            className={`p-2 border rounded ${errors.emailAddress ? 'border-red-500' : 'border-gray-300'}`}
+          />
+          {errors.emailAddress && <p className="text-red-500 text-sm">{errors.emailAddress.message}</p>}
+        </div>
+
+        {/* Account Type Field */}
+        <div className="flex flex-col">
+          {/* <label htmlFor="accountType" className="text-gray-700">I am a:</label> */}
+          <select
+            id="accountType"
+            {...register('accountType')}
+            className={`p-2 border rounded ${errors.accountType ? 'border-red-500' : 'border-gray-300'}`}
+          >
+            {accountTypes.map((type) => (
+              <option key={type.value} value={type.value}>
+                {type.label}
+              </option>
+            ))}
+          </select>
+          {errors.accountType && <p className="text-red-500 text-sm">{errors.accountType.message}</p>}
+        </div>
+
+        {/* City Field */}
+        <div className="flex flex-col">
+          {/* <label htmlFor="city" className="text-gray-700">City/State</label> */}
+          <input
+            id="city"
+            {...register('city')}
+            placeholder="City/State"
+            className={`p-2 border rounded ${errors.city ? 'border-red-500' : 'border-gray-300'}`}
+          />
+          {errors.city && <p className="text-red-500 text-sm">{errors.city.message}</p>}
+        </div>
+
+        {/* Reason Field */}
+        {/* <div className="flex flex-col">
+          <label htmlFor="reason" className="text-gray-700">Reason (optional)</label>
+          <input
+            id="reason"
+            {...register('reason')}
+            placeholder="Reason (optional)"
+            className="p-2 border rounded border-gray-300"
+          />
+        </div> */}
+
+        {/* Submit Button and Loader */}
+        <div className="flex items-center gap-2 mt-4">
+          <button
+            type="submit"
+            className="bg-blue-90 text-white px-4 py-2 rounded flex-1"
+          >
+            Submit
+          </button>
+          {loading && <Loader className="ml-2" />}
+        </div>
+      </form>
+    </div>
+  );
 };
 
-export default ContactForm;
+export default CounselingForm;

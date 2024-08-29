@@ -38,19 +38,19 @@ const AssistanceSection: React.FC<AssistanceSectionProps> = ({ services }) => {
           ease: "easeInOut",
         }}
       />
-      <div className="flex items-start justify-start pb-10 z-40">
+      <div className="flex md:flex-row flex-col gap-5 items-start justify-start pb-10 z-40">
         {services.map((service, index) => (
           <div
             key={index}
-            className="text-blue-90 rounded-2xl bg-white md:h-[50vh] h-[35vh] flex-1 flex flex-col items-center justify-center px-[5vw] overflow-hidden mx-[5vw] z-30"
+            className="text-blue-90 rounded-2xl bg-white h-[50vh] flex-1 flex flex-col items-center justify-center px-[5vw] md:py-0 py-[4vw] overflow-hidden z-30"
           >
-            <h3 className="md:text-[2vw] text-[5vw] text-center font-bold">
+            <h3 className="md:text-[2vw] text-[7vw] text-center font-bold">
               {service.title}
             </h3>
 
             <ul className="mt-4 list-disc list-inside space-y-3 leading-relaxed md:text-[1.5vw] text-[2.5vw] ">
               {service.points.map((point, i) => (
-                <li key={i} className="text-[1vw]">
+                <li key={i} className="md:text-[1vw] text-[2.5vw]">
                   {point}
                 </li>
               ))}
