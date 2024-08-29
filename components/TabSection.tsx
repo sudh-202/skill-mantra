@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { tabData } from '@/constants';
-import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
-import { useRef } from "react"
+import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from './ui/button';
 
@@ -18,7 +17,7 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
-  useMotionValueEvent(scrollYProgress, "change", (latestValue) => console.log(latestValue))
+  useMotionValueEvent(scrollYProgress, 'change', (latestValue) => console.log(latestValue))
 
   const [activeTab, setActiveTab] = useState<string | undefined>(undefined);
 
@@ -46,15 +45,15 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
         alt="circle"
         width={700}
         height={100}
-        className="absolute top-[50%] md:-right-[25%] -right-[70%]  "
+        className="absolute top-[50%] md:-right-[25%] -right-[70%]"
         animate={{
           translateY: [-10, 10],
         }}
         transition={{
           repeat: Infinity,
-          repeatType: "mirror",
+          repeatType: 'mirror',
           duration: 2,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
       />
       <div className="flex flex-row flex-wrap gap-4 md:gap-8">
@@ -65,7 +64,7 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
               } md:flex-grow min-h-full`}
             onClick={() => handleTabClick(tab.id)}
           >
-            <span className={`text-sm md:text-xl font-medium mt-4 ${activeTab === tab.id ? 'text-white' : 'text-gray-800'
+            <span className={`text-sm md:text-xl font-semibold mt-4 ${activeTab === tab.id ? 'text-white' : 'text-gray-800'
               }`}>
               {tab.title}
             </span>
@@ -76,17 +75,16 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
 
       <div className="mt-10 md:mt-16">
         <h3 className="text-xl md:text-2xl font-semibold text-center text-blue-90">{activeTabData?.title}</h3>
-        <p className="text-center text-gray-700 text-lg md:text-xl mt-4 max-w-3xl mx-auto">
-          {activeTabData?.content}
-        </p>
+        <p
+          className="text-center text-gray-700 text-lg md:text-xl mt-4 max-w-3xl mx-auto"
+          dangerouslySetInnerHTML={{ __html: activeTabData?.content || '' }}
+        />
       </div>
       <div>
-
         <Button asChild className="bg-[#00E0D3] py-4 md:py-8 px-6 md:px-8 text-[3vw] md:text-[1.5vw] rounded-xl text-blue-90 flex justify-center items-center uppercase mt-[35px] w-1/4 mx-auto">
           <Link href="https://courses.skillmantra.in/login">Enroll Now</Link>
         </Button>
       </div>
-
     </section>
   );
 };
