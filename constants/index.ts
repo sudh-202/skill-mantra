@@ -473,25 +473,25 @@ export const DEGREE_DATA = {
   subtitle:
     "Get smart, get ahead by benefiting from the best of both worlds: a university degree and industry-ready training course.",
   rows: [
-    { label: "General teaching by university", traditional: true, smart: true },
-    { label: "UGC recognized bachelors", traditional: true, smart: true },
+    { label: "Job Assistance", traditional: true, smart: true },
+    { label: "Industry Curated Courses", traditional: true, smart: true },
     {
-      label: "Access to 1000+ hours of rich content",
+      label: "Resume Writing & Interview Preparation",
       traditional: false,
       smart: true,
     },
     {
-      label: "2500+ hours of hands on training",
+      label: "Personal Relationship Manager",
       traditional: false,
       smart: true,
     },
     {
-      label: "Courses designed by your future employer!",
+      label: "CSR Activities",
       traditional: false,
       smart: true,
     },
-    { label: "Built-in income guaranteed", traditional: false, smart: true },
-    { label: "VR simulation based training", traditional: false, smart: true },
+    { label: "Personalised Counselling Session", traditional: false, smart: true },
+    { label: "In-depth Content", traditional: false, smart: true },
   ],
 };
 
