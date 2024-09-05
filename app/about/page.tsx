@@ -6,6 +6,7 @@ import FeaturesSection from "@/components/Advantage";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import { useRef } from "react"
 import VisionMissionSection from "@/components/Courses/VisionMissionSection";
+import AboutUs from "@/components/About";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState(tabData2[0].id);
@@ -89,6 +90,10 @@ const About = () => {
           Skill-Mantra Advantage
         </h2>
         <FeaturesSection />
+      </div>
+
+      <div className="">
+        <AboutUs/>
       </div>
       
     </main>

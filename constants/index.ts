@@ -2008,3 +2008,63 @@ export const statsData = [
     imageUrl: "/courses/25.webp",
   },
 ];
+
+// About us
+
+export const aboutUsContent = [
+  {
+    title: "Problem",
+    description: "India accounts for most no.of under-skilled force who can contribute to nation's growth...",
+    image: "/about/a1.webp",
+    bgColor: "bg-[#00E0D3]",
+  },
+  {
+    title: "Founding & Vision",
+    description: "Guided by founder Mr. Shankar Kumar...",
+    image: "/about/a2.webp",
+    bgColor: "bg-[#AABDE1]",
+  },
+  {
+    title: "Launch",
+    description: "On 6th April 2022 Skill Mantra was launched at Constitution Club of India...",
+    image: "/about/a3.webp",
+    bgColor: "bg-[#FFC224]",
+  },
+  {
+    title: "Offering & Success",
+    description: "Skill Mantra launched its first successful course of HR Payroll...",
+    image: "/about/a4.webp",
+    bgColor: "bg-[#AABDE1]",
+  },
+  {
+    title: "Educational Collaborations",
+    description: "We have collaborated with various universities & educational institutions...",
+    image: "/about/a5.webp",
+    bgColor: "bg-[#FFC224]",
+  },
+  {
+    title: "Recognition from Leading Institutions",
+    description: "Efforts of Skill Mantra to bridge the skill gap among graduates...",
+    image: "/about/a6.webp",
+    bgColor: "bg-[#00E0D3]",
+  },
+  {
+    title: "1st Successful CSR",
+    description: "Skill-Mantra's emphasizes on community engagement through skill development...",
+    image: "/about/a7.webp",
+    bgColor: "bg-[#FFC224]",
+  },
+  {
+    title: "Implementation partner with PMKVY",
+    description: "Skill Mantra is an implementation partner of the Ministry of Skill Development...",
+    image: "/about/a8.webp",
+    bgColor: "bg-[#AABDE1]",
+  },
+  {
+    title: "Future Plans",
+    description: "Skill-Mantra envisions expanding its course offerings, establishing more partnerships...",
+    image: "/about/a9.webp",
+    bgColor: "bg-[#00E0D3]",
+  },
+];
+
