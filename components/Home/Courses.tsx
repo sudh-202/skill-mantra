@@ -78,7 +78,7 @@ const CoursesSection: React.FC = () => {
                                             <Link href={`/course/${course.slug}`}>Learn More</Link>
                                         </Button>
                                         <Button asChild className="bg-[#00E0D3] hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-                                            <Link href="https://courses.skillmantra.in/login">Enroll Now</Link>
+                                        <Link href="/form">Enroll Now</Link>
                                         </Button>
                                     </div>
                                 </div>
