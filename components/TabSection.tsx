@@ -82,7 +82,8 @@ const TabsSection: React.FC<TabsSectionProps> = ({ courseSlug }) => {
       </div>
       <div>
         <Button asChild className="bg-[#00E0D3] py-4 md:py-8 px-6 md:px-8 text-[3vw] md:text-[1.5vw] rounded-xl text-blue-90 flex justify-center items-center uppercase mt-[35px] w-1/4 mx-auto">
-        <Link href="/form">Enroll Now</Link>
+        <Link href="/form">
+        Enroll Now</Link>
         </Button>
       </div>
     </section>
